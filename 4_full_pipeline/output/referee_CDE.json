@@ -1,0 +1,46 @@
+{
+ "C_house": {
+  "cash": 79859,
+  "cash_share": 0.38328885731838425,
+  "delayed": 2193,
+  "delayed_share": 0.02746089983596088,
+  "window_sensitive": 1020
+ },
+ "C_condo": {
+  "cash": 34416,
+  "cash_share": 0.4172243235379692,
+  "delayed": 579,
+  "delayed_share": 0.016823570432357042,
+  "window_sensitive": 652
+ },
+ "D_repeat": {
+  "n": 78957,
+  "median_price": 750000.0,
+  "cash": 0.45460187190496093,
+  "house": 0.7522322276682245
+ },
+ "D_single": {
+  "n": 211883,
+  "median_price": 825000.0,
+  "cash": 0.3699258553069383,
+  "house": 0.7030200629592747
+ },
+ "D_all": {
+  "n": 290840,
+  "median_price": 800000.0,
+  "cash": 0.39291362948700315,
+  "house": 0.7163801402833173
+ },
+ "E_cash->fin": {
+  "pairs": 10596,
+  "median_gap": 515.0,
+  "share_short": 0.7265949414873537,
+  "median_first": 555000.0
+ },
+ "E_fin->cash": {
+  "pairs": 4478,
+  "median_gap": 1337.0,
+  "share_short": 0.39883876730683343,
+  "median_first": 989117.5
+ }
+}
