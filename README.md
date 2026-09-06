@@ -1,5 +1,7 @@
 # Replication — *Who Gets the House?*
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22421851.svg)](https://doi.org/10.5281/zenodo.22421851)
+
 Pablo Loschi. Companion to *Who Gets the House? Execution Certainty, the
 Mortgage Recording Tax, and the Design of Transfer Taxes in New York City*.
 
