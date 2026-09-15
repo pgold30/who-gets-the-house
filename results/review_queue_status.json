@@ -1,0 +1,8 @@
+{
+  "distress_sample": 90,
+  "distress_reviewed": 0,
+  "coop_sample": 90,
+  "coop_reviewed": 0,
+  "seed": 20260910,
+  "status": "Queues and sampling weights complete; no ground-truth accuracy claim."
+}

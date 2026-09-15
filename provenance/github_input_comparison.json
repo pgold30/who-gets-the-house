@@ -1,0 +1,30 @@
+{
+  "repository": "https://github.com/pgold30/who-gets-the-house",
+  "commit": "f404e48320a81e3bfe20127af2ed7c2d9fb5268e",
+  "input_comparison": [
+    {
+      "file": "2_reproduce/dob_permits.csv.gz",
+      "release_sha256": "1785534a084b78ae117d94c5997944b65b0d03a00aa51734570b7a26b4cb2baf",
+      "github_sha256": "1785534a084b78ae117d94c5997944b65b0d03a00aa51734570b7a26b4cb2baf",
+      "equal": true
+    },
+    {
+      "file": "2_reproduce/panel2.csv.gz",
+      "release_sha256": "a99671affb4d16190e064a998f62541bffa3976bcd432cfd365ff26ddcc8a6c5",
+      "github_sha256": "a99671affb4d16190e064a998f62541bffa3976bcd432cfd365ff26ddcc8a6c5",
+      "equal": true
+    },
+    {
+      "file": "3_section4.9/deeds_for_pairs.json",
+      "release_sha256": "5a3914253109fd3cf3c097de7660121363e051168257b6a688521777f7f4b349",
+      "github_sha256": "5a3914253109fd3cf3c097de7660121363e051168257b6a688521777f7f4b349",
+      "equal": true
+    },
+    {
+      "file": "4_full_pipeline/sample_2016_2025.csv.gz",
+      "release_sha256": "495d66ab48b781fc6b0d02015b15ecf6049a1843e255e0a23f6786ef264bced9",
+      "github_sha256": "495d66ab48b781fc6b0d02015b15ecf6049a1843e255e0a23f6786ef264bced9",
+      "equal": true
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "kind": "house",
+    "document_id": "2023051600851001",
+    "bbl": "3082410041",
+    "sale_day": "2023-05-10",
+    "stratum": "broad_only",
+    "finding": "lender_resale_after_foreclosure_acquisition",
+    "evidence": [
+      "deed_2023051600851001_p3_zoom.png",
+      "instrument_2019020500740001_p1.png",
+      "instrument_2019020500740001_p3.png",
+      "instrument_2019020500740001_p3_detail.png"
+    ],
+    "related_document": "2019020500740001",
+    "notes": "Sale deed page 3 identifies Central Mortgage/Arvest as grantor and recites the 24 January 2019 referee deed. The earlier deed page 3 conveys the same premises to Arvest pursuant to a mortgage foreclosure judgment. Supports an REO resale interpretation; does not establish condition or the causal price effect. The narrower institutional rule missed this seller, while the broad rule flagged it.",
+    "review_date": "2026-09-10",
+    "reviewer": "AI-assisted image review; independent human review pending",
+    "evidence_url": "https://a836-acris.nyc.gov/DS/DocumentSearch/DocumentImageView?doc_id=2023051600851001",
+    "evidence_sha256": {
+      "deed_2023051600851001_p3_zoom.png": "934b2b630efaaea020a5329d4c8fe3c2c7bb85b81f2a08691913de05aebba358",
+      "instrument_2019020500740001_p1.png": "11983b6ef3e9cdc4096dfb3642e3063a563326ff5da6904dbceb87b854241b78",
+      "instrument_2019020500740001_p3.png": "71bb44aff2cd24827d588c32f34d87934361722c4ad61fae1f085a8361f16a96",
+      "instrument_2019020500740001_p3_detail.png": "4744105e5d9f87aa3f57ce6394521f5ba47973f300119a8737a42fdb275e2885"
+    }
+  },
+  {
+    "kind": "house",
+    "document_id": "2019093000695001",
+    "bbl": "4102650007",
+    "sale_day": "2019-09-26",
+    "stratum": "specific_institution",
+    "finding": "referee_deed_in_foreclosure_to_institution",
+    "evidence": [
+      "instrument_2019093000695001_p1.png",
+      "instrument_2019093000695001_p2_detail.png"
+    ],
+    "related_document": "",
+    "notes": "Operative page 2 is explicitly a Referee's Deed in Foreclosure, conveying to U.S. Bank as trustee. Cover metadata uses ordinary DEED. This is a foreclosure transfer, not an ordinary lender resale. The narrower institutional-buyer rule already excludes this case.",
+    "review_date": "2026-09-10",
+    "reviewer": "AI-assisted image review; independent human review pending",
+    "evidence_url": "https://a836-acris.nyc.gov/DS/DocumentSearch/DocumentImageView?doc_id=2019093000695001",
+    "evidence_sha256": {
+      "instrument_2019093000695001_p1.png": "c6e5dfe73ec211771f0028dce3638f1376296c75485110fe95142d5a1d5a0084",
+      "instrument_2019093000695001_p2_detail.png": "462e016e673203dc3eda800ebe25e46ad439b924b5a68cb171d4f91bd5954a7c"
+    }
+  },
+  {
+    "kind": "coop",
+    "document_id": "2025020500312001",
+    "bbl": "1014060017",
+    "sale_day": "2025-02-11",
+    "stratum": "timing_unique",
+    "finding": "collateral_unit_match_purchase_unverified",
+    "sale_unit": "7AB",
+    "instrument_unit": "7AB",
+    "evidence": [
+      "coop_2025020500312001_p1.png",
+      "coop_2025020500312001_p3.png",
+      "coop_2025020500312001_p4.png"
+    ],
+    "related_document": "",
+    "notes": "Cover and co-operative addendum identify 7AB. UCC collateral identifies shares for 7A and 7B and the proprietary lease. Unit match supported; debtor-to-buyer identity and purchase-loan purpose not independently established.",
+    "review_date": "2026-09-10",
+    "reviewer": "AI-assisted image review; independent human review pending",
+    "evidence_url": "https://a836-acris.nyc.gov/DS/DocumentSearch/DocumentImageView?doc_id=2025020500312001",
+    "evidence_sha256": {
+      "coop_2025020500312001_p1.png": "358055000a0cd5d602176ca701666d11e09f7fb1c48a7ad1fd05bd21e10d85a3",
+      "coop_2025020500312001_p3.png": "1edd6c276c30562e6a2e287371cab38b672758624457510aad2a010618462bd8",
+      "coop_2025020500312001_p4.png": "3e77a534c06e976254075958a98b54286a7d3a86c809026945a88038f0ab39f5"
+    }
+  },
+  {
+    "kind": "coop",
+    "document_id": "2020020400882001",
+    "bbl": "3011700041",
+    "sale_day": "2020-02-17",
+    "stratum": "timing_unique",
+    "finding": "collateral_unit_mismatch",
+    "sale_unit": "1CD",
+    "instrument_unit": "4E",
+    "evidence": [
+      "instrument_2020020400882001_p1.png",
+      "instrument_2020020400882001_p2.png",
+      "instrument_2020020400882001_p3_detail.png"
+    ],
+    "related_document": "",
+    "notes": "Preserved DOF sale identifies 1CD at $1,120,000. Cover, operative UCC collateral and addendum identify 4E in the same building. Reject the assignment of this filing to the 1CD sale; classify that sale as unresolved, not cash. Timing uniqueness fails under strict, base and wide windows here.",
+    "review_date": "2026-09-10",
+    "reviewer": "AI-assisted image review; independent human review pending",
+    "evidence_url": "https://a836-acris.nyc.gov/DS/DocumentSearch/DocumentImageView?doc_id=2020020400882001",
+    "evidence_sha256": {
+      "instrument_2020020400882001_p1.png": "06f7ca76ef25f99cb5921171775e3be628621432fd11dab4617d0d0bcb77ceec",
+      "instrument_2020020400882001_p2.png": "bfc709578462c499eb18f5675654a5b7743a94402e2ed1cc1bc4ea2d793078ca",
+      "instrument_2020020400882001_p3_detail.png": "fbf87695becb2ac6f626f69f297a1d9227669db474a85f4140e52bd3089dca5a"
+    }
+  }
+]

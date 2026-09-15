@@ -1,0 +1,8 @@
+{
+  "observations": 574,
+  "long_gaps": [],
+  "source": "https://www.freddiemac.com/pmms/pmms_archives",
+  "retrieval": "official annual archive excerpts saved as pmms_web_YEAR.json; bulk download unavailable",
+  "series": "30-year fixed-rate mortgage average, percentage points",
+  "methodology_change": "2022-11-17"
+}

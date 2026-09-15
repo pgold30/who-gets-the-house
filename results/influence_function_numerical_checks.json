@@ -1,0 +1,72 @@
+[
+  {
+    "cluster": 7334,
+    "estimand": "residual",
+    "finite_difference": 1.130953650174682e-05,
+    "analytic_derivative": 1.1298979887196597e-05,
+    "absolute_error": 1.0556614550222341e-08
+  },
+  {
+    "cluster": 7334,
+    "estimand": "joint",
+    "finite_difference": 1.662818938097388e-05,
+    "analytic_derivative": 1.6625757924304905e-05,
+    "absolute_error": 2.4314566689738536e-09
+  },
+  {
+    "cluster": 61,
+    "estimand": "residual",
+    "finite_difference": 7.447931160697863e-09,
+    "analytic_derivative": 1.0583398275134073e-25,
+    "absolute_error": 7.447931160697863e-09
+  },
+  {
+    "cluster": 61,
+    "estimand": "joint",
+    "finite_difference": 2.0713708526187702e-08,
+    "analytic_derivative": -9.746819570671035e-24,
+    "absolute_error": 2.0713708526187712e-08
+  },
+  {
+    "cluster": 6038,
+    "estimand": "residual",
+    "finite_difference": 4.837662631596018e-06,
+    "analytic_derivative": 4.830304444954935e-06,
+    "absolute_error": 7.358186641082675e-09
+  },
+  {
+    "cluster": 6038,
+    "estimand": "joint",
+    "finite_difference": 5.785796564072854e-06,
+    "analytic_derivative": 5.782265008256521e-06,
+    "absolute_error": 3.5315558163325113e-09
+  },
+  {
+    "cluster": 2120,
+    "estimand": "residual",
+    "finite_difference": 7.242542884866587e-05,
+    "analytic_derivative": 7.242070236542961e-05,
+    "absolute_error": 4.726483236261805e-09
+  },
+  {
+    "cluster": 2120,
+    "estimand": "joint",
+    "finite_difference": 0.00012103377411420979,
+    "analytic_derivative": 0.0001210602525865671,
+    "absolute_error": 2.6478472357305098e-08
+  },
+  {
+    "cluster": 4007,
+    "estimand": "residual",
+    "finite_difference": 1.3629022632688503e-05,
+    "analytic_derivative": 1.3618156165891968e-05,
+    "absolute_error": 1.0866466796535684e-08
+  },
+  {
+    "cluster": 4007,
+    "estimand": "joint",
+    "finite_difference": 1.687280259954349e-05,
+    "analytic_derivative": 1.687172783773255e-05,
+    "absolute_error": 1.0747618109409871e-09
+  }
+]

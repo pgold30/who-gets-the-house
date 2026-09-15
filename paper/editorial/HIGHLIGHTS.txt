@@ -1,0 +1,4 @@
+- A financing-associated house price gap survives cumulative transaction controls.
+- Joint inference separates specification changes from sampling uncertainty.
+- Neighbourhood appreciation does not explain away the gap on linked house pairs.
+- Record checks reveal limits to distress flags and co-op financing assignments.

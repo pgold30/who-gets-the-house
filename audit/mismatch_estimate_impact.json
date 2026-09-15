@@ -1,0 +1,18 @@
+{
+  "source": "data/coop_sales_all.json",
+  "source_sha256": "54aae77338227951c9fe76171c9c0ea5835cf39943d8ef926ac6eac0e0e03bc2",
+  "matched_source_records": [
+    {
+      "sale_price": "1120000",
+      "sale_date": "2020-02-17T00:00:00.000",
+      "borough": "3",
+      "bbl": "3011700041",
+      "building_class_category": "09 COOPS - WALKUP APARTMENTS",
+      "apartment_number": "1CD",
+      "address": "15 BUTLER PLACE"
+    }
+  ],
+  "unique_unit_sales": 1,
+  "repeat_pairs_involving_case": 0,
+  "interpretation": "Reject financing link; do not recode as cash. This case contributes no repeat-sales pair, so its exclusion does not alter the reported co-op repeat-sales estimates."
+}

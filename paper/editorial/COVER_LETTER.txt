@@ -1,0 +1,25 @@
+Dear Editors of the Journal of Housing Economics,
+
+Please consider “Who Gets the House? Financing-Associated Price Gaps in New York City” for publication in the Journal of Housing Economics.
+
+The paper asks how much of the price difference associated with cash and financed home purchases survives controls for changing transaction circumstances. Using New York City repeat sales, it estimates financing-switch coefficients jointly with market controls and traces the contrast through permit restrictions, institutional-name exclusions, buyer and seller characteristics, and neighbourhood-by-time effects.
+
+The incremental contribution is a cumulative assessment of the financing gap with joint inference across specifications and explicit record-linkage diagnostics. This makes changes in estimates interpretable alongside changes in sample composition and controls. On a common linked house sample, neighbourhood appreciation does not explain away the gap; buyer and seller characteristics account for part of it. The full house contrast is 9.25 log points, with a 999-refit parcel-bootstrap interval of 7.17–11.35. A common-specification comparison shows a much smaller condominium contrast. The results add evidence on the persistence and heterogeneity of conditional financing-associated prices, without attributing the remaining difference wholly to execution risk or mortgage taxation.
+
+The manuscript's main argument is focused on housing finance and transaction selection. A co-operative assignment audit and evidence around the 2019 transfer-tax thresholds are provided as supplementary analyses. They are not used as a tax experiment identifying the house gap. I believe this focus fits the journal's readership in housing markets, finance and public policy.
+
+The enclosed replication package includes the archived analysis inputs, preserved public extracts, code, computational results and instrument-pilot evidence. It documents the boundary of replication: the original full raw-to-panel stage has not been reconstructed, and the limited instrument pilot does not validate population-wide financing or distress classifications.
+
+I am the sole author. The manuscript has not been published as a journal article and is not under review elsewhere. There was no external funding, and I have no relevant financial interests or positions or outside review rights to disclose. AI assistance is disclosed in the manuscript; I take responsibility for the analysis and interpretations.
+
+Thank you for considering the manuscript.
+
+Sincerely,
+
+Pablo Loschi
+
+Independent researcher, Berlin, Germany
+
+loschi.pablo@gmail.com
+
+ORCID: 0009-0004-9455-4713

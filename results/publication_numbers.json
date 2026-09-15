@@ -1,0 +1,14 @@
+{
+  "release": "WGTH-2026-09-10-JHE-S1",
+  "macros": {
+    "HouseGap": "9.25",
+    "HouseCI": "[7.17, 11.35]",
+    "GeoChange": "0.39",
+    "GeoCI": "[-1.02, 1.60]",
+    "CondoGap": "0.77",
+    "CondoCI": "[-0.01, 1.56]",
+    "InitialGap": "11.42",
+    "PartyChange": "-2.32"
+  },
+  "source_bootstrap_replications": 999
+}

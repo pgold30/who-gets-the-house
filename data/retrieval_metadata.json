@@ -1,0 +1,15 @@
+{
+  "retrieved_utc": "2026-09-10T05:13:00.187887+00:00",
+  "house_bbls": 8127,
+  "requested_deeds": 16400,
+  "sources": {
+    "geography": "64uk-42ks",
+    "parties": "636b-3b5g",
+    "master": "bnx9-e6tj"
+  },
+  "rows": {
+    "geo": 8087,
+    "parties": 52534,
+    "master": 16449
+  }
+}

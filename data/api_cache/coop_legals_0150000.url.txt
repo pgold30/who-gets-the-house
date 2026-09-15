@@ -1,0 +1,1 @@
+https://data.cityofnewyork.us/resource/uqqa-hym2.json?%24select=document_id%2Cborough%2Cblock%2Clot%2Cproperty_type&%24where=document_id+%3E+%272015%27+AND+document_id+%3C+%272027%27&%24order=document_id%2Cborough%2Cblock%2Clot&%24limit=50000&%24offset=150000

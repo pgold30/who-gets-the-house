@@ -1,0 +1,345 @@
+name,role,specific_institution_rule,broad_rule,pair_endpoint_occurrences,validation_status
+FANNIE MAE,seller,True,True,35,name-rule audit only; foreclosure/REO not legally validated
+FEDERAL NATIONAL MORTGAGE ASSOCIATION,seller,True,True,35,name-rule audit only; foreclosure/REO not legally validated
+FEDERAL NATIONAL MORTGAGE ASSOCIATION,buyer,True,True,31,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK NATIONAL ASSOCIATION, AS TRUSTEE",seller,True,True,21,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST, N.A.",buyer,True,True,17,name-rule audit only; foreclosure/REO not legally validated
+DEUTSCHE BANK NATIONAL TRUST COMPANY,buyer,True,True,17,name-rule audit only; foreclosure/REO not legally validated
+U.S. BANK NATIONAL ASSOCIATION,buyer,True,True,15,name-rule audit only; foreclosure/REO not legally validated
+"DEUTSCHE BANK NATIONAL TRUST COMPANY, AS TRUSTEE",seller,True,True,13,name-rule audit only; foreclosure/REO not legally validated
+21ST MORTGAGE CORPORATION,buyer,False,True,13,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST, N.A., AS TRUSTEE FOR LSF9 MASTER",seller,True,True,12,name-rule audit only; foreclosure/REO not legally validated
+21ST MORTGAGE CORPORATION,seller,False,True,10,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON SAVINGS FUND SOCIETY, FSB",seller,False,True,9,name-rule audit only; foreclosure/REO not legally validated
+SECRETARY OF HOUSING AND URBAN DEVELOPMENT,seller,True,True,8,name-rule audit only; foreclosure/REO not legally validated
+"WELLS FARGO BANK, N.A.",buyer,True,True,8,name-rule audit only; foreclosure/REO not legally validated
+"WELLS FARGO BANK, N.A.",seller,True,True,8,name-rule audit only; foreclosure/REO not legally validated
+"BANK OF AMERICA, N.A.",buyer,True,True,7,name-rule audit only; foreclosure/REO not legally validated
+DEUTSCHE BANK NATIONAL TRUST COMPANY,seller,True,True,7,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON TRUST, NATIONAL ASSOCIATION",buyer,False,True,7,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST, N.A., AS TRUSTEE",seller,True,True,7,name-rule audit only; foreclosure/REO not legally validated
+"BANK OF AMERICA, N.A.",seller,True,True,7,name-rule audit only; foreclosure/REO not legally validated
+"WELLS FARGO BANK, NA",buyer,True,True,6,name-rule audit only; foreclosure/REO not legally validated
+"WELLS FARGO BANK, NA",seller,True,True,6,name-rule audit only; foreclosure/REO not legally validated
+U.S. BANK NATIONAL ASSOCIATION,seller,True,True,6,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST COMPANY, NATIONAL ASSOCIATION",seller,True,True,5,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON SAVINGS FUND SOCIETY, FSB",buyer,False,True,5,name-rule audit only; foreclosure/REO not legally validated
+THE BANK OF NEW YORK MELLON,buyer,True,True,4,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON TRUST, NATIONAL ASSOCIATION",seller,False,True,4,name-rule audit only; foreclosure/REO not legally validated
+NATIONSTAR MORTGAGE LLC,seller,True,True,4,name-rule audit only; foreclosure/REO not legally validated
+"DEUTSCHE BANK NATIONAL TRUST COMPANY, AS TRUSTEE",buyer,True,True,4,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK NATIONAL ASSOCIATION, NOT IN ITS INDIVID",buyer,True,True,4,name-rule audit only; foreclosure/REO not legally validated
+GOSHEN MORTGAGE REO LLC,seller,False,True,4,name-rule audit only; foreclosure/REO not legally validated
+WILMINGTON TRUST NATIONAL ASSOCIATION,buyer,False,True,4,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST, N.A., AS TRUSTEE FOR LSF8 MASTER",seller,True,True,3,name-rule audit only; foreclosure/REO not legally validated
+US BANK NATIONAL ASSOCIATION,buyer,True,True,3,name-rule audit only; foreclosure/REO not legally validated
+"HSBC BANK USA, NATIONAL ASSOCIATION AS TRUSTEE FOR",seller,True,True,3,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK NATIONAL ASSOCIATION, AS TRUSTEE",buyer,True,True,3,name-rule audit only; foreclosure/REO not legally validated
+THE BANK OF NEW YORK MELLON,seller,True,True,3,name-rule audit only; foreclosure/REO not legally validated
+"DEUTSCHE BANK NATIONAL TRUST COMPANY, AS TRUSTEE F",seller,True,True,3,name-rule audit only; foreclosure/REO not legally validated
+DEUTSCHE BANK NATIONAL TRUST COMPANY AS TRUSTEE,seller,True,True,3,name-rule audit only; foreclosure/REO not legally validated
+FEDERAL HOME LOAN MORTGAGE CORPORATION,buyer,True,True,3,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST, N.A., AS TRUSTEE",buyer,True,True,3,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST N.A., AS TRUSTEE",seller,True,True,3,name-rule audit only; foreclosure/REO not legally validated
+FANNIE MAE A/K/A FEDERAL NATIONAL MORTGAGE ASSOCIA,seller,True,True,3,name-rule audit only; foreclosure/REO not legally validated
+"CITIMORTGAGE, INC.",seller,True,False,3,name-rule audit only; foreclosure/REO not legally validated
+US BANK NA,buyer,True,True,3,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK, N.A.",seller,True,True,3,name-rule audit only; foreclosure/REO not legally validated
+"LAKEVIEW LOAN SERVICING, LLC",buyer,False,True,3,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST, N.A., AS TRUSTEE FOR LSF9 MASTER",buyer,True,True,3,name-rule audit only; foreclosure/REO not legally validated
+CENTRAL MORTGAGE COMPANY,seller,False,True,3,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST N.A., AS TRUSTEE FOR LSF10 ET AL",seller,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON SAVINGS FUND SOCIETY, FSB, AS TRUSTEE",seller,False,True,2,name-rule audit only; foreclosure/REO not legally validated
+BANK OF NEW YORK,buyer,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+"WELLS FARGO BANK, NATIONAL ASSOCIATION, AS TRUSTEE",seller,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+UPLAND MORTGAGE LOAN TRUST A,seller,False,True,2,name-rule audit only; foreclosure/REO not legally validated
+"HSBC BANK USA, NATIONAL ASSOCIATION AS TRUSTEE",seller,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+CENTRAL MORTGAGE COMPANY,buyer,False,True,2,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK NATIONAL ASSOCIATION, AS TRUSTEE, ON",buyer,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+US BANK NATIONAL ASSOCIATION AS TRUSTEE,seller,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK, NATIONAL ASSOCIATION",buyer,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+CSMC MORTGAGE-BACKED PASS-THROUGH CERT 2007-6,seller,False,True,2,name-rule audit only; foreclosure/REO not legally validated
+WILMINGTON SAVINGS FUND SOCIETY FSB,seller,False,True,2,name-rule audit only; foreclosure/REO not legally validated
+FREEDOM MORTGAGE CORPORATION,buyer,False,True,2,name-rule audit only; foreclosure/REO not legally validated
+DLJ MORTGAGE CAPITAL INC.,seller,False,True,2,name-rule audit only; foreclosure/REO not legally validated
+US BANK NATIONAL ASSOCIATION,seller,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+CASCADE FUNDING MORTGAGE TRUST HB8,seller,False,True,2,name-rule audit only; foreclosure/REO not legally validated
+DEUTSCHE BANK NATIONAL TRUST CO,buyer,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+"WELLS FARGO BANK, NATIONAL ASSOCIATION AS TRUSTEE",seller,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+"CIT BANK, N.A.",seller,False,True,2,name-rule audit only; foreclosure/REO not legally validated
+CASCADE FUNDING MORTGAGE TRUST HB7,seller,False,True,2,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON SAVINGS FUND SOCIETY, FSB, AS OWNER",seller,False,True,2,name-rule audit only; foreclosure/REO not legally validated
+"HSBC BANK USA, NATIONAL ASSOCIATION AS TRUSTEE FOR",buyer,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+"PNC BANK, NATIONAL ASSOCIATION",seller,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+U.S. BANK TRUST NATIONAL ASSOCIATION,buyer,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+"DLJ MORTGAGE CAPITAL, INC.",seller,False,True,2,name-rule audit only; foreclosure/REO not legally validated
+"HSBC BANK USA, NATIONAL ASSOCIATION, AS TRUSTEE",seller,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+"CHRISTIANA TRUST, A DIVISION OF WILMINGTON SAVINGS",buyer,False,True,2,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON SAVINGS FUND SOCIETY, FSB AS TRUSTEE",seller,False,True,2,name-rule audit only; foreclosure/REO not legally validated
+"WELLS FARGO BANK, NATIONAL ASSOCIATION",buyer,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST N.A., AS TRUSTEE FOR LSF8 MASTER",seller,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+FEDERAL NATIONAL MORTGAGE ASSN (''FANNIE MAE''),seller,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+"CITIBANK, N.A. AS TRUSTEE",seller,True,False,2,name-rule audit only; foreclosure/REO not legally validated
+"NATIONSTAR MORTGAGE, LLC",buyer,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+FIRST FRANKLIN MORTGAGE LOAN TRUST,seller,False,True,2,name-rule audit only; foreclosure/REO not legally validated
+PRETIUM MORTGAGE ACQUISITION TRUST,seller,False,True,2,name-rule audit only; foreclosure/REO not legally validated
+SECRETARY OF HOUSING AND URBAN DEVELOPMENT,buyer,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+"DEUTSCHE BANK NATIONAL TRUST COMPANY,",seller,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK NATIONAL ASSOCIATION, AS TRUSTEE FOR CRE",seller,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+DEUTSCHE BANK NATIONAL TRUST COMPANY AS TRUSTEE,buyer,True,True,2,name-rule audit only; foreclosure/REO not legally validated
+"ASSOCIATION, FEDERAL NATIONAL MORTGAGE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILLMINGTON SAVINGS FUND SOCIETY, FSB AS TRUSTEE",buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+HSBC BANK USA NATIONAL ASSOCIATION,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+WELLS FARGO ASSET SECURITIES CORPORATION,seller,True,False,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON TRUST NATIONAL ASSOCIATION, AS TRUSTEE",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+NATIONSTAR MORTGAGE LLC D/B/A MR. COOPER,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+FEDERAL NATIONAL MORTAGE ASSOCIATION,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+DLJ MORTGAGE CAPITAL INC.,buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK NA, AS TRUSTEE FOR J.P. MORGAN MORTGAGE",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+FREEDOM MORTGAGE CORPORATION,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+MORTGAGE EQUITY CONVERSION ASSET TRUST 2011-1 ETC,buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+U.S BANK NATIONAL ASSOCIATION AS TRUSTEE FOR MORTG,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+NEW RESIDENTIAL MORTGAGE LLC,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"UMB BANK, NATIONAL ASSOCIATION, NOT IN ITS INDIVID",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+CITIMORTGAGE INC.,seller,True,False,1,name-rule audit only; foreclosure/REO not legally validated
+"LOAN TRUST, SERIES 2014-3",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+AS TRUSTEE FOR STANWICH MORTGAGE,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST N.A., AS TRUSTEE FOR LSF11 MASTER",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+GSR MORTGAGE LOAN TRUST 2006-9F,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+U.S. BANK NATIONAL ASSOCIATION NOT IN ITS INDIVIDU,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"JPMORGAN CHASE BANK, NATIONAL ASSOCIATION",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+NATIONSTAR HECM ACQUISITION TRUST 2018-1,buyer,True,False,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK NATIONAL ASSOCIATION, AS TRUSTEE FOR CIT",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+A/K/A FEDERAL NATIONAL MORTGAGE ASSN,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+U.S. BANK NATIONAL ASSOCIATION NOT IN ITS INDIVIDU,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST, N.A., AS TRUSTEE FOR LSRMF MH MAS",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+J.P. MORGAN ALTERNATIVE LOAN TRUST 2006-S4,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK NATIONAL ASSOCIATION, AS TRUSTEE FOR RES",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST, N.A. AS TRUSTEE FOR LSF9 MASTER",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"ORANGE BANK & TRUST, AS TRUSTEE",buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON SAVINGS FUND SOCIETY, FSB, ET AL",buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+FOR J.P. MORTGAGE ACQUISITION TRUST 2007-CH5,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"DITECH FINANCIAL, LLC",seller,True,False,1,name-rule audit only; foreclosure/REO not legally validated
+DITECH FINANCIAL LLC,buyer,True,False,1,name-rule audit only; foreclosure/REO not legally validated
+"STANWICH MORTGAGE LOAN TRUST, SERIES 2014-3",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+MORGAN MORTGAGE ACQUISITION CORP. 2006-FRE2 ASSET,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK N.A., AS TRUSTEE, ON BEHALF OF THE J.P.",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK N.A., AS TRUSTEE, ON BEHALF OF THE J.P.",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON SAVINGS FUND SOCIETY, FSB, NOT IN ITS I",buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+FANNIE MAE A/K/A FEDERAL NATIONAL MORTGAGE ASSOC,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+ARVEST BANK AS SUCCESSOR BY MERGER TO,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"ARVEST CENTRAL MORTGAGE COMPANY, SUCCESSOR IN",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+INTEREST TO CENTRAL MORTGAGE COMPANY,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST, N.A., AS TRUSTEE FOR LSF10 MASTER",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+WILMINGTON SAVINGS FUND SOCIETY,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"JPMORGAN CHASE BANK, NATIONAL ASSOCIATION",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+HSBC BANK USA,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"HSBC BANK USA, N.A., AS INDENTURE TRUSTEE FOR THE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+FANNIE MAE AKA FEDERAL NATIONAL MORTGAGE ASSOCIATI,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"THE BANK OF NEW YORK TRUST COMPANY, NA",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+VALLEY NATIONAL BANK,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+LASALLE BANK NA,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+CASCADE FUNDING MORTGAGE TRUST HB10,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+NATIONSTAR REO SUB 1B LLC,buyer,True,False,1,name-rule audit only; foreclosure/REO not legally validated
+"JPMORGAN CHASE BANK, N.A.",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WAMU MORTGAGE PASS-THROUGH CERTIFICATES, SERIES 20",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"BANK OF AMERICA, NA",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+U.S. BANK NA,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+RIGHTEOUS MEN SERVICING EVERY HOUSEHOLD INC.,buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON SAVINGS FUND SOCIETY, FSB, OWNER TTEE",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+CITIGROUP MORTGAGE LOAN TRUST INC,buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+FIDELIS BRIDGE LOAN VENTURE V REO LLC,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+CARRINGTON MORTGAGE LOAN TRUST SERIES 2005-FRE1,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK NATIONAL ASSOCIATION, AS TRUSTEE FOR",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON TRUST, NATIONAL ASSOCIATION, NOT IN",buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+WELL FARGO BANK NA,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON SAVINGS FUND SOCIETY,FSB",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+PNC BANK NATIONAL ASSOCIATION,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+WELLS FARGO BANK NATIONAL ASSOCIATION,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+U.S. BANK TRUST,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+MIDFIRST BANK,buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST NATIONAL ASSOCIATION, NOT IN ITS I",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"MORGAN STANLEY MORTGAGE LOAN TRUST 2007-3XS, U.S.",buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+WELLS FARGO BANK NATIONAL ASSOCIATION AS TRUSTEE,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+MORTGAGE ELECTRONIC REGISTRATION SYSTEMS,buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+US BANK TRUST NA TRUSTEE LSF9 MASTER PARTICIPATION,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+FREDDIE MAC,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON SAVINGS FUND SOCIETY, FSB AS OWNER",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+FEDERAL HOME LOAN MORTGAGE CORPORATION,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+LAKEVIEW LOAN SERVICING LLC,buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+HARBORVIEW MORTGAGE LOAN TRUST 2007-4,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST, N.A",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"CITIZENS BANK, N.A.",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"CITIZENS BANK, N.A.",buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON SAVINGS FUND SOCIETY, FSB, D/B/A CHRIST",buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"NATIONSTAR HECM ACQUISTION TRUST 2018-3,",buyer,True,False,1,name-rule audit only; foreclosure/REO not legally validated
+C/O SPECIALIZED LOAN SERVICING LLC,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WELLS FARGO BANK, N.A, AS TRUSTEE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WELLS FARGO BANK, N.A. AS TRUSTEE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"CARRINGTON MORTGAGE LOAN TRUST, SERIES 2006-FRE1 A",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+US NATIONAL BANK AS TRUSTEE FOR STRUCTURED ASSET,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK NATIONAL ASSOCIATION, AS TRUSTEE FOR STR",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+MORTGAGE LOAN TRUST 2007-BC1,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"NATIONSTAR MORTGAGE, LLC",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+MORTGAGE PASS-THROUGH CERTIFICATES,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+FEDERAL HOME LOAN MORTGAGE COPRORATION,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+C/O PHH MORTGAGE CORPORATION,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+FEDERAL HOME MORTGAGE CORPORATION,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"GOSHEN MORTGAGE REO, LLC",buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+FEDERAL NATIONAL MORTGAGE ASSN,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"DEUTSCHE BANK NATIONAL TRUST COMPANY,AS TRUSTEE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"MORTGAGE PASS-THROUGH CERTIFICATES,SERIES 2006-NC4",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"HSBC BANK USA, NATIONAL ASSOCIATION",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+THE BANK OF NEW YORK MELLON TRUST COMPANY,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"CMG MORTGAGE, INC.",buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK NATIONAL ASSOCIATION, AS TRUSTEE FOR MER",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST N.A., AS TRUSTEE FOR LSF9 MASTER",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"GSMPS MORTGAGE LOAN TRUST 2004-4, U.S. BANK NATION",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON TRUST, NATIONAL ASSOCIATION, AS TRUSTEE",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+THE BANK OF NEW YORK MELLON TRUST CO,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+HSBC BANK USA NA,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"BANK OF AMERICA, N.A",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK, NATIONAL ASSOCIATION AS LEGAL TITLE TRU",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+THE BANK OF NEW YORK MELLON TRUST COMPANY,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+GREEN TREE SERVICING LLC,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"DEUTSCHE BANK NATIONAL TRUST COMPANY, TRUSTEE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"UMB BANK, NATIONAL ASSOCIATION, NOT IN ITS INDIVID",buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+RESIDENTIAL ASSET MORTGAGE PRODUCTS INC,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+JPMORGAN CHASE BANK. N.A,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON TRUST, NATIONAL ASSOCIATION, NOT IN ITS",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+US BANK NA AS LEGAL TITLE TRUSTEE FOR TRUMAN 2016,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+LASALLE BANK N A,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"NATIONSTAR MORTGAGE LLC,AS ATTORNEY IN FACT",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+FOR CARLSBAD FUNDING MORTGAGE TRUST,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK NATIONAL ASSOCIATION, AS TRUSTEE, IN",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"MORTGAGE LOAN TRUST, MORTGAGE LOAN ASSET-BACKED",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON SAVINGS FUND SOCIETY, FSB NOT IN ITS",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+RESIDENTIAL MORTGAGE AGGREGATION TRUST,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+THE BANK OF NEW YORK MELLON AS TRUSTEE,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+FKA THE BANK OF NEW YORK,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+UMB BANK NATIONAL ASSOCIATION,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON TRUST NATIONAL ASSOCIATION, TRUSTEE",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK, NATIONAL ASSOCIATION, AS TRUSTEE FOR SP",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+JPMORGAN CHASE MORTGAGE ACQUISTION CORP,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"US BANK NA, TRUSTEE FOR VCC LOAN TRUST 2017-2",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+U.S. BANK TRUST N.A,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"C/O RUSHMORE LOAN MANAGEMENT SERVICES, LLC",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON SAVINGS FUND SOCIETY, FSB, D/B/A",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"CIT BANK, N.A.",buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+MERRILL LYNCH FIRST FRANKLIN MORTGAGE LOAN TRUST,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON TRUST, NATIONAL ASSOCIATION,TRUSTEE",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST N.A., AS TRUSTEE FOR LSRMF MH",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+ACE SECURITIES CORP. HOME EQUITY LOAN TRUST,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"HSBC BANK USA, N.A., AS TRUSTEE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"C/O OCWEN LOAN SERVICING, LLC",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"US BANK NATIONAL ASSOCIATION, AS TRUSTEE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"NEW CENTURY HOME EQUITY LOAN TRUST, SERIES 2006-1",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+THE MERRILL LYNCH FIRST FRANKLIN MORTGAGE LOAN TRU,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"BANK OF AMERICA, N.A., AS SUCCESSOR",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK, NATIONAL ASSOCIATION, AS SUCCESSOR TRUS",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"LASALLE BANK, N.A., AS TRUSTEE",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON SAVINGS FUND SOCIETY, FSB, AS OWNER TRU",buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON SAVINGS FUND SOCIETY, FSB, AS OWNER TRU",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"CITIMORTGAGE, INC.",buyer,True,False,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK NATIONAL ASSOCIATION, AS SUCCESSOR TRUST",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"BANK OF AMERICA, NATIONAL ASSOCIATION, AS TRUSTEE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+LEHMAN XS TRUST MORTGAGE,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WELLS FARGO BANK, NATIONAL ASSOCIATION",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST, N.A., AS TRUSTEE FOR LSF9 MPT",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST N.A., AS TRUSTEE FOR LSF9 ET AL",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+U.S. BANK TRUST N.A. AS TRUSTEE,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+WELLS FARGO BANK NA,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WELLS FARGO BANK, N.A., AS TRUSTEE FOR PARK PLACE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+WILMINGTON TRUST NATIONAL ASSOCIATION,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+WILMINGTON SAVINGS FUND SOCIETY. FSB AS TRUSTEE,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"PNC BANK, NATIONAL ASSOCIATION",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WELLS FARGO BANK, N.A., AS TRUSTEE FOR STANWICH",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"BANK OF AMERICA, NATIONAL ASSOCIATION",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"US BANK, NATIONAL ASSOCIATION, AS TRUSTEE FOR",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"TRUST MORTGAGE LOAN ASSET-BACKED CERTIFICATES,",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+US BANK NA AS TRUSTEE FOR SPECIALTY UNDERWRITING,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+AND RESIDENTIAL FINANCE TRUST MORTGAGE LOAN ASSET,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+HSBC BANK  USA N.A.,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"LASALLE BANK NATIONAL ASSOCIATION, AS TRUSTEE",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+FEDERAL NATIONAL MTG ASSOCIATION AKA FANNIE MAE,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+HRB MORTGAGE HOLDINGS,buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+FANNIE MAE A/K/A FEDERAL NATIONAL MORTGAGE ASSOCIA,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"NATIONSTAR REO SUB 1B, LLC",buyer,True,False,1,name-rule audit only; foreclosure/REO not legally validated
+NATIONSTAR REO SUB 1B LLC,seller,True,False,1,name-rule audit only; foreclosure/REO not legally validated
+M&T BANK,buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+SURMA SERVICING LLC,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"BAYVIEW LOAN SERVICING, LLC",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST, NA",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK NATIONAL ASSOCIATION, NOT IN ITS INDIVID",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+FEDERAL HOME LOAN MORTGAGE COROPORATION,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+FANNIE MAE,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"CITIMORTGAGE, INC",buyer,True,False,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON TRUST, NATIONAL ASSOCIATION, TRUSTEE",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+US BANK NA AS LEGAL TITLE TRUSTEE FOR TRUMAN 2012,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+CITIMORTGAGE INC,buyer,True,False,1,name-rule audit only; foreclosure/REO not legally validated
+"GARNETT, FANNIE MAE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+WILMINGTON SAVINGS FUND SOCIETY FSB AS TRUSTEE,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+ARVEST CENTRAL MORTGAGE COMPANY,buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+ARVEST CENTRAL MORTGAGE COMPANY,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"LOAN FUNDER LLC, SERIES 15931",buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+WILMINGTON SAVINGS FUND SOCIETY,buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+BANK OF AMERICA N.A,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+MERILL LYNCH FIRST FRANKLIN MORTGAGE LOAN TRUST,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+U.S. BANK TRUST NATIONAL ASSOCIATION,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"CERTIFICATEHOLDERS OF CWMBS, INC",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+CHL MORTGAGE PASS-THROUGH TRUST 2006-19,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+MORTGAGE PASS-THROUGH TRUST 2016-19,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST NATIONAL ASSOCIATION, AS TRUSTEE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK, N.A., ET AL",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"THE BANK OF NEW YORK MELLON TRUST COMPANY, N.A.",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WELLS FARGO BANK N.A, AS TRUSTEE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+STANWICH MORTGAGE LOAN TRUST SERIES 2015-3,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+THE BANK OF NY MELLON TRUST,buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+US BANK N.A.,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK, N.A., SUCCESSOR TRUSTEE TO LASALLE BANK",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+LASALLE BANK NATIONAL ASSOCIATION,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+NATIONSTAR MORTGAGE LLC,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+HSI ASSET LOAN OBLIGATION TRUST 2007-1,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON TRUST, NATIONAL ASSOCIATION AS SUCCESSO",buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+WILMINGTON TRUST NATIONAL ASSOCIATION AS SUCCESSOR,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+US BANK NA AS LEGAL TITLE TRUSTEE FOR TRUMAN 2012,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK NATIONAL ASSOCIATION, AS LEGAL TITLE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST, NATIONAL ASSOCIATION AS TRUSTEE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK NATIONAL ASSOCIATION,",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+U.S. BANK NATIONAL ASSOCIATION. AS TRUSTEE,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+ARVEST CENTRAL MORTGAGE COMPANY F/K/A,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON TRUST,NATIONAL ASSOCIATION ,AS TRUSTEE",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"HSBC BANK USA, NATIONAL ASSOCIATION, AS TRUSTEE FO",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+NEWREZ LLC D/B/A SHELLPOINT MORTGAGE SERVICING,buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+US BANK NA AS TRUSTEE,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"BANK OF NEW YORK MELLON TRUST COMPANY, NA, TRUSTEE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"THE BANK OF NEW YORK MELLON TRUST COMPANY, N.A. (F",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+US BANK TRUST NATIONAL ASSOCIATION,buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK, N.A.",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST, N.A., AS TRUSTEE FOR LSF8 MASTER",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+U.S. BANK NATIONAL ASSOCIATION AS TRUSTEE,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WELLS FARGO BANK, N.A., AS TRUSTEE FOR OPTION ONE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+CONGREGATION KEREN DAVID AND FREE LOAN SOCIETY INC,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WELLS FARGO BANK, N.A., AS TRUSTEE, ON BEHALF OF T",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"MORTGAGE LOAN ASSET-BACKED CERTIFICATES, SERIES",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WELLS FARGO BANK, N.A., AS TRUSTEE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+WELLS FARGO BANK NATIONAL,seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"HSBC BANK USA NATIONAL ASSOCIATION, AS TRUSTEE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"THE BANK OF NEW YORK , AS TRUSTEE",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK NATIONAL ASSOCIATION, AS TRUSTEE, ON BEH",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"21ST MORTGAGE CORPORATION, AS SERVICING AGENT",seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+21ST MORTGAGE CORP.,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WELLS FARGO BANK,N.A., AS TRUSTEE",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"WILMINGTON TRUST, NATIONAL ASSOCIATION AS...",buyer,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"OCWEN LOAN SERVICING, LLC",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+SHELLPOINT MORTGAGE SERVICING,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+C-BASS MORTGAGE LOAN ASSET-BACKED CERTIFICATES,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+PHH MORTGAGE CORPORATION,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+ONE WEST BANK N.A.,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"U.S. BANK TRUST, NATIONAL ASSOCIATION",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"THE BANK OF NEW YORK MELLON TRUST CO., N.A.",buyer,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+"BANK OF NEW YORK MELLON TRUST CO., NA, TRUSTEE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+CHASE MORTGAGE FINANCE CORPORATION MULTI-CLASS,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+MULTI-CLASS MORTGAGE PASS-THROUGH CERTIFICATES,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated
+"BANK OF NEW YORK TRUST COMPANY, NA, TRUSTEE",seller,True,True,1,name-rule audit only; foreclosure/REO not legally validated
+NEW CENTURY HOME EQUITY LOAN TRUST 2005-3,seller,False,True,1,name-rule audit only; foreclosure/REO not legally validated

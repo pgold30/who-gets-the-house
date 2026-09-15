@@ -1,0 +1,38 @@
+[
+  {
+    "property": "house",
+    "q_failure_scenario": 0.1,
+    "gap_log": 0.09251354999219932,
+    "implied_d": 0.8723520434296237
+  },
+  {
+    "property": "condo",
+    "q_failure_scenario": 0.1,
+    "gap_log": 0.007729776426136628,
+    "implied_d": 0.06983755444700264
+  },
+  {
+    "property": "house",
+    "q_failure_scenario": 0.2,
+    "gap_log": 0.09251354999219932,
+    "implied_d": 0.387712019302055
+  },
+  {
+    "property": "condo",
+    "q_failure_scenario": 0.2,
+    "gap_log": 0.007729776426136628,
+    "implied_d": 0.03103891308755673
+  },
+  {
+    "property": "house",
+    "q_failure_scenario": 0.3,
+    "gap_log": 0.09251354999219932,
+    "implied_d": 0.22616534459286544
+  },
+  {
+    "property": "condo",
+    "q_failure_scenario": 0.3,
+    "gap_log": 0.007729776426136628,
+    "implied_d": 0.01810603263440809
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "raw_sales": 170369,
+  "deduplicated_valid_sales_all_prices": 166195,
+  "eligible_four_borough_sales": 88733,
+  "missing_unit_all_sales": 19721,
+  "exclusions": {
+    "bad_bbl": 3319,
+    "exact_duplicate_rows": 855
+  },
+  "inic_master_records": 181988,
+  "inic_single_parcel": 179655,
+  "inic_multi_parcel": 2298,
+  "classification_counts": {
+    "legacy_expanded": {
+      "1": 60496,
+      "0": 17352,
+      "-1": 10885
+    },
+    "expanded_all_competitors": {
+      "-1": 15765,
+      "1": 55616,
+      "0": 17352
+    },
+    "unique_strict": {
+      "1": 17569,
+      "0": 31964,
+      "-1": 39200
+    },
+    "unique_base": {
+      "-1": 55101,
+      "1": 9750,
+      "0": 23882
+    },
+    "unique_wide": {
+      "-1": 64669,
+      "1": 5481,
+      "0": 18583
+    }
+  },
+  "legacy_financed_to_unique_base": {
+    "-1": {
+      "-1": 8441,
+      "0": 0,
+      "1": 46660
+    },
+    "0": {
+      "-1": 2145,
+      "0": 17352,
+      "1": 4385
+    },
+    "1": {
+      "-1": 299,
+      "0": 0,
+      "1": 9451
+    }
+  },
+  "legacy_financed_without_any_base_window_filing": 4385,
+  "sales_with_competitors_omitted_by_old_sample_filter": 26529,
+  "old_repeat_pairs_bridging_intervening_observed_unit_sale": 271,
+  "maximum_unique_filing_reuse": 1,
+  "validation_status": "Timing-uniqueness and internal-consistency audit; no verified borrower-to-buyer or filing-image match. Zero filings is absence of a matched record, not proven cash financing. Not a verified loan-level classification.",
+  "data_vintage": "Fresh public extract; may differ from archived estimates because of data updates, deduplication, geography and adjacency restrictions."
+}

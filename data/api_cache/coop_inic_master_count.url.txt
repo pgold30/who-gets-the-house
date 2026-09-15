@@ -1,0 +1,1 @@
+https://data.cityofnewyork.us/resource/sv7x-dduq.json?%24select=count%28%2A%29+as+n&%24where=document_id+%3E+%272015%27+AND+document_id+%3C+%272027%27+AND+doc_type%3D%27INIC%27

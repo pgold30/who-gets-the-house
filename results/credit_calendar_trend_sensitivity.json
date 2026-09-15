@@ -1,0 +1,50 @@
+{
+  "model": {
+    "pairs": 6006,
+    "parcels": 5957,
+    "cf": 1044,
+    "fc": 737,
+    "nuisance_columns": 1256,
+    "pi_residual": 0.06386847562661746,
+    "asym_residual": -0.01725911951428899,
+    "pi_joint": 0.044026977462109526,
+    "asym_joint": 0.04832391645512776,
+    "se_residual": 0.0064961875169008195,
+    "se_joint": 0.013324746155613161,
+    "beta": [
+      0.06818893568967341,
+      -0.019865019234545644,
+      -0.01720647196920723,
+      -0.013780884834395574,
+      0.00043334102271416416,
+      0.03329393898580882
+    ],
+    "beta_se": [
+      0.015758443669380513,
+      0.019347153956536096,
+      0.013389311964634991,
+      0.008429336784131382,
+      0.005344789045209171,
+      0.005625193078757962
+    ],
+    "switch_information_fraction": 0.6115523201556039,
+    "max_nuisance_score": 4.361875471925458e-09,
+    "ci_residual": [
+      0.051135948093491854,
+      0.07660100315974307
+    ],
+    "ci_joint": [
+      0.01791047499710773,
+      0.07014347992711133
+    ]
+  },
+  "coefficients": [
+    "cash_to_fin",
+    "fin_to_cash",
+    "fin_first*(rate_first-4)",
+    "fin_second*(rate_second-4)",
+    "fin_first*(first_calendar_date-2020)",
+    "fin_second*(second_calendar_date-2020)"
+  ],
+  "interpretation": "Exploratory rate associations conditional on separate linear financing trends. No exogenous credit shock is identified."
+}

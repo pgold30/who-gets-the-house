@@ -1,0 +1,1 @@
+https://data.cityofnewyork.us/resource/sv7x-dduq.json?%24select=document_id%2Cdoc_type%2Crecorded_datetime%2Cdocument_amt&%24where=document_id+%3E+%272015%27+AND+document_id+%3C+%272027%27+AND+doc_type%3D%27INIC%27&%24order=document_id&%24limit=50000&%24offset=0

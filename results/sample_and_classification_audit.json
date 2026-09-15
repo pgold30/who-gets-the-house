@@ -1,0 +1,92 @@
+{
+  "all_pairs": 8208,
+  "geography_linked_pairs": 8167,
+  "permit_free": 6316,
+  "specific_institution_pairs": 322,
+  "broad_lender_pairs": 417,
+  "financing_stable_pairs": 7992,
+  "support": {
+    "cd": {
+      "areas": 52,
+      "area_year_cells": 487,
+      "cells_fewer_than_5_endpoints": 78,
+      "median_endpoints_per_cell": 17.0
+    },
+    "zipcode": {
+      "areas": 137,
+      "area_year_cells": 1227,
+      "cells_fewer_than_5_endpoints": 353,
+      "median_endpoints_per_cell": 8.0
+    }
+  },
+  "unknown_party_endpoints": {
+    "buyer_a": 180,
+    "buyer_z": 104,
+    "seller_a": 180,
+    "seller_z": 104
+  },
+  "unique_deed_endpoints": 16132,
+  "total_endpoints": 16416,
+  "S4_same_linked_sample_zip_clustered": {
+    "pairs": 6006,
+    "parcels": 5957,
+    "cf": 1044,
+    "fc": 737,
+    "nuisance_columns": 158,
+    "pi_residual": 0.07557330581968036,
+    "asym_residual": -0.02187550758168333,
+    "pi_joint": 0.08865913448700807,
+    "asym_joint": -0.019171463784745088,
+    "se_residual": 0.009922326455413756,
+    "se_joint": 0.011585302765042113,
+    "beta": [
+      0.07907340259463554,
+      -0.09824486637938062
+    ],
+    "beta_se": [
+      0.013316346868196362,
+      0.01757118508915575
+    ],
+    "switch_information_fraction": 0.760333225589067,
+    "max_nuisance_score": 1.2749210021034685e-08,
+    "ci_residual": [
+      0.056125545967069396,
+      0.09502106567229132
+    ],
+    "ci_joint": [
+      0.06595194106752553,
+      0.11136632790649062
+    ]
+  },
+  "S6_zip_year_zip_clustered": {
+    "pairs": 6006,
+    "parcels": 5957,
+    "cf": 1044,
+    "fc": 737,
+    "nuisance_columns": 1256,
+    "pi_residual": 0.0638684756274689,
+    "asym_residual": -0.01725911951398596,
+    "pi_joint": 0.09251354999219932,
+    "asym_joint": -0.018144533618888528,
+    "se_residual": 0.008368699164261417,
+    "se_joint": 0.011933153940234838,
+    "beta": [
+      0.08344128318275505,
+      -0.10158581680164358
+    ],
+    "beta_se": [
+      0.013626213637555722,
+      0.017588402640892214
+    ],
+    "switch_information_fraction": 0.6115523201556039,
+    "max_nuisance_score": 5.251422907637249e-09,
+    "ci_residual": [
+      0.04746582526551653,
+      0.08027112598942128
+    ],
+    "ci_joint": [
+      0.06912456826933905,
+      0.1159025317150596
+    ]
+  }
+}

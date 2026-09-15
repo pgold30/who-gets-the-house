@@ -1,0 +1,89 @@
+{
+  "release": "WGTH-2026-09-10",
+  "started_utc": "2026-09-10T10:28:44.018395+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "executable": "/Users/pablo/Downloads/paper_nyc/PUBLICATION_RELEASE_2026-09-10/clean_run/venv/bin/python",
+  "scope": "Supplied archived inputs and preserved public extracts to current paper; original full raw-to-panel build not executed.",
+  "source_sha256": {
+    "code/additional_checks.py": "3f62bf6223a57bd66cdfc81d5ca5c06cc97c52e88ef07860d9f60490100dde2b",
+    "code/analyze_coop_audit.py": "9f05b746ed620e124557ac21f32035f225f233b4a6be48ca6a676ccf91dee68d",
+    "code/analyze_notches.py": "2ce2aaa4d8f0130030050c2089d0b61b2bf70a95b32da0c7da617f345ae93ced",
+    "code/analyze_repeat_sales.py": "99b125ded8b818c061b4c12fb607762e14f00e79ec11c02d0083beb523e596c6",
+    "code/build_exhibits.py": "a02ea85f52dbc4f4565c78191230d6264303044916ac7d9a3fb63d3cf2cd7826",
+    "code/build_support_documents.py": "ca9f0f0e3d2b65281b2561d86561e972be668c68918887b38a5678f64f7f7037",
+    "code/fetch_coop_audit.py": "4b102a2cc365810daf0a61d7d06777db4ea1f50ddc3255c419ba67613c0c688e",
+    "code/fetch_enrichment.py": "80af52c7d984c77923b338254acba72e2625a062681669915b6f595c30c89aba",
+    "code/fetch_rates.py": "8ad23fe91f88b46bb90742021b4662f596b6c47f75e4f086b9f2aced3f348bb0",
+    "code/legacy_estimator.py": "a496dfee1d7f03e8f1984cbfb476c50d0dfd0721dff9761e6cec070e1250631d",
+    "code/make_review_queues.py": "41559efe8dd51fb2a59fa5ca35e7f50186cba962ad67f2d8236bdebbe8f2b1d8",
+    "code/notch_sample_checks.py": "0448eee44687c9ff0544bc1250ae529e036493481d8cd208308c93f840dcc42a",
+    "code/parse_rates.py": "659bf73ca6d86a8ec268fe53a6c8d59e0a255b853acfedd92b3020e1d8179680",
+    "code/property_comparison.py": "9e1decc0a91e90746fe7f62535df28fc7460d5f525961327938013a9f96459d0",
+    "code/reproduce.py": "778ca4d056a025a44dfdc6d367cb4e724d970a37a50a9cbde1a40386fa4b826d",
+    "inputs/2_reproduce/dob_permits.csv.gz": "1785534a084b78ae117d94c5997944b65b0d03a00aa51734570b7a26b4cb2baf",
+    "inputs/2_reproduce/panel2.csv.gz": "a99671affb4d16190e064a998f62541bffa3976bcd432cfd365ff26ddcc8a6c5",
+    "inputs/3_section4.9/deeds_for_pairs.json": "5a3914253109fd3cf3c097de7660121363e051168257b6a688521777f7f4b349",
+    "inputs/4_full_pipeline/sample_2016_2025.csv.gz": "495d66ab48b781fc6b0d02015b15ecf6049a1843e255e0a23f6786ef264bced9"
+  },
+  "stages": [
+    {
+      "program": "parse_rates.py",
+      "seconds": 0.16921333299251273,
+      "status": "passed"
+    },
+    {
+      "program": "analyze_repeat_sales.py",
+      "seconds": 78.76337429098203,
+      "status": "passed"
+    },
+    {
+      "program": "analyze_coop_audit.py",
+      "seconds": 5.990513833996374,
+      "status": "passed"
+    },
+    {
+      "program": "analyze_notches.py",
+      "seconds": 2.343712834001053,
+      "status": "passed"
+    },
+    {
+      "program": "additional_checks.py",
+      "seconds": 3.4556467499933206,
+      "status": "passed"
+    },
+    {
+      "program": "notch_sample_checks.py",
+      "seconds": 2.2450405409908853,
+      "status": "passed"
+    },
+    {
+      "program": "property_comparison.py",
+      "seconds": 2.229727666010149,
+      "status": "passed"
+    },
+    {
+      "program": "make_review_queues.py",
+      "seconds": 0.8297525829984806,
+      "status": "passed"
+    },
+    {
+      "program": "build_exhibits.py",
+      "seconds": 1.6991431250062305,
+      "status": "passed"
+    },
+    {
+      "program": "build_support_documents.py",
+      "seconds": 0.539155332982773,
+      "status": "passed"
+    },
+    {
+      "program": "tectonic paper/paper.tex",
+      "seconds": 3.3086315830005333,
+      "status": "passed"
+    }
+  ],
+  "status": "passed",
+  "seconds_total": 101.57676508300938,
+  "finished_utc": "2026-09-10T10:30:25.673247+00:00"
+}

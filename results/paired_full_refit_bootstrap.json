@@ -1,0 +1,75 @@
+{
+  "replications": 999,
+  "seed": 20260909,
+  "labels": [
+    "S0_original|residual",
+    "S0_original|joint",
+    "S1_permit_free|residual",
+    "S1_permit_free|joint",
+    "S4_same_linked_sample|residual",
+    "S4_same_linked_sample|joint",
+    "S6_zip_year|residual",
+    "S6_zip_year|joint"
+  ],
+  "ci": {
+    "S0_original|residual": [
+      0.09225596629769867,
+      0.1269000627320408
+    ],
+    "S0_original|joint": [
+      0.09595145308189251,
+      0.13188794909395885
+    ],
+    "S1_permit_free|residual": [
+      0.0744829797287116,
+      0.1101857084917968
+    ],
+    "S1_permit_free|joint": [
+      0.07801726258052312,
+      0.11558230559033261
+    ],
+    "S4_same_linked_sample|residual": [
+      0.0565541875259203,
+      0.09091570458323524
+    ],
+    "S4_same_linked_sample|joint": [
+      0.06808365552214916,
+      0.10842949547069251
+    ],
+    "S6_zip_year|residual": [
+      0.04078181986114497,
+      0.06478425668600149
+    ],
+    "S6_zip_year|joint": [
+      0.07168262757150576,
+      0.11346809027302837
+    ]
+  },
+  "differences": {
+    "S1_permit_free minus S0_original|residual": [
+      -0.029185732511871332,
+      -0.006566048724730218
+    ],
+    "S1_permit_free minus S0_original|joint": [
+      -0.029669045027915134,
+      -0.006093394421206117
+    ],
+    "S6_zip_year minus S4_same_linked_sample|residual": [
+      -0.032110391970088525,
+      -0.011660503190913154
+    ],
+    "S6_zip_year minus S4_same_linked_sample|joint": [
+      -0.010199660692529235,
+      0.01601123963430166
+    ],
+    "S6_zip_year minus S0_original|residual": [
+      -0.07124520301788688,
+      -0.04313168953299303
+    ],
+    "S6_zip_year minus S0_original|joint": [
+      -0.040152080288947345,
+      -0.0036087621375622443
+    ]
+  },
+  "method": "common multinomial resampling of original parcel clusters; index and controls refitted in each specification and draw"
+}

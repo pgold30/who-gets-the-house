@@ -1,0 +1,1 @@
+https://data.cityofnewyork.us/resource/uqqa-hym2.json?%24select=count%28%2A%29+as+n&%24where=document_id+%3E+%272015%27+AND+document_id+%3C+%272027%27

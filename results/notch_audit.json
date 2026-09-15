@@ -1,0 +1,28 @@
+{
+  "full_sales": 431471,
+  "duplicate_rows": 4208,
+  "pre_2016_2018": 131337,
+  "post_2020_2025": 257855,
+  "common_post_matched_sales": 146562,
+  "common_post_by_type": {
+    "house": 94962,
+    "condo": 51600
+  },
+  "common_post_by_year": {
+    "2020": 19430,
+    "2021": 31212,
+    "2022": 28893,
+    "2023": 21274,
+    "2024": 22067,
+    "2025": 23686
+  },
+  "method": "log count ratios; parcel-clustered joint delta-method inference, including covariance from overlapping windows and repeated parcels",
+  "limitations": [
+    "Not a bunching welfare estimate.",
+    "Parallel evolution across threshold and placebo locations is an assumption.",
+    "National reform coincides with market changes; annual diagnostics are essential.",
+    "Financing is a record-window proxy, not randomized.",
+    "Wald charm-share intervals are exploratory and unreliable in very small cells.",
+    "Five-hundred-thousand dollars is a same-tax-side charm comparison; it cannot identify statutory payer response."
+  ]
+}

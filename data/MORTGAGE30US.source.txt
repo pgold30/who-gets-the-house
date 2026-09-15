@@ -1,0 +1,2 @@
+https://www.freddiemac.com/pmms/pmms_archives
+Source: official annual archive tables, saved as pmms_web_YEAR.json and parsed by parse_rates.py. Bulk HTTP downloads were unavailable.

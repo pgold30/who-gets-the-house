@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering\small\singlespacing
+\caption{Cumulative house robustness}\label{tab:cumulative}
+\begin{tabular}{lrrrr}
+\toprule
+Specification & Pairs & Residual & Joint & Joint 95\% CI \\
+\midrule
+Original sample & 8,208 & 11.14 & 11.42 & [9.60, 13.19]* \\
+Permit-free & 6,316 & 9.34 & 9.63 & [7.80, 11.56]* \\
++ Named institutions excluded & 6,033 & 10.48 & 10.82 & [8.96, 12.67] \\
++ Buyer/seller type controls & 6,033 & 7.23 & 8.50 & [6.58, 10.42] \\
+Same geography-linked sample & 6,006 & 7.56 & 8.87 & [6.81, 10.84]* \\
++ Community-district/year & 6,006 & 7.47 & 9.50 & [7.66, 11.33] \\
++ ZIP/year & 6,006 & 6.39 & 9.25 & [7.17, 11.35]* \\
+\bottomrule
+\end{tabular}
+\notes{All estimates and intervals are log points. Every row includes borough-quarter effects. The last two rows are alternative geographic specifications added to the same linked baseline. Institutional exclusions use grantor and grantee name rules at both dates, not verified distress. Stars denote percentile intervals from 999 common parcel-bootstrap refits; other intervals use joint parcel influence functions (CR0). Intervals are pointwise. The residual and joint columns are different estimands.}
+\end{table}
