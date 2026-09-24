@@ -1,0 +1,9 @@
+{
+  "retrieved_date": "2026-09-22",
+  "source": "https://streeteasy.com/blog/data-dashboard/",
+  "download": "https://cdn-charts.streeteasy.com/Master%20Report.zip",
+  "master_sha256": "fb9bf6e23d0a5a4b44f58b7098920a2cc25dbdb76dfc753dd8839d1be50e867f",
+  "csv_sha256": "bfdeab6972757a86d02a7afcddf593fd1617258b697e326e3fd1854b658a7877",
+  "coverage_check": "All 121 monthly borough observations Dec 2015-Dec 2025 present and positive for each of Bronx, Brooklyn, Manhattan, Queens. Outcome associations not inspected when choosing inventory.",
+  "rights": "StreetEasy/Zillow source material; no author licence asserted."
+}

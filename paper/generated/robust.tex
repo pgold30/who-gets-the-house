@@ -1,0 +1,14 @@
+\begin{table}[htbp]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\caption{Outlier-robust estimates of the financing contrast}\label{tab:robust}
+\begin{tabular}{lrrrrr}\toprule
+ & \multicolumn{3}{c}{Houses, full controls (6,006 pairs)} & \multicolumn{2}{c}{Borough-quarter only} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-6}
+Estimator & Contrast & 95\% CI & Change from LS & Houses & Condos \\
+\midrule
+Least squares (reference) & 9.25 & [7.17, 11.35] &  & 11.42 & 0.77 \\
+Huber M-estimator & 6.73 & [5.32, 8.76] & -2.52 [-3.31, -1.14] & 8.83 & -0.49 \\
+Trim growth at 1st/99th pct. & 7.66 & [5.77, 9.53] & -1.59 [-2.76, -0.45] & 9.23 & -0.45 \\
+Trim growth at 2.5th/97.5th pct. & 5.15 & [3.55, 6.78] & -4.10 [-5.64, -2.53] & 6.91 & -0.58 \\
+\bottomrule\end{tabular}
+\notes{Log points. Columns 2--4 use the headline specification of Table~\ref{tab:cumulative} (ZIP-year and borough-quarter effects, buyer and seller type controls). Columns 5--6 use the common specification of Table~\ref{tab:property}. The Huber estimator ($k=1.345$; MAD scale from least-squares residuals, updated once) refits all nuisance controls by iteratively reweighted least squares. Trimming removes pairs whose annualized log growth lies outside the stated percentiles of the estimation sample; cutoffs ignore financing labels. Intervals are percentile intervals from the same 999 parcel-bootstrap draws as Table~\ref{tab:cumulative}, re-estimating the Huber scale and trimming cutoffs in every draw; the change column is the paired difference within draws. Tuning constants are conventional defaults and were not varied.}
+\end{table}

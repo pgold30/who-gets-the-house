@@ -9,3 +9,6 @@ Freddie Mac retains rights in PMMS archive material. Its archive permits informa
 Python libraries and Tectonic retain their own licences. They are installed through setup instructions, rather than bundled as author-owned software. The machine-specific virtual environment is excluded from the transport archive. Consult package distributions for their notices.
 
 The linked GitHub snapshot is provenance for the archived input files and original scripts. Its earlier manuscript/deposit claims do not define the identity or publication status of the current revision. No repository DOI has been assigned by this workflow.
+
+
+StreetEasy/Zillow: historical total sales inventory, Single Family, downloaded from the public StreetEasy Data Dashboard on 22 September 2026. The CSV is attributed to StreetEasy; no MIT or CC-BY author licence is asserted over this third-party material. Source: https://streeteasy.com/blog/data-dashboard/. Underlying source conditions remain applicable. The source vintage and SHA-256 are in provenance/streeteasy_inventory.json.

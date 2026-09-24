@@ -1,0 +1,50 @@
+{
+  "counts": {
+    "shared_address_pairs": 1851,
+    "surname_pairs": 358,
+    "combined_pairs": 1953,
+    "additional_address_only_pairs": 1595,
+    "shared_person_address_pairs": 1440,
+    "additional_person_address_only_pairs": 1190,
+    "remaining_pairs": 4053,
+    "remaining_person_address_pairs": 4458,
+    "cash_endpoints_shared": 444,
+    "financed_endpoints_shared": 1605
+  },
+  "point": {
+    "all": 0.09251354998456673,
+    "no_surname": 0.04867675311764144,
+    "no_surname_or_address": 0.03759564620461289,
+    "no_surname_or_person_address": 0.044079767972385546
+  },
+  "ci": {
+    "no_surname": [
+      0.026913061034453848,
+      0.06764630757020348
+    ],
+    "no_surname_or_address": [
+      0.011649987916294518,
+      0.06053954699761728
+    ],
+    "additional_change": [
+      -0.027642406642365558,
+      0.002893119780413702
+    ],
+    "no_surname_or_person_address": [
+      0.02141171866852601,
+      0.06745213058385449
+    ],
+    "additional_person_change": [
+      -0.014313614475144185,
+      0.00711123731083927
+    ]
+  },
+  "additional_change_point": -0.011081106913028549,
+  "additional_person_change_point": -0.0045969851452558955,
+  "bootstrap": {
+    "draws": 999,
+    "seed": 20260909,
+    "clusters": 8127
+  },
+  "normalization": "Uppercase address_1; remove punctuation and apartment/unit suffix; standardize common street suffixes; require identical street, city, and five-digit ZIP. Exclude PO boxes and care-of addresses. Flag any grantor/grantee pair regardless of name or entity type. This is shared mailing address, not proof of kinship."
+}

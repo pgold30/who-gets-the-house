@@ -1,5 +1,5 @@
 {
-  "release": "WGTH-2026-09-10-JHE-S1",
+  "release": "WGTH-2026-09-22-R3",
   "macros": {
     "HouseGap": "9.25",
     "HouseCI": "[7.17, 11.35]",

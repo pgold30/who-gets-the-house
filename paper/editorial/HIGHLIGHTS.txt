@@ -1,4 +1,5 @@
-- A financing-associated house price gap survives cumulative transaction controls.
-- Joint inference separates specification changes from sampling uncertainty.
-- Neighbourhood appreciation does not explain away the gap on linked house pairs.
-- Record checks reveal limits to distress flags and co-op financing assignments.
+- Financed NYC house purchases are priced 9.25 log points above cash purchases.
+- When a company pays cash, the house price gap is close to zero.
+- Same-surname deeds are 5.7% of cash sales but 2.3% of financed sales.
+- Excluding them reduces the house gap to 4.87 log points.
+- Screened the same way, condominiums show no gap; houses retain one.

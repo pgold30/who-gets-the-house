@@ -35,7 +35,7 @@ table('property.tex','House and condominium contrasts under common controls','ta
 C=read('coop_estimate_sensitivity.json');rows=[]
 for method,label in [('legacy_expanded','Expanded count rule'),('expanded_all_competitors','All competing sales'),('unique_strict','Unique timing: narrow'),('unique_base','Unique timing: base'),('unique_wide','Unique timing: wide')]:
     v=next(x for x in C if x['tag']=='adjacent_all_observed_unit_sales' and x['method']==method);rows.append([label,f"{v['pairs']:,}",v['cf'],v['fc'],f(v['pi_joint']),ci(v['ci_joint'])])
-table('coop.tex','Co-operative assignment sensitivity','tab:coop',['Assignment rule','Pairs','$N_{cf}$','$N_{fc}$','Joint','95\\% CI'],rows,'Log points and building-clustered CR0 intervals. Every row forms adjacency using all observed known-unit sales before dropping ineligible endpoints and ambiguous financing. Timing uniqueness does not establish debtor identity or purchase purpose. No matched filing is a cash proxy, not proof of an unlevered purchase. These are fresh-extract estimates, not an exact reconstruction of unavailable legacy co-op microdata.')
+table('coop.tex','Co-operative assignment sensitivity','tab:coop',['Assignment rule','Pairs','$N_{cf}$','$N_{fc}$','Joint','95\\% CI'],rows,'Log points and building-clustered CR0 intervals. Every row forms adjacency using all observed known-unit sales before dropping ineligible endpoints and ambiguous financing. Timing uniqueness does not establish debtor identity or purchase purpose. No matched filing is a cash proxy, not proof of an unlevered purchase. Estimates use the September 2026 co-operative extract.')
 F=read('financing_sensitivity.json');rows=[]
 for w in ['strict','base','wide']:
     v=next(x for x in F if x['sample']=='S6_zip_year' and x['window']==w);rows.append(['Financing window: '+w,f"{v['pairs']:,}",f(v['pi_joint']),ci(v['ci_joint'])])
@@ -46,12 +46,6 @@ CR=read('credit_both_sale_dates.json')['S6_zip_year']['separate_date_rate_intera
 for j,label in [(2,'First-sale financing $\\times$ rate'),(3,'Second-sale financing $\\times$ rate')]:
     rows.append([label,f(CR['beta'][j]),'('+f(CR['beta_se'][j])+')',f(CT['beta'][j]),'('+f(CT['beta_se'][j])+')'])
 table('credit.tex','Credit conditions at both sale dates','tab:credit',['Interaction','Baseline','SE','+ Trends','SE'],rows,'Coefficients in log points per one percentage point of the mortgage rate. Both models include the full geographic house controls and two financing-switch indicators. The second adds separate financing-specific linear calendar trends at both sale dates. Rates are the latest published weekly PMMS value on or before sale, centered on 4 percent; calendar trends are centered on 2020. Standard errors cluster by parcel. The coefficients are exploratory associations.')
-N=pd.read_csv(R/'notch_difference_in_differences.csv');N=N[N.placebos.str.contains(',')];rows=[]
-for v in N.itertuples():rows.append([f'\\${v.threshold/1e6:g}m',f'{v.difference_in_log_ratios:.3f}',ci([v.ci_low,v.ci_high],1),f'{v.percent_change_relative_ratio:.1f}'])
-table('notches.tex','Changes in local price-count ratios around transfer-tax thresholds','tab:notches',['Threshold','Log-ratio change','95\\% CI','Relative change (\\%)'],rows,'The 2016--2018 to 2020--2025 change in the log above/below count ratio, less the mean change at four placebo prices (\\$1.5m, \\$1.75m, \\$2.25m, \\$2.5m). The above window is $[X,X+100{,}000)$ and the below window $[X-150{,}000,X-50{,}000)$; at \\$500,000 the above window excludes $X$, where the lower city rate still applies. All 2019 observations are omitted. Joint parcel CR0 intervals include overlapping-window covariance. Relative change is $100(\\exp(\\widehat\\Delta)-1)$, not lost sales or welfare.')
-H=pd.read_csv(R/'charm_composition_adjusted.csv');rows=[]
-for v in H.itertuples():rows.append([f'\\${v.threshold/1e6:g}m',v.exact_price_sales,v.charm_sales,f(v.adjusted_financed_share_difference),ci([v.ci_low,v.ci_high])])
-table('charm.tex','Financing composition at exact and one-dollar-below prices','tab:charm',['Threshold','Selected sales','$X-1$ sales','Difference','95\\% CI'],rows,'Common 2020--2025 four-borough house/condo sample. Difference in financed share (percentage points), $X-1$ minus $X$, from a linear probability model with threshold, borough-year and property-type-year effects. Parcel CR0 intervals. Exact-price cells are small and selected. At \\$500,000 both prices face the lower city rate. These are financing-composition contrasts, not estimates of economic incidence.')
 # The inversion is explicitly a scenario grid, not an estimated model.
 rows=[];grid=[]
 for q in [.1,.2,.3]:
@@ -68,9 +62,5 @@ fig,ax=plt.subplots(figsize=(8,4));y=np.arange(len(names))
 for off,key,color,label in [(-.13,'residual','#976143','Outcome-only residual'),(.13,'joint','#1e5a78','Joint coefficient')]:
     vals=np.array([100*S[n]['pi_'+key] for n in names]);se=np.array([100*S[n]['se_'+key] for n in names]);ax.errorbar(vals,y+off,xerr=1.96*se,fmt='o',ms=4,capsize=2,label=label,color=color)
 ax.set_yticks(y,labels);ax.invert_yaxis();ax.set_xlabel('Log points');ax.legend(frameon=False,loc='lower right',fontsize=8);ax.grid(axis='x',alpha=.2);fig.tight_layout();fig.savefig(O/'robustness.png',dpi=230);plt.close(fig)
-annual=pd.read_csv(R/'notch_annual_placebo_adjusted.csv');fig,axes=plt.subplots(1,3,figsize=(8,2.8))
-for ax,t in zip(axes,[1000000,2000000,3000000]):
-    z=annual[annual.threshold==t];ax.axvspan(2018.5,2019.5,color='#eeeeee');ax.errorbar(z.year,z.placebo_adjusted_log_ratio,yerr=1.96*z.adjusted_se,fmt='o-',ms=3,capsize=2,color='#1e5a78');ax.set_title(f'${t/1e6:g} million');ax.set_xticks([2016,2019,2022,2025]);ax.grid(alpha=.15)
-axes[0].set_ylabel('Adjusted log count ratio');fig.tight_layout();fig.savefig(O/'annual.png',dpi=230);plt.close(fig)
-(R/'publication_numbers.json').write_text(json.dumps({'release':'WGTH-2026-09-10-JHE-S1','macros':macros,'source_bootstrap_replications':B['replications']},indent=2))
-print('Generated nine tables, two figures, scenario grid and manuscript macros.',flush=True)
+(R/'publication_numbers.json').write_text(json.dumps({'release':'WGTH-2026-09-22-R3','macros':macros,'source_bootstrap_replications':B['replications']},indent=2))
+print('Generated seven tables, one figure, scenario grid and manuscript macros.',flush=True)

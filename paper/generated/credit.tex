@@ -1,13 +1,10 @@
-\begin{table}[htbp]
-\centering\small\singlespacing
+\begin{table}[htbp]\centering\small
 \caption{Credit conditions at both sale dates}\label{tab:credit}
-\begin{tabular}{lrrrr}
-\toprule
-Interaction & Baseline & SE & + Trends & SE \\
+\begin{tabular}{lrrrr}\toprule
+Financing $\times$ rate & Without trends & SE & With trends & SE \\
 \midrule
-First-sale financing $\times$ rate & -4.33 & (1.26) & -1.72 & (1.34) \\
-Second-sale financing $\times$ rate & 2.40 & (0.59) & -1.38 & (0.84) \\
-\bottomrule
-\end{tabular}
-\notes{Coefficients in log points per one percentage point of the mortgage rate. Both models include the full geographic house controls and two financing-switch indicators. The second adds separate financing-specific linear calendar trends at both sale dates. Rates are the latest published weekly PMMS value on or before sale, centered on 4 percent; calendar trends are centered on 2020. Standard errors cluster by parcel. The coefficients are exploratory associations.}
+First sale & -0.43 & 1.95 & 0.46 & 1.93 \\
+Second sale & 2.98 & 0.62 & -1.24 & 1.03 \\
+\bottomrule\end{tabular}
+\notes{Log points per one percentage point of PMMS rates, centered on 4 percent; 6,006 pairs. Both models include separate uninteracted weekly rates at both endpoints, the full geographic controls and both financing-switch indicators. The second adds separate endpoint financing-specific linear calendar trends. Standard errors cluster by parcel (CR0). Appendix Table~\ref{tab:marketconditions} reports calendar-dependence sensitivity. The headline contrast is estimated in the model without rate interactions.}
 \end{table}

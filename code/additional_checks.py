@@ -43,23 +43,6 @@ def main():
             win.append({'type':typ,'window':f,'sales':len(ss),'financed_share':float(ss['financed_'+f].mean()),'disagreements_with_base':int((ss['financed_'+f]!=ss.financed_base).sum())})
         assert np.all(ss.financed_strict<=ss.financed_base) and np.all(ss.financed_base<=ss.financed_wide)
     pd.DataFrame(win).to_csv(OUT/'financing_window_agreement.csv',index=False)
-    # Charm pricing: same post-reform sample; joint partial regression conditions
-    # on borough-by-year and property-type-by-year composition.
-    panel['year']=pd.to_datetime(panel.date).dt.year;panel=panel[panel.year.between(2020,2025)].copy()
-    selected=[]
-    for threshold in [500000,1000000,2000000,3000000]:
-        ss=panel[panel.price.isin([threshold-1,threshold])].copy();ss['threshold']=threshold;ss['charm']=(ss.price==threshold-1).astype(int);selected.append(ss)
-    pp=pd.concat(selected,ignore_index=True);labels=[]
-    # Threshold fixed effects keep different base financing propensities separate.
-    X=pd.get_dummies(pp[['threshold']].astype(str),dtype=float)
-    for name,series in [('boro_year',pp.borough.astype(str)+'_'+pp.year.astype(str)),('type_year',pp.src.astype(str)+'_'+pp.year.astype(str))]:
-        X=pd.concat([X,pd.get_dummies(series,prefix=name,dtype=float)],axis=1)
-    X=sparse.csr_matrix(X.to_numpy());Q=np.column_stack([(pp.threshold.eq(t)&pp.charm.eq(1)).astype(float) for t in [500000,1000000,2000000,3000000]])
-    R=np.column_stack([residualize(X,Q[:,j]) for j in range(4)]);inv=np.linalg.inv(R.T@R);y=pp.financed_base.to_numpy();b=inv@(R.T@y);e=residualize(X,y)-R@b
-    _,g=np.unique(pp.bbl,return_inverse=True);IF=cluster_sum((R@inv)*e[:,None],g,g.max()+1);se=np.sqrt((IF**2).sum(axis=0))
-    out=[]
-    for j,t in enumerate([500000,1000000,2000000,3000000]):out.append({'threshold':t,'adjusted_financed_share_difference':b[j],'se':se[j],'ci_low':b[j]-1.96*se[j],'ci_high':b[j]+1.96*se[j],'exact_price_sales':int(pp.threshold.eq(t).sum()),'charm_sales':int((pp.threshold.eq(t)&pp.charm.eq(1)).sum()),'same_tax_side':t==500000})
-    pd.DataFrame(out).to_csv(OUT/'charm_composition_adjusted.csv',index=False)
     # Save an adjudication queue rather than manufacture ground-truth labels.
     matches=pd.read_csv(OUT/'deed_match_audit.csv',dtype={'bbl':str,'deed':str})
     endpoints=[]

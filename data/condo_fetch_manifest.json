@@ -1,0 +1,13 @@
+{
+  "source": "NYC ACRIS real-property legals 8h5j-fqxa and master bnx9-e6tj",
+  "legal_pages": 190,
+  "legal_rows": 203528,
+  "master_pages": 220,
+  "master_deeds": 14575,
+  "pairs": 6584,
+  "unique_parcels": 6495,
+  "endpoint_deeds_matched": 13092,
+  "total_endpoints": 13168,
+  "ambiguous_endpoints": 31,
+  "method": "Unit BBL; unique DEED within 45 days and 0.5 percent consideration; every indexed partition verified against count(1)"
+}

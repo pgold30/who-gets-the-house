@@ -11,13 +11,15 @@ anon=re.sub(r'^\\author\{.*\}\n',r'\\author{}\n',source,flags=re.M)
 start=anon.index(r'\section*{Declarations}')
 end=anon.index(r'\section{Joint uncertainty',start)
 anon=anon[:start]+r'''\section*{Declarations}\begingroup\small\singlespacing
-Funding, interest and author statements are supplied separately to the editor. AI tools assisted with drafting, literature checking, code development and replication review. The author remains responsible for the analysis and interpretations. Independent human verification of unresolved instrument classifications is not asserted.
+Data and code are publicly deposited; the identifying repository link is supplied separately to the editor. Funding, interest, prior-dissemination and author statements are supplied separately to the editor. AI tools assisted with drafting, literature checking, code development and replication review. The author remains responsible for the analysis and interpretations. Independent human verification of unresolved instrument classifications is not asserted.
 \par\endgroup\clearpage\appendix
 '''+anon[end:]
 anon=anon.replace('f404e48320a81e3bfe20127af2ed7c2d9fb5268e','withheld for anonymous review')
 anon=anon.replace(r'\bibliography{references}',r'\bibliography{references_anonymous}')
 bib=(R/'paper/references.bib').read_text()
 bib=re.sub(r'@misc\{loschicode2026,.*?(?=\n@)',r'@misc{loschicode2026,\n author={{Anonymous author}}, year={2026}, title={Replication code and archived inputs},\n note={Identifying repository information supplied separately to the editor}}\n',bib,flags=re.S)
+bib=re.sub(r'@misc\{loschi2026shape,.*?(?=\n@)',r'@misc{loschi2026shape,\n author={{Anonymous author}}, year={2026}, title={Companion working paper on statutory mortgage-recording and transfer-tax design},\n note={Details supplied separately to the editor}}\n',bib,flags=re.S)
+assert 'Loschi' not in bib and '22880953' not in bib
 (R/'paper/references_anonymous.bib').write_text(bib)
 (R/'paper/manuscript_anonymous.tex').write_text(anon)
 subprocess.run([shutil.which('tectonic'),str(R/'paper/manuscript_anonymous.tex')],cwd=R,check=True)

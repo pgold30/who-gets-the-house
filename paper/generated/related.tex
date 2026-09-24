@@ -1,0 +1,18 @@
+\begin{table}[htbp]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\caption{Related-party transfers and the identity of the cash buyer}\label{tab:related}
+\begin{tabular}{lrllrr}\toprule
+\multicolumn{6}{l}{\textit{A. Financing contrast by estimator}}\\
+Sample & Pairs & Least squares & Huber & Trim 1/99 & Trim 2.5/97.5 \\
+\midrule
+All pairs & 6,006 & 9.25 [7.17, 11.35] & 6.73 [5.32, 8.76] & 7.66 & 5.15 \\
+No same-surname deeds & 5,648 & 4.87 [2.69, 6.76] & 4.02 [2.28, 5.73] & 4.03 & 2.83 \\
+Same, strict flag & 5,768 & 6.71 [4.69, 8.72] & 4.94 [3.43, 6.79] & 5.13 & 3.06 \\
+\midrule
+\multicolumn{6}{l}{\textit{B. Least-squares contrast by the buyer at the cash sale}}\\
+Sample & Pairs & Company buyer & Other buyer & \multicolumn{2}{r}{Other minus company} \\
+\midrule
+All pairs & 6,006 & 1.53 [-1.79, 5.44] & 13.77 [10.96, 15.98] & \multicolumn{2}{r}{12.24 [7.50, 16.06]} \\
+No same-surname deeds & 5,648 & 1.55 [-1.75, 5.49] & 7.11 [4.48, 9.12] & \multicolumn{2}{r}{5.56 [0.97, 9.07]} \\
+\bottomrule\end{tabular}
+\notes{Log points; 95\% percentile intervals from the paper's 999 common parcel-bootstrap draws (seed 20260909), with every nuisance control, Huber scale and trimming cutoff re-estimated in each draw. Headline specification of Table~\ref{tab:cumulative}. A same-surname transfer is a deed at either endpoint on which a natural-person grantor and grantee share a surname; company, trust and estate names never match. The strict flag ignores the 40 most frequent surnames in the party extract. Panel B splits both switching arms by whether the grantee at the unfinanced sale has an explicit company form; always-financed and always-unfinanced pairs are pooled.}
+\end{table}

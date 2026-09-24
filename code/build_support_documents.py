@@ -11,7 +11,7 @@ styles.add(ParagraphStyle(name='HeadingRelease',fontName='Helvetica-Bold',fontSi
 styles.add(ParagraphStyle(name='TitleRelease',fontName='Helvetica-Bold',fontSize=20,leading=24,spaceAfter=16))
 styles.add(ParagraphStyle(name='CodeRelease',fontName='Courier',fontSize=7.5,leading=10,spaceAfter=9))
 def footer(c,doc):
-    c.setFont('Helvetica',8);c.setFillColor(colors.HexColor('#555555'));c.drawString(54,32,'WGTH-2026-09-10-JHE-S1');c.drawRightString(558,32,str(doc.page))
+    c.setFont('Helvetica',8);c.setFillColor(colors.HexColor('#555555'));c.drawString(54,32,'WGTH-2026-09-24-V3.1');c.drawRightString(558,32,str(doc.page))
 def build(src,dest):
     story=[];buf=[];code=False;codebuf=[]
     def flush():

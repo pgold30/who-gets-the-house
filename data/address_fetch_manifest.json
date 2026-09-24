@@ -1,0 +1,9 @@
+{
+  "resource": "636b-3b5g",
+  "indexed_key": "document_id",
+  "requested_document_ids": 11745,
+  "pages": 118,
+  "page_document_ids": 100,
+  "rows": 38044,
+  "method": "IN lists over sorted document_id values; per-page count(1) equality required"
+}

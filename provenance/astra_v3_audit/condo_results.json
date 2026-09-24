@@ -1,0 +1,37 @@
+{
+  "pairs": 6584,
+  "clusters": 6495,
+  "matched_deed_endpoints": 13092,
+  "party_covered_endpoints": 13092,
+  "party_rows": 39504,
+  "party_pages": 131,
+  "related_pairs": 189,
+  "related_pairs_strict": 137,
+  "remaining_pairs": 6395,
+  "point": {
+    "all": 0.007729776426504454,
+    "no_surname": -0.00455763641319783,
+    "no_surname_strict": -0.00262295787734724
+  },
+  "ci": {
+    "all": [
+      -0.00017166387872192797,
+      0.015463422341655578
+    ],
+    "no_surname": [
+      -0.011640231997521672,
+      0.0014483797602550558
+    ],
+    "change": [
+      -0.01710670607257042,
+      -0.008245919162452913
+    ],
+    "no_surname_strict": [
+      -0.00972372445118824,
+      0.0034413945627664306
+    ]
+  },
+  "change_point": -0.012287412839702284,
+  "seed": 20260909,
+  "draws": 999
+}

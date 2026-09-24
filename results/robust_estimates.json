@@ -1,0 +1,213 @@
+{
+  "house_zip_year": {
+    "pairs": 6006,
+    "cash_to_financed": 1044,
+    "financed_to_cash": 737,
+    "point": {
+      "ols": 0.09251354998984046,
+      "huber": 0.0673395047706827,
+      "trim_1_99": 0.07664986037103003,
+      "trim_2.5_97.5": 0.051468711917797984
+    },
+    "ci": {
+      "ols": [
+        0.07168262757937818,
+        0.11346809027778657
+      ],
+      "huber": [
+        0.05319888112696486,
+        0.08756203620759759
+      ],
+      "trim_1_99": [
+        0.057661074640930184,
+        0.09528380079572289
+      ],
+      "trim_2.5_97.5": [
+        0.03553275109281948,
+        0.06782563305668592
+      ]
+    },
+    "bootstrap_huber_iterations_max": 132,
+    "bootstrap_huber_iterations_median": 61.0,
+    "difference_from_ols": {
+      "huber": {
+        "estimate": -0.025174045219157754,
+        "ci": [
+          -0.0330697377237319,
+          -0.011396100588679025
+        ]
+      },
+      "trim_1_99": {
+        "estimate": -0.015863689618810434,
+        "ci": [
+          -0.0275568976490606,
+          -0.004514949345127789
+        ]
+      },
+      "trim_2.5_97.5": {
+        "estimate": -0.041044838072042476,
+        "ci": [
+          -0.05644955503630482,
+          -0.025288527333663158
+        ]
+      }
+    },
+    "huber_iterations": 48,
+    "huber_share_downweighted_by_arm": {
+      "cash_to_financed": 0.33524904214559387,
+      "financed_to_cash": 0.3514246947082768,
+      "unchanged": 0.18177514792899407
+    },
+    "share_log_growth_above_0.7": {
+      "cash_to_financed": 0.1532567049808429,
+      "financed_to_cash": 0.06241519674355495,
+      "unchanged": 0.0485207100591716,
+      "always_financed": 0.04201902748414376
+    },
+    "bootstrap_draws": 999,
+    "bootstrap_seconds": 426.2268038749462
+  },
+  "house_borough_quarter": {
+    "pairs": 8208,
+    "cash_to_financed": 1669,
+    "financed_to_cash": 1035,
+    "point": {
+      "ols": 0.11422151239669037,
+      "huber": 0.08826066684546274,
+      "trim_1_99": 0.09233509947573934,
+      "trim_2.5_97.5": 0.06913967979447705
+    },
+    "ci": {
+      "ols": [
+        0.09595145308106467,
+        0.1318879490935491
+      ],
+      "huber": [
+        0.07393633133044147,
+        0.10284644492587725
+      ],
+      "trim_1_99": [
+        0.07752218432622385,
+        0.10986807556788707
+      ],
+      "trim_2.5_97.5": [
+        0.05420813905617176,
+        0.08275859647334578
+      ]
+    },
+    "bootstrap_huber_iterations_max": 105,
+    "bootstrap_huber_iterations_median": 23.0,
+    "difference_from_ols": {
+      "huber": {
+        "estimate": -0.02596084555122763,
+        "ci": [
+          -0.03458531135453906,
+          -0.017302779852571375
+        ]
+      },
+      "trim_1_99": {
+        "estimate": -0.02188641292095103,
+        "ci": [
+          -0.029464731537966433,
+          -0.012693737370748838
+        ]
+      },
+      "trim_2.5_97.5": {
+        "estimate": -0.04508183260221332,
+        "ci": [
+          -0.05707882240932421,
+          -0.03277695447103207
+        ]
+      }
+    },
+    "huber_iterations": 24,
+    "huber_share_downweighted_by_arm": {
+      "cash_to_financed": 0.38825644098262435,
+      "financed_to_cash": 0.36135265700483093,
+      "unchanged": 0.17169331395348839
+    },
+    "share_log_growth_above_0.7": {
+      "cash_to_financed": 0.20071899340922708,
+      "financed_to_cash": 0.0927536231884058,
+      "unchanged": 0.07194767441860465,
+      "always_financed": 0.06270903010033445
+    },
+    "bootstrap_draws": 999,
+    "bootstrap_seconds": 48.54705562500749
+  },
+  "condo_borough_quarter": {
+    "pairs": 6584,
+    "cash_to_financed": 1228,
+    "financed_to_cash": 1659,
+    "point": {
+      "ols": 0.007729776426075284,
+      "huber": -0.0048842267761750584,
+      "trim_1_99": -0.0045416966196870825,
+      "trim_2.5_97.5": -0.005766370114055175
+    },
+    "ci": {
+      "ols": [
+        -0.00017166387586663157,
+        0.01546342233754572
+      ],
+      "huber": [
+        -0.010015795099588855,
+        -0.0002607517960459659
+      ],
+      "trim_1_99": [
+        -0.00980487428662445,
+        0.00135912214854048
+      ],
+      "trim_2.5_97.5": [
+        -0.010679497594092613,
+        -0.0014290482668175468
+      ]
+    },
+    "bootstrap_huber_iterations_max": 82,
+    "bootstrap_huber_iterations_median": 16.0,
+    "difference_from_ols": {
+      "huber": {
+        "estimate": -0.012614003202250344,
+        "ci": [
+          -0.017845147342248614,
+          -0.007756850663565398
+        ]
+      },
+      "trim_1_99": {
+        "estimate": -0.012271473045762368,
+        "ci": [
+          -0.017159810440742766,
+          -0.006713736736172113
+        ]
+      },
+      "trim_2.5_97.5": {
+        "estimate": -0.013496146540130458,
+        "ci": [
+          -0.020164297139388044,
+          -0.007284007626844011
+        ]
+      }
+    },
+    "huber_iterations": 20,
+    "huber_share_downweighted_by_arm": {
+      "cash_to_financed": 0.23615635179153094,
+      "financed_to_cash": 0.2326702833031947,
+      "unchanged": 0.21530971057614282
+    },
+    "share_log_growth_above_0.7": {
+      "cash_to_financed": 0.016286644951140065,
+      "financed_to_cash": 0.0054249547920434,
+      "unchanged": 0.011360562618339193,
+      "always_financed": 0.007831821929101401
+    },
+    "bootstrap_draws": 999,
+    "bootstrap_seconds": 30.873653374961577
+  },
+  "method": {
+    "huber_k": 1.345,
+    "scale": "two-stage MAD/0.6745: from least-squares residuals, then updated once from the first fixed-scale Huber fit; each stage solved to convergence",
+    "trimming": "annualized log growth, percentile cutoffs from the estimation sample, financing-blind",
+    "bootstrap": "percentile intervals; common multinomial parcel draws, seed 20260909; cutoffs and Huber scale re-estimated in every draw",
+    "status": "Conventional default tuning constants; not tuned on the financing contrast."
+  }
+}

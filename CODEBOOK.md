@@ -87,12 +87,20 @@ A review must distinguish an instrument's visible wording from inferred economic
 - paired_full_refit_bootstrap.npy: 999 rows of common parcel-bootstrap draws; column order is in the accompanying JSON labels. Percentile intervals and paired-difference intervals are in that JSON.
 - financing_window_agreement.csv: group, label window, sale count, financed share, disagreements with base. Disagreements are not validated errors.
 
-## Price-distribution and mechanism outputs
+## Robust-estimator and mechanism outputs
 
-Notch outputs identify threshold, period/year, count windows, log ratios and placebo-adjusted changes. difference_in_log_ratios is the pre/post log-ratio difference minus the specified placebo change; percent_change_relative_ratio is 100*(exp(difference)-1). Neither variable measures destroyed sales or welfare. ci_low/ci_high are pointwise parcel CR0 bounds. Annual placebo-adjusted log ratios are levels, not normalized event coefficients.
-
-Charm outputs report exact_price_sales, charm_sales, adjusted_financed_share_difference, its standard error and confidence interval. The difference is X-1 minus X in probability units; paper tables multiply by 100 for percentage points. same_tax_side is true at $500,000, where both exact prices face the lower city rate.
+robust_estimates.json: for each sample (house_zip_year, house_borough_quarter, condo_borough_quarter), point estimates for ols, huber, trim_1_99 and trim_2.5_97.5 (log points), percentile bootstrap intervals, paired differences from ols, Huber down-weighting shares by switching arm, shares of pairs with log growth above 0.7 by arm, and Huber iteration counts. robust_bootstrap_*.csv: the 999 draws of every estimator.
 
 Credit result files list their coefficient ordering: switching arms first, followed by financing interacted with rate deviations from 4 percent at each sale date, and where included financing-specific calendar trends centered on 2020. Rate coefficients use probability labels and rates in percentage points, not decimal interest rates.
 
 model_inversion_scenarios.json records property, q_failure_scenario, gap_log and implied_d. d = (exp(gap_log)-1)*(1-q)/q. q is an illustrative assumption. publication_numbers.json records the final manuscript macros; it is generated from current results rather than serving as input to estimation.
+
+related_party.json (v3.0): description (pair counts, party-record coverage by endpoint, same-surname shares of cash and financed endpoints, switching-pair counts, mean log growth by arm and flag, sample dates, the 40 surnames ignored by the strict flag), point estimates and 95% percentile intervals (log-price units; multiply by 100 for log points) keyed as sample|estimator for samples all, no_related, no_related_strict and estimators ols, huber, trim_1_99, trim_2.5_97.5, plus sample|company, sample|other and sample|difference for the cash-buyer split; paired differences from the headline least-squares estimate; bootstrap metadata.
+
+related_party_flags.csv (v3.0): one row per headline house pair (bbl, deed_a, deed_z) with related_a/related_z (same-surname flag at each endpoint), related_strict_a/related_strict_z (strict flag) and party_data_a/party_data_z (1 if the endpoint deed has party records).
+
+related_party_extensions.json (v3.1): house_borough_quarter and condo_borough_quarter (pairs, clusters, endpoints, endpoints_with_deed, endpoints_with_party_records, flagged_pairs, flagged_pairs_strict, point and ci for all / no_related / no_related_strict, paired change; condominium deed_linkage from the retrieval manifest); house_shared_address (pair counts, shared-address shares of cash and financed endpoints, point and ci for no_surname / no_surname_or_address / no_surname_or_person_address, additional changes, normalization rule); bootstrap metadata. Values are log-price units.
+
+data/condo_pairs_with_deeds.csv.gz (v3.1): the 6,584 condominium pairs of Table 4 with unit BBL, dates, prices, base financing flags, log growth, cluster and the linked deed document_id at each endpoint (blank when no unique deed within 45 days and 0.5 percent consideration).
+data/condo_parties.json.gz (v3.1): ACRIS Real Property Parties rows (document_id, party_type, name) for linked condominium deeds.
+data/house_party_addresses.json.gz (v3.1): ACRIS Real Property Parties rows with address_1, city and zip for house endpoint deeds.

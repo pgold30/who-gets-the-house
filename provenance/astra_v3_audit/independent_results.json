@@ -1,0 +1,96 @@
+{
+  "sample_pairs": 6006,
+  "related_pairs": 358,
+  "strict_pairs": 238,
+  "related_cash_endpoints": 152,
+  "cash_endpoints": 2663,
+  "related_financed_endpoints": 214,
+  "financed_endpoints": 9349,
+  "common_surnames": [
+    "AHMED",
+    "ALI",
+    "BEGUM",
+    "BROWN",
+    "CHAN",
+    "CHEN",
+    "CHOWDHURY",
+    "GAO",
+    "GONZALEZ",
+    "HOSSAIN",
+    "HUANG",
+    "ISLAM",
+    "JIANG",
+    "JOHNSON",
+    "KAUR",
+    "KHAN",
+    "KIM",
+    "LEE",
+    "LI",
+    "LIANG",
+    "LIN",
+    "LIU",
+    "LU",
+    "MARTINEZ",
+    "RAHMAN",
+    "RODRIGUEZ",
+    "SINGH",
+    "TANG",
+    "WANG",
+    "WILLIAMS",
+    "WONG",
+    "WU",
+    "XU",
+    "YANG",
+    "YU",
+    "ZHANG",
+    "ZHAO",
+    "ZHENG",
+    "ZHOU",
+    "ZHU"
+  ],
+  "point": {
+    "all|ols": 0.09251354998456673,
+    "no_related|ols": 0.04867675311764144,
+    "no_related_strict|ols": 0.06706669295448058,
+    "no_related|huber": 0.040225050186735854,
+    "all|company": 0.015287028750578382,
+    "all|other": 0.13766312803971945,
+    "no_related|company": 0.015457596683383246,
+    "no_related|other": 0.07109894012338451
+  },
+  "ci": {
+    "all|ols": [
+      0.07168262756324119,
+      0.11346809027053871
+    ],
+    "no_related|ols": [
+      0.026913061034453848,
+      0.06764630757020348
+    ],
+    "no_related_strict|ols": [
+      0.04686442375314228,
+      0.08720959563570849
+    ],
+    "all|company": [
+      -0.017906206758891527,
+      0.054383782671783655
+    ],
+    "all|other": [
+      0.10964985874398725,
+      0.15977105319608
+    ],
+    "no_related|company": [
+      -0.017539638154338875,
+      0.054910877407986544
+    ],
+    "no_related|other": [
+      0.0448035231949569,
+      0.09121845984134726
+    ]
+  },
+  "bootstrap": {
+    "draws": 999,
+    "seed": 20260909,
+    "clusters": 8127
+  }
+}

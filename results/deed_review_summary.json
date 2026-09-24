@@ -1,0 +1,35 @@
+{
+  "flagged": {
+    "n": 40,
+    "non_market_sign": 16,
+    "share": 0.4,
+    "ci": [
+      0.2634811061240136,
+      0.5540438017260649
+    ],
+    "with_possible": 25,
+    "share_with_possible": 0.625,
+    "ci_with_possible": [
+      0.47032160054531913,
+      0.7577722646420829
+    ],
+    "relatives_box_A": 13
+  },
+  "unflagged": {
+    "n": 20,
+    "non_market_sign": 2,
+    "share": 0.1,
+    "ci": [
+      0.027865893984153206,
+      0.30103820641179335
+    ],
+    "with_possible": 2,
+    "share_with_possible": 0.1,
+    "ci_with_possible": [
+      0.027865893984153206,
+      0.30103820641179335
+    ],
+    "relatives_box_A": 1
+  },
+  "method": "Deed-image review of the same-surname flag (v3.1).\n\nReads audit/deed_image_review/deed_review_readings.csv: a random sample\n(seed 20260924) of 40 flagged and 20 unflagged cash endpoint deeds from the\nheadline house sample, read from ACRIS images with AI assistance and confirmed\nby the author. A deed counts as showing a non-market sign when its RP-5217NYC\ntransfer report declares a sale between relatives (box A), a buyer who is also\na seller (box C) or a non-standard deed type (box E), or reports a $0 price with\nno transfer tax. Wilson 95% intervals; the sample is small and self-declared\nconditions are a lower bound."
+}

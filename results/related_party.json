@@ -1,0 +1,209 @@
+{
+  "description": {
+    "pairs": 6006,
+    "party_data_share": {
+      "a": 0.9775224775224776,
+      "z": 0.987012987012987
+    },
+    "related_pairs": 358,
+    "related_pairs_strict": 238,
+    "common_surnames_ignored_by_strict_flag": [
+      "AHMED",
+      "ALI",
+      "BEGUM",
+      "BROWN",
+      "CHAN",
+      "CHEN",
+      "CHOWDHURY",
+      "GAO",
+      "GONZALEZ",
+      "HOSSAIN",
+      "HUANG",
+      "ISLAM",
+      "JIANG",
+      "JOHNSON",
+      "KAUR",
+      "KHAN",
+      "KIM",
+      "LEE",
+      "LI",
+      "LIANG",
+      "LIN",
+      "LIU",
+      "LU",
+      "MARTINEZ",
+      "RAHMAN",
+      "RODRIGUEZ",
+      "SINGH",
+      "TANG",
+      "WANG",
+      "WILLIAMS",
+      "WONG",
+      "WU",
+      "XU",
+      "YANG",
+      "YU",
+      "ZHANG",
+      "ZHAO",
+      "ZHENG",
+      "ZHOU",
+      "ZHU"
+    ],
+    "related_share_of_endpoints": {
+      "cash": 0.05707848291400676,
+      "financed": 0.022890148679003103,
+      "cash_endpoints": 2663,
+      "financed_endpoints": 9349
+    },
+    "switching_pairs": {
+      "cash_to_financed": 1044,
+      "financed_to_cash": 737,
+      "cash_buyer_company": 794,
+      "related_among_switching": 147
+    },
+    "mean_log_growth": {
+      "cash_to_financed": {
+        "related": 0.653856287800752,
+        "unrelated": 0.3408157386862439,
+        "n_related": 58
+      },
+      "financed_to_cash": {
+        "related": -0.26770363445911577,
+        "unrelated": 0.1981978582514578,
+        "n_related": 89
+      },
+      "unchanged": {
+        "related": 0.2839290454723829,
+        "unrelated": 0.2700413009308047,
+        "n_related": 211
+      }
+    },
+    "sample_dates": {
+      "first_sale": [
+        "2016-01-04",
+        "2022-12-27"
+      ],
+      "resale": [
+        "2019-03-05",
+        "2025-12-31"
+      ]
+    }
+  },
+  "point": {
+    "all|ols": 0.09251354998984046,
+    "all|huber": 0.0673395047706827,
+    "all|trim_1_99": 0.07664986037103003,
+    "all|trim_2.5_97.5": 0.051468711917797984,
+    "no_related|ols": 0.04867675312010334,
+    "no_related|huber": 0.04022505019360489,
+    "no_related|trim_1_99": 0.04028196686842528,
+    "no_related|trim_2.5_97.5": 0.02827331763185166,
+    "no_related_strict|ols": 0.06706669294776968,
+    "no_related_strict|huber": 0.04935570568135794,
+    "no_related_strict|trim_1_99": 0.051305933011900194,
+    "no_related_strict|trim_2.5_97.5": 0.03055130729291812,
+    "all|company": 0.015287028724385043,
+    "all|other": 0.13766312804574857,
+    "all|difference": 0.12237609932136352,
+    "no_related|company": 0.015457596680257969,
+    "no_related|other": 0.0710989401242618,
+    "no_related|difference": 0.05564134344400383
+  },
+  "ci": {
+    "all|ols": [
+      0.07168262757937818,
+      0.11346809027778657
+    ],
+    "all|huber": [
+      0.05319888112696486,
+      0.08756203620759759
+    ],
+    "all|trim_1_99": [
+      0.057661074640930184,
+      0.09528380079572289
+    ],
+    "all|trim_2.5_97.5": [
+      0.03553275109281948,
+      0.06782563305668592
+    ],
+    "no_related|ols": [
+      0.026913061031378846,
+      0.0676463075751891
+    ],
+    "no_related|huber": [
+      0.02276791602475344,
+      0.05733267511765702
+    ],
+    "no_related|trim_1_99": [
+      0.02336042535104942,
+      0.055156656059123135
+    ],
+    "no_related|trim_2.5_97.5": [
+      0.014083677658572422,
+      0.04375847746818281
+    ],
+    "no_related_strict|ols": [
+      0.04686442374702338,
+      0.08720959564521193
+    ],
+    "no_related_strict|huber": [
+      0.034308725598992444,
+      0.0678897048464975
+    ],
+    "no_related_strict|trim_1_99": [
+      0.03353214495083877,
+      0.0693063280288717
+    ],
+    "no_related_strict|trim_2.5_97.5": [
+      0.017157640791803104,
+      0.0468490199211298
+    ],
+    "all|company": [
+      -0.017906206726065712,
+      0.05438378267194903
+    ],
+    "all|other": [
+      0.1096498587447367,
+      0.15977105318534546
+    ],
+    "all|difference": [
+      0.07502426452066166,
+      0.1606110210523607
+    ],
+    "no_related|company": [
+      -0.01753963818710637,
+      0.05491087738727242
+    ],
+    "no_related|other": [
+      0.04480352320983425,
+      0.0912184598526543
+    ],
+    "no_related|difference": [
+      0.009748894925940249,
+      0.0907247121296016
+    ]
+  },
+  "difference_from_headline_ols": {
+    "no_related|ols": {
+      "estimate": -0.04383679686973712,
+      "ci": [
+        -0.05634590278625797,
+        -0.031766025169546006
+      ]
+    },
+    "no_related_strict|ols": {
+      "estimate": -0.02544685704207078,
+      "ci": [
+        -0.03494988657647303,
+        -0.01533363931525511
+      ]
+    }
+  },
+  "bootstrap": {
+    "draws": 999,
+    "seed": 20260909,
+    "clusters": 8127,
+    "seconds": 1548.1851271250052
+  },
+  "method": "Same-surname grantor/grantee on the endpoint deed (natural-person names only). Strict flag ignores the 40 most frequent surnames. Cash-buyer identity: explicit company form of the grantee at the unfinanced endpoint of a switching pair."
+}

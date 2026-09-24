@@ -1,0 +1,18 @@
+\begin{table}[htbp]\centering\footnotesize\setlength{\tabcolsep}{2pt}
+\caption{The same-surname screen across property types, and a shared-address sensitivity}\label{tab:relatedext}
+\begin{tabular}{lrlrll}\toprule
+\multicolumn{6}{l}{\textit{A. Common borough-quarter design (Table~\ref{tab:property})}}\\
+ & Pairs & All pairs & Flagged & Unflagged pairs & Change \\
+\midrule
+Houses & 8,208 & 11.42 [9.60, 13.19] & 449 & 7.50 [6.00, 9.19] & -3.93 [-4.81, -2.94] \\
+Condominiums & 6,584 & 0.77 [-0.02, 1.55] & 189 & -0.46 [-1.16, 0.14] & -1.23 [-1.71, -0.82] \\
+\midrule
+\multicolumn{6}{l}{\textit{B. Headline house specification: excluding pairs with}}\\
+ & Pairs & Contrast & \multicolumn{2}{l}{Change vs.\ surname screen} & \\
+\midrule
+Same-surname deeds & 5,648 & 4.87 [2.69, 6.76] & \multicolumn{2}{l}{} \\
+\quad or shared address & 4,053 & 3.76 [1.16, 6.05] & \multicolumn{2}{l}{-1.11 [-2.76, 0.29]} \\
+\quad or shared address, persons & 4,458 & 4.41 [2.14, 6.75] & \multicolumn{2}{l}{-0.46 [-1.43, 0.71]} \\
+\bottomrule\end{tabular}
+\notes{Log points; 95\% percentile intervals from the paper's 999 common parcel-bootstrap draws (seed 20260909), refitting all controls in each draw. Panel A: least squares under borough-quarter effects only, as in Table~\ref{tab:property}; the same-surname flag of Table~\ref{tab:related} is applied to deeds linked to each endpoint. Condominium deeds are linked for 13,092 of 13,168 endpoints (31 ambiguous matches left unlinked). Panel B: headline specification of Table~\ref{tab:cumulative}. A shared address is a grantor and grantee on the same deed with the same normalized mailing street, city and ZIP code; it can reflect a common mailing agent or co-location and is not evidence of kinship. The natural-person variant counts only addresses of parties with personal names.}
+\end{table}

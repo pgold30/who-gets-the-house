@@ -1,0 +1,137 @@
+\begin{thebibliography}{17}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bailey et~al.(1963)Bailey, Muth, and Nourse]{bailey1963}
+Martin~J. Bailey, Richard~F. Muth, and Hugh~O. Nourse.
+\newblock A regression method for real estate price index construction.
+\newblock \emph{Journal of the American Statistical Association}, 58\penalty0
+  (304):\penalty0 933--942, 1963.
+\newblock \doi{10.1080/01621459.1963.10480679}.
+
+\bibitem[{Bloomberg News}(2026{\natexlab{a}})]{bloomberg2026cashtax}
+{Bloomberg News}.
+\newblock {NY} plans new tax on {NYC} homes over \$1 million bought with cash.
+\newblock Bloomberg, 14 May 2026, 2026{\natexlab{a}}.
+\newblock URL
+  \url{https://www.bloomberg.com/news/articles/2026-05-14/ny-plans-new-tax-on-city-homes-over-1-million-bought-with-cash}.
+
+\bibitem[{Bloomberg News}(2026{\natexlab{b}})]{bloomberg2026cashtaxdropped}
+{Bloomberg News}.
+\newblock {NYC} cash home purchases tax is likely to be dropped from {New York}
+  state budget.
+\newblock Bloomberg, 21 May 2026, 2026{\natexlab{b}}.
+\newblock URL
+  \url{https://www.bloomberg.com/news/articles/2026-05-21/new-york-s-tax-on-nyc-cash-home-purchases-is-close-to-collapse}.
+
+\bibitem[Campbell et~al.(2011)Campbell, Giglio, and Pathak]{campbell2011}
+John~Y. Campbell, Stefano Giglio, and Parag Pathak.
+\newblock Forced sales and house prices.
+\newblock \emph{American Economic Review}, 101\penalty0 (5):\penalty0
+  2108--2131, 2011.
+\newblock \doi{10.1257/aer.101.5.2108}.
+
+\bibitem[{Freddie Mac}(2026)]{pmms2026}
+{Freddie Mac}.
+\newblock Primary mortgage market survey: Historical archives, 2026.
+\newblock URL \url{https://www.freddiemac.com/pmms/pmms_archives}.
+\newblock Weekly 30-year mortgage rates, 2015--2025; 574 observations parsed
+  from preserved annual archive extracts.
+
+\bibitem[Han and Hong(2024)]{hanhong2024}
+Lu~Han and Seung-Hyun Hong.
+\newblock Cash is king? understanding financing risk in housing markets.
+\newblock \emph{Review of Finance}, 28\penalty0 (6):\penalty0 2083--2118, 2024.
+\newblock \doi{10.1093/rof/rfae025}.
+
+\bibitem[Loschi(2026{\natexlab{a}})]{loschi2026shape}
+Pablo Loschi.
+\newblock The shape of the tax: Statutory incidence, notches, and the design of
+  {New York City}'s mortgage recording and transfer taxes.
+\newblock Preprint, Zenodo, version 1.0, 2026{\natexlab{a}}.
+\newblock URL \url{https://doi.org/10.5281/zenodo.22925302}.
+\newblock Replication package version 1.3: doi:10.5281/zenodo.22924780.
+
+\bibitem[Loschi(2026{\natexlab{b}})]{loschicode2026}
+Pablo Loschi.
+\newblock Who gets the house? replication code and archived inputs,
+  2026{\natexlab{b}}.
+\newblock URL \url{https://github.com/pgold30/who-gets-the-house}.
+\newblock GitHub snapshot, commit f404e48320a81e3bfe20127af2ed7c2d9fb5268e;
+  accessed September 10, 2026.
+
+\bibitem[{New York City Department of Buildings}(2026)]{dob2026}
+{New York City Department of Buildings}.
+\newblock {DOB} permit issuance, 2026.
+\newblock URL
+  \url{https://data.cityofnewyork.us/Housing-Development/DOB-Permit-Issuance/ipu4-2q9a}.
+\newblock NYC Open Data: ipu4-2q9a; preserved original permit snapshot.
+
+\bibitem[{New York City Department of City Planning}(2026)]{pluto2026}
+{New York City Department of City Planning}.
+\newblock {PLUTO}, version 26v2, 2026.
+\newblock URL
+  \url{https://www.nyc.gov/site/planning/data-maps/open-data/dwn-pluto-mappluto.page}.
+\newblock NYC Open Data: 64uk-42ks; targeted parcel geography extract,
+  September 2026.
+
+\bibitem[{New York City Department of
+  Finance}(2026{\natexlab{a}})]{acrispp2026}
+{New York City Department of Finance}.
+\newblock {ACRIS} personal property master and legals, 2026{\natexlab{a}}.
+\newblock URL \url{https://www.nyc.gov/site/finance/property/acris.page}.
+\newblock NYC Open Data: sv7x-dduq and uqqa-hym2; September 2026 extract.
+
+\bibitem[{New York City Department of
+  Finance}(2026{\natexlab{b}})]{acrisrp2026}
+{New York City Department of Finance}.
+\newblock {ACRIS} real property master, legals, and parties,
+  2026{\natexlab{b}}.
+\newblock URL \url{https://www.nyc.gov/site/finance/property/acris.page}.
+\newblock NYC Open Data: bnx9-e6tj, 8h5j-fqxa, 636b-3b5g; archived panel and
+  September 2026 targeted extracts.
+
+\bibitem[{New York City Department of Finance}(2026{\natexlab{c}})]{nycmrt2026}
+{New York City Department of Finance}.
+\newblock Mortgage recording tax, 2026{\natexlab{c}}.
+\newblock URL
+  \url{https://www.nyc.gov/site/finance/property/property-mortgage-recording-tax-mrt.page}.
+
+\bibitem[{New York City Department of
+  Finance}(2026{\natexlab{d}})]{nycsales2026}
+{New York City Department of Finance}.
+\newblock Annualized calendar sales, 2026{\natexlab{d}}.
+\newblock URL
+  \url{https://data.cityofnewyork.us/City-Government/NYC-Citywide-Annualized-Calendar-Sales-Update/w2pb-icbu}.
+\newblock NYC Open Data, w2pb-icbu; archived 2016--2025 price sample and
+  September 2026 co-operative extract.
+
+\bibitem[{New York State}(2026)]{nytaxlaw}
+{New York State}.
+\newblock {New York Tax Law} {\S\S}~253, 253-a, 261, 1402, 1402-a, 1402-b,
+  1404; {New York City Administrative Code} {\S\S}~11-2101 to 11-2117.
+\newblock Consolidated Laws of New York, Chapter 60, Articles 11 and 31; Real
+  Property Transfer Tax, 2026.
+\newblock {\S}1402-b added by L.2019, c.59, pt.~D, effective 1 July 2019, with
+  conveyances under binding contracts entered into on or before 1 April 2019
+  excluded.
+
+\bibitem[Reher and Valkanov(2024)]{reher2024}
+Michael Reher and Rossen Valkanov.
+\newblock The mortgage-cash premium puzzle.
+\newblock \emph{Journal of Finance}, 79\penalty0 (5):\penalty0 3149--3201,
+  2024.
+\newblock \doi{10.1111/jofi.13373}.
+
+\bibitem[{StreetEasy}(2026)]{streeteasy2026}
+{StreetEasy}.
+\newblock Streeteasy data dashboard: Historical total sales inventory, single
+  family.
+\newblock \url{https://streeteasy.com/blog/data-dashboard/}, 2026.
+\newblock Borough-month series, downloaded 22 September 2026; retrospective
+  source vintage.
+
+\end{thebibliography}

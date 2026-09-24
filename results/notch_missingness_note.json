@@ -1,6 +1,0 @@
-{
-  "missing_bbl": 7713,
-  "repeated_bbl_date_price_tuples": 4208,
-  "treatment": "Original density counts retained. Missing BBL rows are clustered together within borough. Nonmissing-only results and tuple-collapse sensitivity are also reported.",
-  "caution": "Identical BBL/date/price tuples can be different co-op units; the archived density sample lacks unit identifiers. Tuple collapse is a sensitivity exercise, not verified deduplication."
-}

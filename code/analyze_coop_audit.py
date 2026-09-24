@@ -51,12 +51,11 @@ def main():
     master={r['document_id']:day(r['recorded_datetime']) for r in json.loads((DATA/'coop_inic_master.json').read_text()) if r.get('recorded_datetime')}
     parcels=collections.defaultdict(set)
     legals_p = DATA/'coop_legals.json'
-    if not legals_p.exists() and (DATA/'coop_legals.json.gz').exists():
-        import gzip
-        legals_raw = json.loads(gzip.decompress((DATA/'coop_legals.json.gz').read_bytes()))
+    if not legals_p.exists() and (DATA/'coop_legals.json.gz').exists():  # GitHub copy is gzipped (100 MB file limit)
+        import gzip; legals_rows = json.loads(gzip.decompress((DATA/'coop_legals.json.gz').read_bytes()))
     else:
-        legals_raw = json.loads(legals_p.read_text())
-    for r in legals_raw:
+        legals_rows = json.loads(legals_p.read_text())
+    for r in legals_rows:
         did=r['document_id']
         if did not in master:continue
         try:b=f"{int(r['borough'])}{int(r['block']):05d}{int(r['lot']):04d}"

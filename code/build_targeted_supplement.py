@@ -65,18 +65,4 @@ assert keys=={('2020-02-17',1120000.0)},keys
  matched_source_records=matched,unique_unit_sales=len(keys),repeat_pairs_involving_case=0,
  interpretation='Reject financing link; do not recode as cash. This case contributes no repeat-sales pair, so its exclusion does not alter the reported co-op repeat-sales estimates.'),indent=2)+'\n')
 
-results=pd.read_csv(ROOT/'results/reform_period_bandwidth_checks.csv')
-main=results.query('window_width==100000 and threshold in [2000000,3000000]')
-labels={'baseline_2020_2025':'2020--2025','pandemic_2020_2021':'2020--2021','later_2022_2025':'2022--2025','2019_H2_season_matched':'2019 H2','2019_Q4_season_matched':'2019 Q4'}
-table=[r'\begin{table}[htbp]\centering\small',r'\caption{Reform comparisons by post period}\label{tab:targetedperiods}',r'\begin{tabular}{lrrrr}\toprule',r'Post period & $\Delta_{2m}$ & 95\% interval & $\Delta_{3m}$ & 95\% interval \\ \midrule']
-for key,label in labels.items():
- rr=main[main.comparison.eq(key)].set_index('threshold')
- cells=[]
- for t in [2000000,3000000]:
-  a=rr.loc[t];cells.extend([f'{a.estimate:.3f}',f'[{a.ci_low:.3f}, {a.ci_high:.3f}]'])
- table.append(label+' & '+' & '.join(cells)+r' \\')
-table.extend([r'\bottomrule\end{tabular}',r'\notes{Changes in log above/below price-count ratios less the mean change at four placebo prices; $100{,}000$ windows. Reference period: 2016--2018, restricted to the same calendar months for the 2019 rows. Intervals use joint parcel-cluster CR0 scores and are pointwise. The 2019 rows may include grandfathered contracts. Periods overlap; separate significance levels do not test differences between periods. All 45 period/bandwidth comparisons are retained in the supplement.}',r'\end{table}'])
-
-
-(ROOT/'paper/generated/targeted_periods.tex').write_text('\n'.join(table)+'\n')
-print('Instrument pilot and targeted table regenerated from supplied evidence and results.')
+print('Instrument pilot regenerated from supplied evidence and results.')

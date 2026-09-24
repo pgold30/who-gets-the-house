@@ -1,0 +1,26 @@
+\begin{table}[htbp]\centering\small
+\caption{Focused house validation: influence, geography and source consistency}\label{tab:focusedvalidation}
+\begin{tabular}{lrrr}\toprule
+Restriction & Pairs & Contrast & Change \\
+\midrule
+Main reference & 6,006 & 9.25 & +0.00 \\
+Omit top 1 absolute influences & 6,005 & 9.07 & -0.18 \\
+Omit top 5 absolute influences & 6,001 & 9.68 & +0.42 \\
+Omit top 10 absolute influences & 5,996 & 9.79 & +0.54 \\
+Omit top 30 absolute influences & 5,976 & 9.41 & +0.16 \\
+Omit top 60 absolute influences & 5,946 & 8.51 & -0.74 \\
+Omit 60 largest positive influences & 5,946 & 4.68 & -4.57 \\
+Omit Manhattan & 5,962 & 9.26 & +0.01 \\
+Omit Bronx & 4,962 & 9.42 & +0.17 \\
+Omit Brooklyn & 4,052 & 10.39 & +1.14 \\
+Omit Queens & 3,042 & 7.91 & -1.34 \\
+Omit ZIP 11234 & 5,801 & 9.11 & -0.14 \\
+Omit ZIP 10465 & 5,844 & 9.01 & -0.25 \\
+Omit ZIP 11357 & 5,875 & 9.25 & -0.00 \\
+Joint record-consistency safeguards & 5,585 & 8.98 & -0.27 \\
+Omit ambiguous source dates & 5,996 & 9.29 & +0.04 \\
+Omit missing positive loan amounts & 6,003 & 9.25 & -0.00 \\
+Joint safeguards and source checks & 5,579 & 9.02 & -0.23 \\
+\bottomrule\end{tabular}
+\notes{Log points. Every row refits the joint switch model and all nuisance controls on its retained sample. Parcels, not single observations, are removed in the influence exercises. Absolute- and positive-influence exclusions are selected using the fitted outcome; they are diagnostics, not alternative preferred samples, and ordinary confidence intervals would not account for that selection. Geographic and source restrictions also change the estimation population. The three ZIPs are selected by pair count. Combined safeguards require stable financing windows, unique amount-consistent deeds at both endpoints and no broad institutional-name flag. Source checks additionally remove ambiguous parcel/date records and financed endpoints without positive recorded loan amounts. These are internal consistency restrictions, not validated classifications. The complete model outputs and nominal parcel intervals are retained in the replication files.}
+\end{table}

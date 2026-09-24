@@ -1,0 +1,130 @@
+{
+  "house_borough_quarter": {
+    "pairs": 8208,
+    "clusters": 8127,
+    "endpoints": 16416,
+    "endpoints_with_deed": 16132,
+    "endpoints_with_party_records": 16132,
+    "flagged_pairs": 449,
+    "flagged_pairs_strict": 282,
+    "point": {
+      "all": 0.11422151239669037,
+      "no_related": 0.0749502535631692,
+      "no_related_strict": 0.093322529789893
+    },
+    "ci": {
+      "all": [
+        0.09595145308106467,
+        0.1318879490935491
+      ],
+      "no_related": [
+        0.05996388356312965,
+        0.09190761279717605
+      ],
+      "no_related_strict": [
+        0.07804819887535568,
+        0.11117082389596629
+      ]
+    },
+    "change": {
+      "estimate": -0.03927125883352117,
+      "ci": [
+        -0.04807443525256822,
+        -0.029428698020034286
+      ]
+    }
+  },
+  "condo_borough_quarter": {
+    "pairs": 6584,
+    "clusters": 6495,
+    "endpoints": 13168,
+    "endpoints_with_deed": 13092,
+    "endpoints_with_party_records": 13092,
+    "flagged_pairs": 189,
+    "flagged_pairs_strict": 137,
+    "point": {
+      "all": 0.007729776426075284,
+      "no_related": -0.004557636412624778,
+      "no_related_strict": -0.0026229578765606873
+    },
+    "ci": {
+      "all": [
+        -0.00017166387586663157,
+        0.01546342233754572
+      ],
+      "no_related": [
+        -0.011640231996432424,
+        0.0014483797632959365
+      ],
+      "no_related_strict": [
+        -0.009723724451343696,
+        0.0034413945595810126
+      ]
+    },
+    "change": {
+      "estimate": -0.012287412838700062,
+      "ci": [
+        -0.017106706074074763,
+        -0.008245919164144511
+      ]
+    },
+    "deed_linkage": {
+      "endpoint_deeds_matched": 13092,
+      "total_endpoints": 13168,
+      "ambiguous_endpoints": 31,
+      "method": "Unit BBL; unique DEED within 45 days and 0.5 percent consideration; every indexed partition verified against count(1)"
+    }
+  },
+  "house_shared_address": {
+    "pairs": 6006,
+    "surname_pairs": 358,
+    "shared_address_pairs": 1851,
+    "additional_address_pairs": 1595,
+    "remaining_pairs": 4053,
+    "shared_person_address_pairs": 1440,
+    "additional_person_address_pairs": 1190,
+    "remaining_person_pairs": 4458,
+    "shared_share_of_endpoints": {
+      "cash": 0.16672925272249342,
+      "financed": 0.17167611509252326
+    },
+    "point": {
+      "no_surname": 0.04867675312010334,
+      "no_surname_or_address": 0.03759564620981284,
+      "no_surname_or_person_address": 0.044079767978869845
+    },
+    "ci": {
+      "no_surname": [
+        0.026913061031378846,
+        0.0676463075751891
+      ],
+      "no_surname_or_address": [
+        0.01164998790887194,
+        0.0605395470197619
+      ],
+      "no_surname_or_person_address": [
+        0.021411718664652756,
+        0.06745213058287601
+      ]
+    },
+    "additional_change": {
+      "estimate": -0.011081106910290503,
+      "ci": [
+        -0.02764240664237654,
+        0.0028931197747700207
+      ]
+    },
+    "additional_person_change": {
+      "estimate": -0.004596985141233495,
+      "ci": [
+        -0.01431361446939205,
+        0.007111237318218615
+      ]
+    },
+    "normalization": "address_1 upper-cased; PO boxes and care-of addresses dropped; apartment/unit suffix removed; common street suffixes standardized; identical street, city and five-digit ZIP required."
+  },
+  "bootstrap": {
+    "draws": 999,
+    "seed": 20260909
+  }
+}

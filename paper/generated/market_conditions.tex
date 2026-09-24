@@ -1,0 +1,12 @@
+\begin{table}[htbp]\centering\small
+\caption{Historical market conditions: endpoint and trend sensitivity}\label{tab:marketconditions}
+\begin{tabular}{lrrrrrr}\toprule
+Model & First & 95\% CI & Second & 95\% CI & $p_Q$ & $p_Y$ \\
+\midrule
+Credit & -0.43 & [-5.91, 5.05] & 2.98 & [2.02, 3.94] & $<0.001$ & $<0.001$ \\
+Credit + trends & 0.46 & [-4.63, 5.54] & -1.24 & [-3.18, 0.70] & 0.418 & 0.330 \\
+Inventory & -3.13 & [-7.17, 0.91] & -13.38 & [-22.54, -4.21] & 0.005 & 0.003 \\
+Inventory + trends & -4.51 & [-9.79, 0.77] & 3.21 & [-6.65, 13.08] & 0.195 & 0.244 \\
+\bottomrule\end{tabular}
+\notes{All 6,006 pairs; slopes in log points. Credit unit: one percentage point of the weekly rate. Inventory unit: a doubling of prior-month borough Single Family inventory relative to its borough reference. Inventory models also include separate endpoint financing-by-borough controls (Brooklyn reference). Both indicators enter uninteracted at both dates. Intervals use the union of parcel and either-endpoint calendar-quarter score dependence and a $t_{39}$ reference. Columns $p_Q$ and $p_Y$ test both interaction slopes jointly, using calendar-quarter and calendar-year dependence respectively, with approximate $F_{2,39}$ and $F_{2,9}$ references. Negative covariance eigenvalues are set to zero: one is corrected in each quarter model with trends and in each year model. The unadjusted eigenvalues are recorded in the replication output. These are exploratory, pointwise diagnostics, not exact small-cluster inference.}
+\end{table}
