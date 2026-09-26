@@ -50,12 +50,7 @@ def main():
         sales.append({'bbl':b,'unit_key':b+'|'+u,'unit_known':bool(u),'day':d,'price':p,'eligible':eligible})
     master={r['document_id']:day(r['recorded_datetime']) for r in json.loads((DATA/'coop_inic_master.json').read_text()) if r.get('recorded_datetime')}
     parcels=collections.defaultdict(set)
-    legals_p = DATA/'coop_legals.json'
-    if not legals_p.exists() and (DATA/'coop_legals.json.gz').exists():  # GitHub copy is gzipped (100 MB file limit)
-        import gzip; legals_rows = json.loads(gzip.decompress((DATA/'coop_legals.json.gz').read_bytes()))
-    else:
-        legals_rows = json.loads(legals_p.read_text())
-    for r in legals_rows:
+    for r in json.loads((DATA/'coop_legals.json').read_text()):
         did=r['document_id']
         if did not in master:continue
         try:b=f"{int(r['borough'])}{int(r['block']):05d}{int(r['lot']):04d}"

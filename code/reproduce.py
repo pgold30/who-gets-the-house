@@ -10,7 +10,7 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 manifest={'release':'WGTH-2026-09-24-V3.1','started_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'python':sys.version,'platform':platform.platform(),'executable':sys.executable,'scope':'Supplied archived inputs and preserved public extracts to current paper; original full raw-to-panel build not executed.','source_sha256':{str(p.relative_to(ROOT)):sha(p) for folder in ['code','inputs','data'] for p in sorted((ROOT/folder).rglob('*')) if p.is_file() and '__pycache__' not in str(p)},'stages':[]}
 manifest['mode']='from-results' if '--from-results' in sys.argv else 'full-analysis'
 start=time.monotonic()
-programs=['parse_rates.py','analyze_repeat_sales.py','analyze_coop_audit.py','additional_checks.py','property_comparison.py','make_review_queues.py','market_conditions_extension.py','focused_validation.py','robust_estimators.py','related_party.py','related_party_extensions.py','deed_review_summary.py','build_exhibits.py','build_market_exhibits.py','build_focused_exhibits.py','build_targeted_supplement.py','build_support_documents.py']
+programs=['parse_rates.py','analyze_repeat_sales.py','analyze_coop_audit.py','additional_checks.py','property_comparison.py','make_review_queues.py','market_conditions_extension.py','focused_validation.py','robust_estimators.py','related_party.py','related_party_extensions.py','legal_rule_screen.py','deed_review_summary.py','build_exhibits.py','build_market_exhibits.py','build_focused_exhibits.py','build_targeted_supplement.py','build_support_documents.py']
 if '--from-results' in sys.argv:
     programs=['build_exhibits.py','build_market_exhibits.py','build_focused_exhibits.py','build_targeted_supplement.py','build_support_documents.py']
 try:

@@ -12,3 +12,5 @@ The linked GitHub snapshot is provenance for the archived input files and origin
 
 
 StreetEasy/Zillow: historical total sales inventory, Single Family, downloaded from the public StreetEasy Data Dashboard on 22 September 2026. The CSV is attributed to StreetEasy; no MIT or CC-BY author licence is asserted over this third-party material. Source: https://streeteasy.com/blog/data-dashboard/. Underlying source conditions remain applicable. The source vintage and SHA-256 are in provenance/streeteasy_inventory.json.
+
+code/vendor/acris_consideration_filter.py is the author's own classifier from the companion replication package *When a Deed Is Not a Market Sale* (Zenodo concept DOI 10.5281/zenodo.22925383), copied unchanged from version 1.0.2 under that package's CC BY 4.0 licence (Copyright 2026 Pablo Loschi) and cited in the paper.

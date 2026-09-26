@@ -17,3 +17,5 @@ For each endpoint:
 Do not manufacture an error rate from a few convenient cases. If the bounded review remains incomplete, report its exact completion and leave the main labels unchanged. Do not silently relabel an unresolved sale as cash. If verified errors affect repeat pairs, document the rule, apply corrections consistently, rerun affected fits and regenerate the manuscript and release hashes before submission.
 
 The inherited four-case instrument pilot remains separate. Existing AI-assisted readings do not count as newly completed independent cases in this queue.
+
+The analyst key (`focused_review_ANALYST_KEY.csv`) is not in the public v3.2 archive, so that reviewers cannot see the answers. Its SHA-256 is `c57075d1462c944cd784f1b7ad44b2c2c71c9708bc7011e73ad9de84723c0ca0`. `code/focused_validation.py` regenerates the same file deterministically from the archived inputs and seeds, so anyone can confirm the key after the review. Earlier archives (v3.1) did include it; reviewers are asked not to open any package or repository for this paper until both sheets are locked.

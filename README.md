@@ -2,9 +2,7 @@
 
 Who Gets the House? Related-Party Transfers and the Cash–Mortgage Price Gap in New York City
 
-Pablo Loschi, independent researcher, Berlin. Contact: loschi.pablo@gmail.com. Version 3.1 (WGTH-2026-09-24-V3.1), prepared 24 September 2026. This self-contained package accompanies paper/paper.pdf for Journal of Housing Economics. It requires no earlier revision folders. Nothing has been submitted or uploaded by this workflow.
-
-**GitHub copy.** This repository mirrors version 3.1 of the replication package, deposited at https://doi.org/10.5281/zenodo.22939641 (concept DOI https://doi.org/10.5281/zenodo.22421850, always the latest). The manuscript is `who_gets_the_house_v3_1.pdf`, and `revision_notes.md` lists changes between versions. GitHub limits files to 100 MB, so `data/coop_legals.json` is stored here as `data/coop_legals.json.gz`. `code/analyze_coop_audit.py` reads either form; the Zenodo archive holds the uncompressed file. The files under `inputs/` are unchanged since commit f404e48.
+Pablo Loschi, independent researcher, Berlin. Contact: loschi.pablo@gmail.com. Version 3.2 (WGTH-2026-09-25-V3.2), prepared 25 September 2026. This self-contained package accompanies paper/paper.pdf for Journal of Housing Economics. It requires no earlier revision folders. Nothing has been submitted or uploaded by this workflow.
 
 ## Computational scope and unresolved omissions
 
@@ -77,6 +75,7 @@ The paper source and bibliography are in paper. code/build_exhibits.py regenerat
 - code/robust_estimators.py: Table 3, Huber and trimmed re-estimates of the headline and common borough-quarter house/condominium contrasts on the same 999 parcel-bootstrap draws; robust_estimates.json and robust_bootstrap_*.csv.
 - code/related_party.py: Table 6, same-surname (probable related-party) deed flags and the company/other cash-buyer split, on the same 999 parcel-bootstrap draws; related_party.json, related_party_flags.csv, generated/related.tex and related_numbers.tex. `--from-results` rebuilds the table and macros from related_party.json.
 - code/related_party_extensions.py: Table 7, the same-surname screen applied to houses and condominiums under the common borough-quarter design, and the shared-address sensitivity; related_party_extensions.json, generated/related_ext.tex and related_ext_numbers.tex. Inputs: data/condo_pairs_with_deeds.csv.gz, data/condo_parties.json.gz, data/house_party_addresses.json.gz (retrieval manifests data/condo_fetch_manifest.json and data/address_fetch_manifest.json; retrieval scripts in provenance/astra_v3_audit/).
+- code/legal_rule_screen.py: lender take-title sensitivity (v3.2). Applies the companion paper's party-name classifier (When a Deed Is Not a Market Sale, module version 1.1.0, vendored unchanged as code/vendor/acris_consideration_filter.py, SHA-256 1b649ff08f9967b435a5f7da6696c432b03eee4d12799a11a7c762cc83c544f8; concept DOI 10.5281/zenodo.22925383) to the endpoint deeds of the 6,006 headline pairs and refits on the same 999 parcel-bootstrap draws; legal_rule_screen.json and generated/legal_numbers.tex. `--from-results` rebuilds the macros. The classifier's own document review is pending, so this is a sensitivity, not a correction.
 - code/property_comparison.py: Table 4, common borough-quarter house/condominium estimates in property_comparison.json.
 - code/analyze_repeat_sales.py plus additional_checks.py: Table 5, financing-window, institutional-name and unique-deed/amount sensitivities; Table 9, credit conditions and calendar-trend sensitivity.
 - code/build_exhibits.py: Table 8, the conditional model inversion; model_inversion_scenarios.json. Failure probabilities are scenarios, not data estimates.
@@ -157,6 +156,10 @@ Version 3.0 adds one analysis, code/related_party.py (Table 6, new Section 5), a
 - Runtime: related_party.py took 19 minutes in the clean full run of 24 September 2026 (999 draws, each with least squares, Huber and two trims on three samples plus two splits); the whole master script took 29 minutes.
 
 The party extract covers house deeds only, so condominium estimates are not adjusted. A shared surname is a proxy for a relationship: it misses relatives with different surnames and can match unrelated people.
+
+## V3.2: lender take-title sensitivity (25 September 2026)
+
+`code/legal_rule_screen.py` applies the companion deed classifier (vendored, module 1.1.0) to the 6,006 headline pairs and refits on the common 999 draws: 93 flagged pairs; excluding them gives 9.78 [7.73, 11.84], a paired change of +0.52 [0.19, 0.97]; with the same-surname screen, 5.35 [3.23, 7.35]. Output: results/legal_rule_screen.json and paper/generated/legal_numbers.tex. This stage was run on 25 September 2026 with Python 3.14.7 and current NumPy, pandas and SciPy rather than the pinned 3.12 environment; the script asserts that it reproduces the published headline (9.25) and the published bootstrap interval of the headline to 1e-7 before reporting anything, and both checks passed. It took 82 minutes on eight cores. No other stage was rerun for v3.2; the manuscript was rebuilt with Tectonic. The analyst key (`audit/focused_review_ANALYST_KEY.csv`) is not in the public v3.2 archive, so that reviewers cannot see the answers. Its SHA-256 is `c57075d1462c944cd784f1b7ad44b2c2c71c9708bc7011e73ad9de84723c0ca0`. `code/focused_validation.py` regenerates the same file deterministically from the archived inputs and seeds, so anyone can confirm the key after the review. Earlier archives (v3.1) did include it; reviewers are asked not to open any package or repository for this paper until both sheets are locked.
 
 ## V3.1: condominium screen, shared-address sensitivity and wording (24 September 2026)
 
