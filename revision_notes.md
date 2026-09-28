@@ -4,6 +4,13 @@ Pablo Loschi · ORCID 0009-0004-9455-4713 · concept DOI 10.5281/zenodo.22421850
 
 All numbers are in log points (100 × log-price difference) unless stated otherwise. Intervals are 95% percentile intervals from the same 999 parcel-bootstrap draws (seed 20260909) used since v2.1.
 
+## v3.3 (28 September 2026): instrument review of the 53-pair queue
+
+- **Review.** The original protocol called for two human readers; this version uses two independent AI readings instead. ChatGPT read the deed and candidate mortgages for all 106 endpoints; Claude checked each reading against ACRIS open data and returned five for a second look. Readings were locked before the analyst key was opened; the key (SHA-256 c57075d1…0ca0, as published with v3.2) is now deposited.
+- **Results.** 54 of 56 financed labels are confirmed by a documented purchase mortgage. 4 of 50 cash labels (8%; 95% interval 3–19%) have a same-day purchase mortgage: two because the city's index dates the mortgage or the deed a year from its true date, two because the loan is recorded against two adjoining lots. No reading establishes a cash purchase, so pair-level error bounds stay wide (6.2–100% in the probability arms).
+- **Headline.** Dropping the four pairs with a documented error gives 9.40 log points (analytic interval [7.59, 11.21]) against 9.25 [7.44, 11.07] on the same interval. The bootstrap headline and every other estimate are unchanged.
+- **Text.** Abstract, conclusion, Appendix (focused validation) and the generative-AI statement updated. New macros in `paper/generated/review_numbers.tex`, written by `code/cross_ai_review.py`, which the master now runs.
+
 ## v3.2 (25 September 2026): lender take-title sensitivity, companion links, review queue
 
 The companion paper *When a Deed Is Not a Market Sale* shows that foreclosure and deed-in-lieu transfers to lenders can record an amount set by a legal rule instead of a price. v3.2 applies that paper's party-name classifier (module version 1.1.0, copied unchanged to `replication/code/vendor/acris_consideration_filter.py`) to the deeds linked to the 6,006 headline pairs, using `replication/code/legal_rule_screen.py` and the same 999 bootstrap draws.

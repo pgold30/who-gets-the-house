@@ -4,7 +4,7 @@ Pablo Loschi
 
 Who Gets the House? Related-Party Transfers and the Cash–Mortgage Price Gap in New York City
 
-Author declarations confirmed 10 September 2026; included in the 25 September 2026 version 3.2.
+Author declarations confirmed 10 September 2026; included in the 28 September 2026 version 3.3.
 
 I am an independent researcher based in Berlin, Germany. This research received no external funding. I have no relevant financial interests or positions to disclose. No outside party has the right to review this research before its dissemination.
 

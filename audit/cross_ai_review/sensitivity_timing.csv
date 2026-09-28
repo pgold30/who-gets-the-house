@@ -1,0 +1,3 @@
+case_id,endpoint,field,value,source,reason
+H027,a,purchase_vs_refinance,UNKNOWN,Claude sensitivity 2026-09-28,Mortgage dated 25 days after the transfer; no purchase-money statement on the pages Luna read; may be post-closing (delayed) financing of a cash purchase.
+H050,z,purchase_vs_refinance,UNKNOWN,Claude sensitivity 2026-09-28,"Same-day $3.55M private-lender loan (Broad X Funding) against a $730,000 price, with assignment of leases and rents; an acquisition-and-development facility whose purchase share is not documented."

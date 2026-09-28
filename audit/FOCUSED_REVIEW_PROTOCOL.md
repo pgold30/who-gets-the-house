@@ -1,5 +1,7 @@
 # Independent house-instrument review
 
+> **Note added in v3.3.** This is the protocol as prepared in v3.1–v3.2. It called for two human readers; the review reported in v3.3 uses two independent AI readings instead, with the same queue, codes and scoring rules. See `audit/cross_ai_review/README.md`.
+
 This queue is prepared, not completed. An AI reading of instruments may assist retrieval, but must not be described as independent human verification.
 
 Give the reviewer **focused_blinded_house_review.csv**. Do not give them **focused_review_ANALYST_KEY.csv**, regression outputs or price changes until adjudication is complete. The source deeds may reveal consideration; blinding removes it from the queue, not from underlying legal records. Both endpoints of each pair are listed. Current loan IDs are absent from the archived panel and must be retrieved from genuine source records.

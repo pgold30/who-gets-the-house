@@ -1,0 +1,140 @@
+{
+  "key_sha256": "c57075d1462c944cd784f1b7ad44b2c2c71c9708bc7011e73ad9de84723c0ca0",
+  "main": {
+    "endpoints": {
+      "financed_confirmed": 54,
+      "financed_total": 56,
+      "cash_with_mortgage": 4,
+      "cash_total": 50,
+      "cash_with_mortgage_95ci": [
+        0.03154951408859298,
+        0.18838246918342832
+      ]
+    },
+    "label_errors": [
+      "H024-z",
+      "H032-z",
+      "H034-z",
+      "H050-z"
+    ],
+    "error_pairs": [
+      "H024",
+      "H032",
+      "H034",
+      "H050"
+    ],
+    "probability_arms": {
+      "cash_to_financed": {
+        "population_pairs": 1044,
+        "counts": {
+          "error": 0,
+          "correct": 0,
+          "unknown": 20
+        }
+      },
+      "financed_to_cash": {
+        "population_pairs": 737,
+        "counts": {
+          "error": 3,
+          "correct": 0,
+          "unknown": 17
+        }
+      }
+    },
+    "pair_error_bounds": [
+      0.06207186973610331,
+      1.0
+    ],
+    "targeted": {
+      "error": 1,
+      "correct": 3,
+      "unknown": 9
+    },
+    "headline": {
+      "published": {
+        "pairs": 6006,
+        "logpoints": 9.25135499897151,
+        "ci": [
+          7.436250920738139,
+          11.066459077204877
+        ]
+      },
+      "corrected": {
+        "pairs": 6002,
+        "logpoints": 9.39932802949453,
+        "ci": [
+          7.587558919225157,
+          11.211097139763904
+        ]
+      }
+    }
+  },
+  "sensitivity_timing": {
+    "endpoints": {
+      "financed_confirmed": 53,
+      "financed_total": 56,
+      "cash_with_mortgage": 3,
+      "cash_total": 50,
+      "cash_with_mortgage_95ci": [
+        0.02061497034897397,
+        0.16217091688838167
+      ]
+    },
+    "label_errors": [
+      "H024-z",
+      "H032-z",
+      "H034-z"
+    ],
+    "error_pairs": [
+      "H024",
+      "H032",
+      "H034"
+    ],
+    "probability_arms": {
+      "cash_to_financed": {
+        "population_pairs": 1044,
+        "counts": {
+          "error": 0,
+          "correct": 0,
+          "unknown": 20
+        }
+      },
+      "financed_to_cash": {
+        "population_pairs": 737,
+        "counts": {
+          "error": 2,
+          "correct": 0,
+          "unknown": 18
+        }
+      }
+    },
+    "pair_error_bounds": [
+      0.041381246490735546,
+      1.0
+    ],
+    "targeted": {
+      "error": 1,
+      "correct": 2,
+      "unknown": 10
+    },
+    "headline": {
+      "published": {
+        "pairs": 6006,
+        "logpoints": 9.25135499897151,
+        "ci": [
+          7.436250920738139,
+          11.066459077204877
+        ]
+      },
+      "corrected": {
+        "pairs": 6003,
+        "logpoints": 9.386812546818168,
+        "ci": [
+          7.578858342950653,
+          11.194766750685684
+        ]
+      }
+    }
+  },
+  "note": "Analytic parcel-clustered intervals for both the published and the corrected fit."
+}

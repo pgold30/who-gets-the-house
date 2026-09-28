@@ -2,7 +2,7 @@
 
 Who Gets the House? Related-Party Transfers and the Cash–Mortgage Price Gap in New York City
 
-Pablo Loschi, independent researcher, Berlin. Contact: loschi.pablo@gmail.com. Version 3.2 (WGTH-2026-09-25-V3.2), prepared 25 September 2026. This self-contained package accompanies paper/paper.pdf for Journal of Housing Economics. It requires no earlier revision folders. Nothing has been submitted or uploaded by this workflow.
+Pablo Loschi, independent researcher, Berlin. Contact: loschi.pablo@gmail.com. Version 3.3 (WGTH-2026-09-28-V3.3), prepared 28 September 2026. This self-contained package accompanies paper/paper.pdf for Journal of Housing Economics. It requires no earlier revision folders. Nothing has been submitted or uploaded by this workflow.
 
 ## Computational scope and unresolved omissions
 
@@ -10,7 +10,7 @@ The offline analysis run reproduces the baseline calculations from the four supp
 
 The original raw-stage scripts are preserved under legacy_raw_pipeline for provenance, but contain historical paths and an incomplete retrieval-to-analysis integration. Their retrieval wrapper writes NDJSON while linkage scripts expect other filenames/formats, and it is not the master script for this revision. Refreshing today's APIs is a new data vintage, not proof of exact reconstruction of the original extract. Recovering the original raw inputs and running an integrated raw build remains necessary before claiming full raw-to-paper replication.
 
-The consolidated audit includes AI-assisted image review of two house and two co-operative cases, with independent human review pending. One co-operative filing pledges a different unit from its assigned sale; that sale enters no repeat pair and its rejection does not change the estimates. The 90+90 queues remain incomplete. Saved evidence and case notes are in audit; no population accuracy rate or classification-adjusted estimate is claimed. These remain substantive measurement limitations.
+The consolidated audit includes AI-assisted image review of two house and two co-operative cases, read with AI assistance. One co-operative filing pledges a different unit from its assigned sale; that sale enters no repeat pair and its rejection does not change the estimates. The 90+90 queues remain incomplete. Saved evidence and case notes are in audit; no population accuracy rate or classification-adjusted estimate is claimed. These remain substantive measurement limitations.
 
 ## Provenance of the four archived inputs
 
@@ -75,7 +75,7 @@ The paper source and bibliography are in paper. code/build_exhibits.py regenerat
 - code/robust_estimators.py: Table 3, Huber and trimmed re-estimates of the headline and common borough-quarter house/condominium contrasts on the same 999 parcel-bootstrap draws; robust_estimates.json and robust_bootstrap_*.csv.
 - code/related_party.py: Table 6, same-surname (probable related-party) deed flags and the company/other cash-buyer split, on the same 999 parcel-bootstrap draws; related_party.json, related_party_flags.csv, generated/related.tex and related_numbers.tex. `--from-results` rebuilds the table and macros from related_party.json.
 - code/related_party_extensions.py: Table 7, the same-surname screen applied to houses and condominiums under the common borough-quarter design, and the shared-address sensitivity; related_party_extensions.json, generated/related_ext.tex and related_ext_numbers.tex. Inputs: data/condo_pairs_with_deeds.csv.gz, data/condo_parties.json.gz, data/house_party_addresses.json.gz (retrieval manifests data/condo_fetch_manifest.json and data/address_fetch_manifest.json; retrieval scripts in provenance/astra_v3_audit/).
-- code/legal_rule_screen.py: lender take-title sensitivity (v3.2). Applies the companion paper's party-name classifier (When a Deed Is Not a Market Sale, module version 1.1.0, vendored unchanged as code/vendor/acris_consideration_filter.py, SHA-256 1b649ff08f9967b435a5f7da6696c432b03eee4d12799a11a7c762cc83c544f8; concept DOI 10.5281/zenodo.22925383) to the endpoint deeds of the 6,006 headline pairs and refits on the same 999 parcel-bootstrap draws; legal_rule_screen.json and generated/legal_numbers.tex. `--from-results` rebuilds the macros. The classifier's own document review is pending, so this is a sensitivity, not a correction.
+- code/legal_rule_screen.py: lender take-title sensitivity (v3.2). Applies the companion paper's party-name classifier (When a Deed Is Not a Market Sale, module version 1.1.0, vendored unchanged as code/vendor/acris_consideration_filter.py, SHA-256 1b649ff08f9967b435a5f7da6696c432b03eee4d12799a11a7c762cc83c544f8; concept DOI 10.5281/zenodo.22925383) to the endpoint deeds of the 6,006 headline pairs and refits on the same 999 parcel-bootstrap draws; legal_rule_screen.json and generated/legal_numbers.tex. `--from-results` rebuilds the macros. The companion paper's document review (v1.0.3) puts the classifier's precision at 0.993; the exclusion remains a sensitivity, not a correction.
 - code/property_comparison.py: Table 4, common borough-quarter house/condominium estimates in property_comparison.json.
 - code/analyze_repeat_sales.py plus additional_checks.py: Table 5, financing-window, institutional-name and unique-deed/amount sensitivities; Table 9, credit conditions and calendar-trend sensitivity.
 - code/build_exhibits.py: Table 8, the conditional model inversion; model_inversion_scenarios.json. Failure probabilities are scenarios, not data estimates.
@@ -122,7 +122,7 @@ code/focused_validation.py reconstructs the 6,006 house pairs from archived rows
 
 The most adverse reported deletion removes 60 parcels selected for largest positive influence and reduces the contrast to 4.68 log points. Outcome-selected deletion is a diagnostic, not a new preferred sample; ordinary reported intervals do not account for selection. The outcome-perturbation scenarios hold financing labels and the design fixed and are not misclassification bounds. All fits are in results/focused_validation.json and focused_validation_refits.csv.
 
-The new audit/focused_blinded_house_review.csv is prepared for an independent reader. Its analyst key includes selection information withheld from the reader-facing file. Forty randomly sampled switching pairs are distinct from targeted cases; their sample does not represent all house transactions. No new independent human reviews are claimed. audit/FOCUSED_REVIEW_PROTOCOL.md explains evidence and adjudication requirements. Both existing and new queues must remain unreviewed until actual documented examination occurs.
+audit/focused_blinded_house_review.csv is the frozen 106-endpoint review queue; its analyst key, audit/focused_review_ANALYST_KEY.csv, is deposited from v3.3. Forty randomly sampled switching pairs are distinct from targeted cases; their sample does not represent all house transactions. The queue was reviewed in v3.3 by two AI systems (audit/cross_ai_review/, code/cross_ai_review.py); see the V3.3 section below.
 
 provenance/FOCUSED_VALIDATION_PLAN.md distinguishes the original pre-fit plan from source-triggered additions. code/build_focused_exhibits.py builds the new appendix table from saved results. The default master includes these stages; --from-results regenerates the exhibit without rerunning estimation. This release does not refresh raw government sources or reconstruct the original raw panel.
 
@@ -156,6 +156,16 @@ Version 3.0 adds one analysis, code/related_party.py (Table 6, new Section 5), a
 - Runtime: related_party.py took 19 minutes in the clean full run of 24 September 2026 (999 draws, each with least squares, Huber and two trims on three samples plus two splits); the whole master script took 29 minutes.
 
 The party extract covers house deeds only, so condominium estimates are not adjusted. A shared surname is a proxy for a relationship: it misses relatives with different surnames and can match unrelated people.
+
+## V3.3: cross-AI instrument review (28 September 2026)
+
+The original protocol (audit/FOCUSED_REVIEW_PROTOCOL.md) called for two human readers; this version uses two independent AI readings instead. ChatGPT read the deed and candidate mortgages for all 106 endpoints (audit/cross_ai_review/house_readings_chatgpt.csv); Claude checked every reading against ACRIS open data (opendata_check_claude.csv) and returned five for a second look (reread_notes_chatgpt.md). The readings were locked before the analyst key was opened; the key's SHA-256 (c57075d1…0ca0) matches the value published with v3.2.
+
+code/cross_ai_review.py (added to the master after deed_review_summary.py) scores the labels and writes results/cross_ai_review.json and paper/generated/review_numbers.tex:
+- Financed labels confirmed by a documented purchase mortgage: 54 of 56.
+- Cash labels with a same-day purchase mortgage: 4 of 50 (8%; Wilson 95% interval 3–19%). Two follow from index date errors (one mortgage, one deed, each indexed a year from its true date); two are loans recorded against two adjoining lots.
+- No reading establishes a cash purchase, so pair-level error bounds in the probability arms stay 6.2–100%.
+- Dropping the four pairs with a documented error: 9.40 log points (analytic interval [7.59, 11.21]) against 9.25 [7.44, 11.07] on the same interval. Timing sensitivity (sensitivity_timing.csv): 3 errors, 9.39.
 
 ## V3.2: lender take-title sensitivity (25 September 2026)
 
