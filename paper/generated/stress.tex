@@ -1,0 +1,17 @@
+\begin{table}[htbp]\centering\caption{Conditional stress test: random recoding of unreviewed cash labels}\label{tab:stress}
+\footnotesize\setlength{\tabcolsep}{3.5pt}\begin{tabular}{llccc}\toprule
+Share recoded, & Share recoded, & All pairs & Without same- & Share of contrast \\
+financed-to-cash arm & cash-to-financed arm & & surname pairs & removed by screen \\\midrule
+\multicolumn{2}{l}{Corrected baseline, no recoding} & 9.40 & 4.89 & 48\% \\\addlinespace
+0.10 (2 of 20) & 0.00 & 9.33 [8.81, 9.82] & 4.87 [4.41, 5.31] & 48\% [45, 51] \\
+0.10 (2 of 20) & 0.08 & 9.26 [8.57, 9.93] & 4.78 [4.11, 5.44] & 48\% [45, 52] \\
+0.10 (2 of 20) & 0.16 & 9.20 [8.47, 9.86] & 4.75 [4.01, 5.35] & 48\% [45, 54] \\
+0.15 (3 of 20) & 0.00 & 9.34 [8.66, 9.97] & 4.87 [4.28, 5.40] & 48\% [44, 52] \\
+0.15 (3 of 20) & 0.08 & 9.24 [8.53, 10.00] & 4.79 [4.10, 5.51] & 48\% [44, 52] \\
+0.15 (3 of 20) & 0.16 & 9.22 [8.47, 10.06] & 4.78 [4.06, 5.60] & 48\% [43, 53] \\
+0.36 (upper limit) & 0.00 & 9.17 [8.04, 10.30] & 4.78 [3.72, 5.90] & 48\% [41, 56] \\
+0.36 (upper limit) & 0.08 & 9.13 [8.04, 10.13] & 4.69 [3.67, 5.77] & 49\% [41, 56] \\
+0.36 (upper limit) & 0.16 & 9.13 [7.92, 10.40] & 4.76 [3.56, 5.90] & 48\% [40, 57] \\
+\bottomrule\end{tabular}
+\notes{Headline joint model, log points. Baseline: the 6,002 pairs left after removing the four pairs with a documented label error (Appendix~\ref{sec:focusedvalidation}); 5,645 without same-surname pairs. Each draw recodes, at random, the stated share of the 712 unreviewed financed-to-cash pairs and of the 1,019 unreviewed cash-to-financed pairs from cash to financed at their cash endpoint; the 49 reviewed pairs keep their labels. Both columns are fitted on the same recoded data. Entries are means over 200 draws, with the 2.5th and 97.5th percentiles of the point estimates in brackets; these are scenario ranges, not confidence intervals. Shares are assumed scenarios informed by the review's detected discrepancies (2 of 20 under the strict coding, 3 of 20 under the lenient one; 0.36 and 0.16 are Wilson upper limits), not measured error rates. \texttt{code/financing\_stress\_test.py}.}
+\end{table}

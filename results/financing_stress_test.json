@@ -1,0 +1,206 @@
+{
+ "seed": 20260930,
+ "draws_per_cell": 200,
+ "baseline": {
+  "pairs": 6002,
+  "full": 9.39932802949453,
+  "full_ci": [
+   7.587558919225157,
+   11.211097139763904
+  ],
+  "pairs_no_related": 5645,
+  "no_related": 4.892711111378126,
+  "no_related_ci": [
+   3.1973582589680136,
+   6.588063963788238
+  ]
+ },
+ "arms": {
+  "fc_unreviewed": 712,
+  "cf_unreviewed": 1019,
+  "reviewed_kept_fixed": 49
+ },
+ "cells": {
+  "q_fc=0.1|q_cf=0.0": {
+   "draws": 200,
+   "full_mean": 9.332356570262446,
+   "full_range": [
+    8.805000177044068,
+    9.824111718272892
+   ],
+   "no_related_mean": 4.868210797322982,
+   "no_related_range": [
+    4.41295922755465,
+    5.309230855891873
+   ],
+   "share_removed_by_screen_mean": 0.47852576121639273,
+   "share_removed_range": [
+    0.44654043459625037,
+    0.5098086681463548
+   ],
+   "min_full": 8.387806404801882,
+   "min_no_related": 4.050107870813087
+  },
+  "q_fc=0.1|q_cf=0.08": {
+   "draws": 200,
+   "full_mean": 9.257574716477697,
+   "full_range": [
+    8.573537414741937,
+    9.927008812989934
+   ],
+   "no_related_mean": 4.778950246195216,
+   "no_related_range": [
+    4.111690610518117,
+    5.442499384442672
+   ],
+   "share_removed_by_screen_mean": 0.4842736835255023,
+   "share_removed_range": [
+    0.4475110702225251,
+    0.5230716213444314
+   ],
+   "min_full": 8.35422983021804,
+   "min_no_related": 3.8457486781171375
+  },
+  "q_fc=0.1|q_cf=0.16": {
+   "draws": 200,
+   "full_mean": 9.202169236548189,
+   "full_range": [
+    8.466735915835427,
+    9.855175554507564
+   ],
+   "no_related_mean": 4.749652341787254,
+   "no_related_range": [
+    4.0057353762572605,
+    5.347127150552521
+   ],
+   "share_removed_by_screen_mean": 0.48438877395770036,
+   "share_removed_range": [
+    0.44527699908786134,
+    0.5364489809348085
+   ],
+   "min_full": 8.308647418413015,
+   "min_no_related": 3.7995429973512103
+  },
+  "q_fc=0.15|q_cf=0.0": {
+   "draws": 200,
+   "full_mean": 9.34096660232751,
+   "full_range": [
+    8.661155046444982,
+    9.967601499113277
+   ],
+   "no_related_mean": 4.872972861026255,
+   "no_related_range": [
+    4.282464160709217,
+    5.404109668745049
+   ],
+   "share_removed_by_screen_mean": 0.47859011939845403,
+   "share_removed_range": [
+    0.4426508697945082,
+    0.5199395986314328
+   ],
+   "min_full": 8.467040090284378,
+   "min_no_related": 3.826284029692406
+  },
+  "q_fc=0.15|q_cf=0.08": {
+   "draws": 200,
+   "full_mean": 9.23812626418426,
+   "full_range": [
+    8.533978316393307,
+    9.995612552766119
+   ],
+   "no_related_mean": 4.787460743933138,
+   "no_related_range": [
+    4.096492507162264,
+    5.505350113140596
+   ],
+   "share_removed_by_screen_mean": 0.4821950828574277,
+   "share_removed_range": [
+    0.4377420760713471,
+    0.5240341136110271
+   ],
+   "min_full": 8.377474216973983,
+   "min_no_related": 3.9951590778822945
+  },
+  "q_fc=0.15|q_cf=0.16": {
+   "draws": 200,
+   "full_mean": 9.217313942769097,
+   "full_range": [
+    8.469601665966943,
+    10.058798121666166
+   ],
+   "no_related_mean": 4.775342063617144,
+   "no_related_range": [
+    4.055503348665517,
+    5.595984304118142
+   ],
+   "share_removed_by_screen_mean": 0.48249316008742704,
+   "share_removed_range": [
+    0.4296370277405175,
+    0.5338719688587275
+   ],
+   "min_full": 8.261129005268092,
+   "min_no_related": 3.6844361968438553
+  },
+  "q_fc=0.36|q_cf=0.0": {
+   "draws": 200,
+   "full_mean": 9.171734791294863,
+   "full_range": [
+    8.040266288214758,
+    10.302490541583525
+   ],
+   "no_related_mean": 4.778329570946641,
+   "no_related_range": [
+    3.7152456294931504,
+    5.901857510622482
+   ],
+   "share_removed_by_screen_mean": 0.47995381922947145,
+   "share_removed_range": [
+    0.40627939154192616,
+    0.560092934757473
+   ],
+   "min_full": 7.2324067412041755,
+   "min_no_related": 2.5766092072489157
+  },
+  "q_fc=0.36|q_cf=0.08": {
+   "draws": 200,
+   "full_mean": 9.133765985283313,
+   "full_range": [
+    8.03988762128788,
+    10.127439666440974
+   ],
+   "no_related_mean": 4.694826448212098,
+   "no_related_range": [
+    3.6715474779889234,
+    5.766390316659632
+   ],
+   "share_removed_by_screen_mean": 0.4868464778725077,
+   "share_removed_range": [
+    0.41496256745659293,
+    0.5645946689523994
+   ],
+   "min_full": 7.73212796786974,
+   "min_no_related": 3.3043636658110076
+  },
+  "q_fc=0.36|q_cf=0.16": {
+   "draws": 200,
+   "full_mean": 9.129007864259012,
+   "full_range": [
+    7.923487859449696,
+    10.39934526481085
+   ],
+   "no_related_mean": 4.7628749445602105,
+   "no_related_range": [
+    3.5610714113261546,
+    5.895235377526306
+   ],
+   "share_removed_by_screen_mean": 0.4795818266445073,
+   "share_removed_range": [
+    0.39913341978544337,
+    0.5708115997019151
+   ],
+   "min_full": 7.592466461498254,
+   "min_no_related": 3.181509343641367
+  }
+ },
+ "note": "Conditional stress test of the house contrast to hidden purchase mortgages (v3.4).\n\nThe instrument review (cross_ai_review.py) found a purchase mortgage behind 4\nof 50 cash-labelled endpoints: 3 of the 20 sampled pairs in the\nfinanced-to-cash arm under the lenient coding (2 of 20 if the two-lot\ndevelopment loan H050-z is left unresolved), and none of the 20 in the\ncash-to-financed arm. This script asks how far the contrast would move if\nsimilar errors existed elsewhere.\n\nBaseline: the corrected headline sample of Appendix G (the four pairs with a\ndocumented error removed; 9.40 log points). All 53 reviewed pairs keep their\nlabels. In each draw a share q_fc of the unreviewed financed-to-cash pairs has\nits cash endpoint recoded to financed, and a share q_cf of the unreviewed\ncash-to-financed pairs likewise. Each pair in a switching arm has exactly one\ncash-labelled endpoint, so arm-specific shares are the natural unit. The same\nrecoded data are fitted with and without same-surname pairs, so the two\nestimates and their difference are paired within a draw.\n\nThe rates are assumed scenarios informed by the detected shares, not measured\nerror prevalence: 0.10 and 0.15 are the strict and lenient detected shares in\nthe financed-to-cash arm, 0.36 is the Wilson upper limit of 3 of 20, and 0.16\nthat of 0 of 20. Recoding is random within an arm and goes only in the\ndirection the review can detect; financed labels that are really cash cannot\nbe established from the documents. The ranges reported are the 2.5-97.5\npercentiles of point estimates across draws, not confidence intervals.\n\nWrites results/financing_stress_test.json, paper/generated/stress.tex and\npaper/generated/stress_numbers.tex.\n"
+}

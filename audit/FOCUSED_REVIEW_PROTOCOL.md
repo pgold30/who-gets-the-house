@@ -1,6 +1,6 @@
 # Independent house-instrument review
 
-> **Note added in v3.3.** This is the protocol as prepared in v3.1–v3.2. It called for two human readers; the review reported in v3.3 uses two independent AI readings instead, with the same queue, codes and scoring rules. See `audit/cross_ai_review/README.md`.
+> **Note added in v3.3.** This is the protocol as prepared in v3.1–v3.2. It called for two human readers; the review reported from v3.3 uses AI readings instead, with the same queue, codes and scoring rules. See `audit/cross_ai_review/README.md`.
 
 This queue is prepared, not completed. An AI reading of instruments may assist retrieval, but must not be described as independent human verification.
 

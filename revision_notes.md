@@ -4,9 +4,19 @@ Pablo Loschi · ORCID 0009-0004-9455-4713 · concept DOI 10.5281/zenodo.22421850
 
 All numbers are in log points (100 × log-price difference) unless stated otherwise. Intervals are 95% percentile intervals from the same 999 parcel-bootstrap draws (seed 20260909) used since v2.1.
 
+## v3.4 (29 September 2026): conditional stress test; review wording
+
+- **Stress test (new Table 13, Appendix G; `code/financing_stress_test.py`).** How far would the contrast move if unreviewed cash labels hid purchase mortgages like those the review found?
+  - Design: start from the corrected sample (9.40; 4.89 without same-surname pairs) and keep the 49 remaining reviewed pairs fixed. Then recode at random 10%, 15% or 36% of the unreviewed financed-to-cash pairs, and 0%, 8% or 16% of the unreviewed cash-to-financed pairs, from cash to financed; 200 draws per cell. The same recoded data are fitted with and without same-surname pairs.
+  - Results: the mean contrast stays between 9.13 and 9.34 (4.69–4.87 without same-surname pairs). The surname screen removes 48–49% of the contrast in every cell.
+  - Limits: the shares are scenarios informed by the detected discrepancies, and the ranges are percentiles of point estimates, not confidence intervals. The test does not model errors correlated with price growth, financed labels that are really cash, or cash–cash pairs that would become switchers.
+- **Correction.** v3.3 said that misclassifying financed purchases as cash would, if anything, shrink the contrast. The documented corrections raise it slightly, but the random recoding lowers it slightly, so the direction depends on which pairs carry the errors. The sentence now says so.
+- **Review wording.** v3.3 described the review as "two independent AI readings". ChatGPT read the documents and Claude then checked each reading against ACRIS open data; Claude did not read the images. The abstract, Appendix G, conclusion, declarations, cover letter and review files now say this. The rates measure agreement with the readings, not accuracy against a verified record.
+- **Unchanged.** No other estimate. An earlier version of the stress test, run outside the package, was reproduced exactly by an AI cross-check (ChatGPT/Codex), whose three requested changes are made here.
+
 ## v3.3 (28 September 2026): instrument review of the 53-pair queue
 
-- **Review.** The original protocol called for two human readers; this version uses two independent AI readings instead. ChatGPT read the deed and candidate mortgages for all 106 endpoints; Claude checked each reading against ACRIS open data and returned five for a second look. Readings were locked before the analyst key was opened; the key (SHA-256 c57075d1…0ca0, as published with v3.2) is now deposited.
+- **Review.** The original protocol called for two human readers; this version uses AI (v3.4 wording: ChatGPT read the documents and Claude then checked each reading against open data). ChatGPT read the deed and candidate mortgages for all 106 endpoints; Claude checked each reading against ACRIS open data and returned five for a second look. Readings were locked before the analyst key was opened; the key (SHA-256 c57075d1…0ca0, as published with v3.2) is now deposited.
 - **Results.** 54 of 56 financed labels are confirmed by a documented purchase mortgage. 4 of 50 cash labels (8%; 95% interval 3–19%) have a same-day purchase mortgage: two because the city's index dates the mortgage or the deed a year from its true date, two because the loan is recorded against two adjoining lots. No reading establishes a cash purchase, so pair-level error bounds stay wide (6.2–100% in the probability arms).
 - **Headline.** Dropping the four pairs with a documented error gives 9.40 log points (analytic interval [7.59, 11.21]) against 9.25 [7.44, 11.07] on the same interval. The bootstrap headline and every other estimate are unchanged.
 - **Text.** Abstract, conclusion, Appendix (focused validation) and the generative-AI statement updated. New macros in `paper/generated/review_numbers.tex`, written by `code/cross_ai_review.py`, which the master now runs.

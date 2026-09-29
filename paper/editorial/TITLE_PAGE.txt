@@ -10,8 +10,8 @@ ORCID: 0009-0004-9455-4713
 
 Journal: Journal of Housing Economics
 
-Version: WGTH-2026-09-28-V3.3
+Version: WGTH-2026-09-29-V3.4
 
-28 September 2026
+29 September 2026
 
 Sole author. No external funding, relevant financial interests or positions, or outside review rights. Not under review elsewhere.

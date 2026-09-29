@@ -1,6 +1,6 @@
 # Cross-AI review of the 106-endpoint house queue (v3.3)
 
-The original protocol (`audit/FOCUSED_REVIEW_PROTOCOL.md`) called for two human readers; this version uses two independent AI readings instead.
+The original protocol (`audit/FOCUSED_REVIEW_PROTOCOL.md`) called for two human readers; this version uses AI instead: ChatGPT read the documents and Claude then checked each reading against ACRIS open data. Claude did not read the images, so these are not independent readings, and the rates measure agreement with the readings, not accuracy against a verified record.
 
 | File | What it is |
 |---|---|

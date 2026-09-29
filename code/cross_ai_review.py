@@ -1,7 +1,8 @@
 """Score the house financing labels against the cross-AI instrument review.
 
 The original protocol (audit/FOCUSED_REVIEW_PROTOCOL.md) called for two human
-readers; this version uses two independent AI readings instead. ChatGPT read the
+readers; this version uses AI instead, and the rates measure agreement with the
+readings, not accuracy against a verified record. ChatGPT read the
 deed and candidate mortgages for all 106 endpoints of the frozen queue
 (audit/cross_ai_review/house_readings_chatgpt.csv). Claude checked each reading
 against ACRIS open data (opendata_check_claude.csv) and returned inconsistent

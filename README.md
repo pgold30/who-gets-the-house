@@ -2,7 +2,7 @@
 
 Who Gets the House? Related-Party Transfers and the Cash–Mortgage Price Gap in New York City
 
-Pablo Loschi, independent researcher, Berlin. Contact: loschi.pablo@gmail.com. Version 3.3 (WGTH-2026-09-28-V3.3), prepared 28 September 2026. This self-contained package accompanies paper/paper.pdf for Journal of Housing Economics. It requires no earlier revision folders. Nothing has been submitted or uploaded by this workflow.
+Pablo Loschi, independent researcher, Berlin. Contact: loschi.pablo@gmail.com. Version 3.4 (WGTH-2026-09-29-V3.4), prepared 29 September 2026. This self-contained package accompanies paper/paper.pdf for Journal of Housing Economics. It requires no earlier revision folders. Nothing has been submitted or uploaded by this workflow.
 
 ## Computational scope and unresolved omissions
 
@@ -122,7 +122,7 @@ code/focused_validation.py reconstructs the 6,006 house pairs from archived rows
 
 The most adverse reported deletion removes 60 parcels selected for largest positive influence and reduces the contrast to 4.68 log points. Outcome-selected deletion is a diagnostic, not a new preferred sample; ordinary reported intervals do not account for selection. The outcome-perturbation scenarios hold financing labels and the design fixed and are not misclassification bounds. All fits are in results/focused_validation.json and focused_validation_refits.csv.
 
-audit/focused_blinded_house_review.csv is the frozen 106-endpoint review queue; its analyst key, audit/focused_review_ANALYST_KEY.csv, is deposited from v3.3. Forty randomly sampled switching pairs are distinct from targeted cases; their sample does not represent all house transactions. The queue was reviewed in v3.3 by two AI systems (audit/cross_ai_review/, code/cross_ai_review.py); see the V3.3 section below.
+audit/focused_blinded_house_review.csv is the frozen 106-endpoint review queue; its analyst key, audit/focused_review_ANALYST_KEY.csv, is deposited from v3.3. Forty randomly sampled switching pairs are distinct from targeted cases; their sample does not represent all house transactions. The queue was reviewed in v3.3 with AI: ChatGPT read the documents and Claude then checked each reading against open data (audit/cross_ai_review/, code/cross_ai_review.py); see the V3.3 and V3.4 sections below.
 
 provenance/FOCUSED_VALIDATION_PLAN.md distinguishes the original pre-fit plan from source-triggered additions. code/build_focused_exhibits.py builds the new appendix table from saved results. The default master includes these stages; --from-results regenerates the exhibit without rerunning estimation. This release does not refresh raw government sources or reconstruct the original raw panel.
 
@@ -157,9 +157,17 @@ Version 3.0 adds one analysis, code/related_party.py (Table 6, new Section 5), a
 
 The party extract covers house deeds only, so condominium estimates are not adjusted. A shared surname is a proxy for a relationship: it misses relatives with different surnames and can match unrelated people.
 
+## V3.4: conditional stress test and review wording (29 September 2026)
+
+code/financing_stress_test.py (added to the master after cross_ai_review.py; about 2 minutes on eight cores) asks how far the house contrast would move if unreviewed cash labels hid purchase mortgages like the ones the review found. It starts from the corrected sample (the four pairs with a documented error removed: 9.40; 4.89 without same-surname pairs), keeps the 49 remaining reviewed pairs at their labels, and recodes at random a share of the 712 unreviewed financed-to-cash pairs (0.10, 0.15, 0.36) and of the 1,019 unreviewed cash-to-financed pairs (0, 0.08, 0.16) from cash to financed at their cash endpoint, 200 draws per cell (seed 20260930). Each draw fits the same recoded data with and without same-surname pairs, so the two are paired. Mean contrasts: 9.13–9.34 (all pairs), 4.69–4.87 (without same-surname pairs); the screen removes 48–49% of the contrast in every cell. Outputs: results/financing_stress_test.json, paper/generated/stress.tex (Table 13) and stress_numbers.tex. The shares are scenarios informed by detected discrepancies, not measured error rates; the ranges are percentiles of point estimates, not confidence intervals; errors correlated with price growth, financed labels that are really cash and cash–cash pairs that would become switchers are not modelled.
+
+An earlier version of this analysis, run outside the package from the published labels, was reproduced exactly by an AI cross-check (ChatGPT/Codex), which asked for three changes made here: start from the corrected baseline with known decisions fixed, pair the two samples within each draw, and describe the results as a conditional stress test.
+
+The v3.3 text described the review as "two independent AI readings". ChatGPT read the documents and Claude then checked each reading against open data; Claude did not read the images. The paper, this README and the review files now say so. No other estimate changes.
+
 ## V3.3: cross-AI instrument review (28 September 2026)
 
-The original protocol (audit/FOCUSED_REVIEW_PROTOCOL.md) called for two human readers; this version uses two independent AI readings instead. ChatGPT read the deed and candidate mortgages for all 106 endpoints (audit/cross_ai_review/house_readings_chatgpt.csv); Claude checked every reading against ACRIS open data (opendata_check_claude.csv) and returned five for a second look (reread_notes_chatgpt.md). The readings were locked before the analyst key was opened; the key's SHA-256 (c57075d1…0ca0) matches the value published with v3.2.
+The original protocol (audit/FOCUSED_REVIEW_PROTOCOL.md) called for two human readers; this version uses AI instead (v3.4 wording: ChatGPT read the documents and Claude then checked each reading, so these are not independent readings). ChatGPT read the deed and candidate mortgages for all 106 endpoints (audit/cross_ai_review/house_readings_chatgpt.csv); Claude checked every reading against ACRIS open data (opendata_check_claude.csv) and returned five for a second look (reread_notes_chatgpt.md). The readings were locked before the analyst key was opened; the key's SHA-256 (c57075d1…0ca0) matches the value published with v3.2.
 
 code/cross_ai_review.py (added to the master after deed_review_summary.py) scores the labels and writes results/cross_ai_review.json and paper/generated/review_numbers.tex:
 - Financed labels confirmed by a documented purchase mortgage: 54 of 56.

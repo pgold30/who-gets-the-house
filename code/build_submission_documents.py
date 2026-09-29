@@ -11,7 +11,7 @@ anon=re.sub(r'^\\author\{.*\}\n',r'\\author{}\n',source,flags=re.M)
 start=anon.index(r'\section*{Declarations}')
 end=anon.index(r'\section{Joint uncertainty',start)
 anon=anon[:start]+r'''\section*{Declarations}\begingroup\small\singlespacing
-Data and code are publicly deposited; the identifying repository link is supplied separately to the editor. Funding, interest, prior-dissemination and author statements are supplied separately to the editor. Generative AI tools (OpenAI's ChatGPT and Codex, Anthropic's Claude and Google's Gemini) assisted with drafting, literature checking, code development and replication review. The author remains responsible for the analysis and interpretations. The instrument review in the appendix was carried out by two AI systems.
+Data and code are publicly deposited; the identifying repository link is supplied separately to the editor. Funding, interest, prior-dissemination and author statements are supplied separately to the editor. Generative AI tools (OpenAI's ChatGPT and Codex, Anthropic's Claude and Google's Gemini) assisted with drafting, literature checking, code development and replication review. The author remains responsible for the analysis and interpretations. The instrument review in the appendix used AI in place of human readers: one system read the documents and a second checked each reading against open data.
 \par\endgroup\clearpage\appendix
 '''+anon[end:]
 anon=anon.replace('f404e48320a81e3bfe20127af2ed7c2d9fb5268e','withheld for anonymous review')
