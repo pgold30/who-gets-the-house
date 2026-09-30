@@ -4,6 +4,15 @@ Pablo Loschi · ORCID 0009-0004-9455-4713 · concept DOI 10.5281/zenodo.22421850
 
 All numbers are in log points (100 × log-price difference) unless stated otherwise. Intervals are 95% percentile intervals from the same 999 parcel-bootstrap draws (seed 20260909) used since v2.1.
 
+## v3.5 (30 September 2026): label errors in both directions and related to growth
+
+- **What v3.4 left open.** Its stress test recoded cash labels at random, in one direction, inside the switching arms. It did not model financed labels that are really cash, cash–cash or financed–financed pairs that would become switchers, or errors related to price growth. New Table 14 (Appendix G; `code/misclassification_checks.py`) covers all three on the same corrected sample, with the 49 reviewed pairs fixed.
+- **Random errors in both directions**, at the review's rates and upper limits (8% or 18.8% of cash labels hiding a mortgage; 0, 3.6% or 6.4% of financed labels really cash), pull the contrast toward zero, to 5.82–8.96 log points on average, without changing its sign. The surname screen still removes 47–51%.
+- **The documented failure modes** barely move it: late or early recording gives 8.75, and hidden mortgages only among company buyers give 9.26–9.39.
+- **Errors related to growth** can reverse it. With labels drawn more often where recoding works against the contrast, it reaches zero when the recoded labels' mean standardized effect is 0.70 (0.45 without same-surname pairs); choosing the most influential labels bounds it between −15.70 and 25.49. The review is too small to rule such a pattern out, and the abstract, conclusion and appendix now say so.
+- **Joint table (new Table 15).** The documented corrections and the screens together, on the common bootstrap: 5.19 [2.98, 7.18] on 5,520 pairs, a change of −4.06 [−5.36, −2.76] from the published estimate.
+- **Unchanged.** Every earlier estimate. These checks were specified in an AI assessment (ChatGPT) of v3.4 and run by Claude.
+
 ## v3.4 (29 September 2026): conditional stress test; review wording
 
 - **Stress test (new Table 13, Appendix G; `code/financing_stress_test.py`).** How far would the contrast move if unreviewed cash labels hid purchase mortgages like those the review found?

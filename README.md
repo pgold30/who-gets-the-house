@@ -2,7 +2,7 @@
 
 Who Gets the House? Related-Party Transfers and the Cash–Mortgage Price Gap in New York City
 
-Pablo Loschi, independent researcher, Berlin. Contact: loschi.pablo@gmail.com. Version 3.4 (WGTH-2026-09-29-V3.4), prepared 29 September 2026. This self-contained package accompanies paper/paper.pdf for Journal of Housing Economics. It requires no earlier revision folders. Nothing has been submitted or uploaded by this workflow.
+Pablo Loschi, independent researcher, Berlin. Contact: loschi.pablo@gmail.com. Version 3.5 (WGTH-2026-09-30-V3.5), prepared 30 September 2026. This self-contained package accompanies paper/paper.pdf for Journal of Housing Economics. It requires no earlier revision folders. Nothing has been submitted or uploaded by this workflow.
 
 ## Computational scope and unresolved omissions
 
@@ -156,6 +156,17 @@ Version 3.0 adds one analysis, code/related_party.py (Table 6, new Section 5), a
 - Runtime: related_party.py took 19 minutes in the clean full run of 24 September 2026 (999 draws, each with least squares, Huber and two trims on three samples plus two splits); the whole master script took 29 minutes.
 
 The party extract covers house deeds only, so condominium estimates are not adjusted. A shared surname is a proxy for a relationship: it misses relatives with different surnames and can match unrelated people.
+
+## V3.5: financing-label errors in both directions and related to growth (30 September 2026)
+
+code/misclassification_checks.py (added to the master after financing_stress_test.py; about 10 minutes on eight cores) relaxes the three restrictions of the v3.4 stress test on the same corrected sample, with the 49 reviewed pairs fixed. It writes results/misclassification_checks.json, paper/generated/misclass.tex (Table 14), paper/generated/jointscreens.tex (Table 15) and paper/generated/misclass_numbers.tex; `--outputs-only` rewrites the tables from the saved JSON.
+
+- Both directions, whole sample: 8% or 18.8% of the 2,613 unreviewed cash-labelled endpoints recoded to financed and 0, 3.6% or 6.4% of the 9,293 financed-labelled endpoints to cash, with the arms rebuilt. The mean contrast falls to 5.82–8.96 log points and never changes sign; the surname screen removes 47–51%.
+- Documented failure modes: late or early recording (90 endpoints) gives 8.75; hidden mortgages only among company buyers give 9.26–9.39.
+- Errors related to growth: labels drawn with probability rising in their effect against the contrast. The contrast reaches zero when the recoded labels' mean standardized effect is 0.70 (0.45 without same-surname pairs). Choosing the labels with the largest effect bounds the estimate between −15.70 and 25.49.
+- Joint table on the common bootstrap: documented errors +0.15 [−0.03, 0.36]; same-surname screen −4.51; broad lender-name rule −0.01; legal-rule deeds +0.31 [0.11, 0.54]; all together 5.19 [2.98, 7.18] on 5,520 pairs.
+
+No earlier estimate changes. Rerunning the script reproduces its scenario results and joint table exactly.
 
 ## V3.4: conditional stress test and review wording (29 September 2026)
 

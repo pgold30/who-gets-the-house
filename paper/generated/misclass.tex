@@ -1,0 +1,24 @@
+\begin{table}[htbp]\centering\caption{Financing-label errors in both directions, across the whole sample and related to price growth}\label{tab:misclass}
+\footnotesize\setlength{\tabcolsep}{2.2pt}\begin{tabular}{lccccc}\toprule
+Scenario & Labels & Arms & All pairs & Without same- & Removed \\
+ & recoded & (c-to-f / f-to-c) & & surname pairs & by screen \\\midrule
+Corrected baseline, no recoding & 0 & 1,044 / 733 & 9.40 & 4.89 & 48\% \\\addlinespace
+\multicolumn{6}{l}{\textit{A. Random, both directions, all pairs}} \\
+Hidden 8.0\%, false financed 0.0\% & 209 & 995 / 711 & 8.96 [8.29, 9.67] & 4.72 [3.99, 5.43] & 47\% \\
+Hidden 8.0\%, false financed 3.6\% & 544 & 1,101 / 821 & 7.34 [6.31, 8.17] & 3.80 [2.84, 4.63] & 48\% \\
+Hidden 18.8\%, false financed 0.0\% & 491 & 924 / 671 & 8.24 [7.16, 9.22] & 4.32 [3.18, 5.18] & 48\% \\
+Hidden 18.8\%, false financed 6.4\% & 1,086 & 1,115 / 884 & 5.82 [4.64, 6.82] & 2.98 [1.86, 3.82] & 49\% \\
+\addlinespace\multicolumn{6}{l}{\textit{B. Documented failure modes}} \\
+Late or early recording, all & 90 & 1,044 / 715 & 8.75 & 4.27 & 51\% \\
+Company buyers only, hidden 8.0\% & 209 & 1,003 / 719 & 9.26 [8.60, 9.92] & 4.83 [4.09, 5.51] & 48\% \\
+Company buyers only, hidden 18.8\% & 491 & 935 / 694 & 9.39 [8.42, 10.31] & 4.93 [3.95, 5.98] & 48\% \\
+\addlinespace\multicolumn{6}{l}{\textit{C. Related to growth, hidden 8.0\%, false financed 3.6\%}} \\
+Mean standardized effect 0.31 & 544 & -- & 4.12 & 1.15 & -- \\
+Mean standardized effect 0.56 & 544 & -- & 1.52 & $-$0.88 & -- \\
+Mean standardized effect 0.81 & 544 & -- & $-$1.18 & $-$2.86 & -- \\
+Mean standardized effect 1.19 & 544 & -- & $-$5.17 & $-$5.79 & -- \\
+Worst case against the contrast & 544 & 1,054 / 809 & $-$15.70 & $-$14.28 & 9\% \\
+Worst case in its favour & 544 & 1,217 / 860 & 25.49 & 20.75 & 19\% \\
+\bottomrule\end{tabular}
+\notes{Headline joint model, log points, on the corrected sample of Table~\ref{tab:stress}; the 49 reviewed pairs keep their labels. Hidden: share of the 2,613 unreviewed cash-labelled endpoints recoded to financed; false financed: share of the 9,293 unreviewed financed-labelled endpoints recoded to cash; at most one endpoint per pair. Arms are rebuilt after recoding. Panels A and B: means over 200 draws with the 2.5th and 97.5th percentiles of the point estimates; late or early recording recodes every cash endpoint with a mortgage in the wide but not the base window. Panel C draws the recoded labels with probability rising in their effect against the contrast; the first column gives the mean standardized effect of the labels recoded (0 when unrelated to growth), 96 draws each. Worst cases pick the labels with the largest effect. Scenario ranges, not confidence intervals. \texttt{code/misclassification\_checks.py}.}
+\end{table}

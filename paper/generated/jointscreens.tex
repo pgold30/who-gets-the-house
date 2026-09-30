@@ -1,0 +1,12 @@
+\begin{table}[htbp]\centering\caption{Documented corrections and screens applied together}\label{tab:jointscreens}
+\footnotesize\setlength{\tabcolsep}{2.5pt}\begin{tabular}{lrccc}\toprule
+Sample & Pairs & Contrast & Change from & Change from \\
+ & & [95\% CI] & published & row above \\\midrule
+Published headline sample & 6,006 & 9.25 [7.17, 11.35] & -- & -- \\
+Less the four documented label errors & 6,002 & 9.40 [7.23, 11.41] & +0.15 [$-$0.03, 0.36] & -- \\
+\quad and same-surname pairs & 5,645 & 4.89 [2.73, 6.79] & $-$4.36 [$-$5.62, $-$3.17] & $-$4.51 [$-$5.74, $-$3.30] \\
+\quad and the broad lender-name rule & 5,558 & 4.88 [2.74, 6.83] & $-$4.37 [$-$5.65, $-$3.10] & $-$0.01 [$-$0.39, 0.45] \\
+\quad and legal-rule deeds & 5,520 & 5.19 [2.98, 7.18] & $-$4.06 [$-$5.36, $-$2.76] & +0.31 [0.11, 0.54] \\
+\bottomrule\end{tabular}
+\notes{Headline joint model, log points. Each row removes the stated pairs from the row above. Intervals are 2.5th--97.5th percentiles over the paper's common parcel bootstrap (999 draws, seed 20260909), so every row and difference is paired with the published estimate. Flags in the published sample: 358 same-surname pairs, 88 pairs matching the broad lender-name rule and 93 pairs with a legal-rule deed (Section~\ref{sec:who}, Appendix~\ref{sec:focusedvalidation}). \texttt{code/misclassification\_checks.py}.}
+\end{table}

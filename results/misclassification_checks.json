@@ -1,0 +1,574 @@
+{
+ "seed": 20261001,
+ "draws": 200,
+ "baseline": {
+  "full": 9.39932802949453,
+  "no_related": 4.892711111378126,
+  "pairs": 6002,
+  "cf": 1044,
+  "fc": 733,
+  "reviewed_fixed": 49
+ },
+ "counts": {
+  "cash_endpoints": 2613,
+  "financed_endpoints": 9293,
+  "company_cash_endpoints": 1255,
+  "late_recorded_cash_endpoints": 90
+ },
+ "scenarios": {
+  "random|h=0.08|f=0.0": {
+   "draws": 200,
+   "recoded": 209.0,
+   "cf_pairs": 995.465,
+   "fc_pairs": 710.735,
+   "full_mean": 8.961582071101283,
+   "full_range": [
+    8.28700104505024,
+    9.671746460521014
+   ],
+   "no_related_mean": 4.720484717846895,
+   "no_related_range": [
+    3.9920996450490747,
+    5.434562611785548
+   ],
+   "share_removed_mean": 0.47388957975763774,
+   "share_removed_range": [
+    0.43144423850326014,
+    0.524523186572709
+   ]
+  },
+  "random|h=0.08|f=0.036": {
+   "draws": 200,
+   "recoded": 544.0,
+   "cf_pairs": 1101.27,
+   "fc_pairs": 821.45,
+   "full_mean": 7.3351859734570874,
+   "full_range": [
+    6.314875924156761,
+    8.166511899531308
+   ],
+   "no_related_mean": 3.7984124159617623,
+   "no_related_range": [
+    2.8439214211534014,
+    4.625474469560529
+   ],
+   "share_removed_mean": 0.48357724535530944,
+   "share_removed_range": [
+    0.4171146501080366,
+    0.5645520134382325
+   ]
+  },
+  "random|h=0.08|f=0.064": {
+   "draws": 200,
+   "recoded": 804.0,
+   "cf_pairs": 1175.72,
+   "fc_pairs": 910.39,
+   "full_mean": 6.406623378402298,
+   "full_range": [
+    5.5104794339634084,
+    7.166116738558333
+   ],
+   "no_related_mean": 3.295195487639477,
+   "no_related_range": [
+    2.5500537223946527,
+    4.036849784256777
+   ],
+   "share_removed_mean": 0.48718752581095726,
+   "share_removed_range": [
+    0.4191021881902963,
+    0.5648426202162564
+   ]
+  },
+  "random|h=0.188|f=0.0": {
+   "draws": 200,
+   "recoded": 491.0,
+   "cf_pairs": 924.4,
+   "fc_pairs": 671.42,
+   "full_mean": 8.2391692233145,
+   "full_range": [
+    7.159820385262057,
+    9.216162442538005
+   ],
+   "no_related_mean": 4.32056329620942,
+   "no_related_range": [
+    3.1839223654342215,
+    5.183416181911185
+   ],
+   "share_removed_mean": 0.4774048181013237,
+   "share_removed_range": [
+    0.41090064748497984,
+    0.5746114839977923
+   ]
+  },
+  "random|h=0.188|f=0.036": {
+   "draws": 200,
+   "recoded": 826.0,
+   "cf_pairs": 1032.335,
+   "fc_pairs": 792.405,
+   "full_mean": 6.7186820179471844,
+   "full_range": [
+    5.604956846188121,
+    7.772983465817266
+   ],
+   "no_related_mean": 3.4407838883544777,
+   "no_related_range": [
+    2.4987502064503277,
+    4.47641423707928
+   ],
+   "share_removed_mean": 0.49011018434733705,
+   "share_removed_range": [
+    0.3998720016522402,
+    0.5764900637393018
+   ]
+  },
+  "random|h=0.188|f=0.064": {
+   "draws": 200,
+   "recoded": 1086.0,
+   "cf_pairs": 1114.72,
+   "fc_pairs": 883.94,
+   "full_mean": 5.8221612886333265,
+   "full_range": [
+    4.639902153997865,
+    6.81870712914267
+   ],
+   "no_related_mean": 2.976437064814887,
+   "no_related_range": [
+    1.859525661486382,
+    3.8204431245051933
+   ],
+   "share_removed_mean": 0.4922020312477593,
+   "share_removed_range": [
+    0.40731940955307366,
+    0.6139281894733756
+   ]
+  },
+  "tilted_against|h=0.08|f=0.036": {
+   "draws": 200,
+   "recoded": 544.0,
+   "cf_pairs": 1069.935,
+   "fc_pairs": 797.525,
+   "full_mean": -5.183197959799368,
+   "full_range": [
+    -5.953284025896453,
+    -4.421579860951681
+   ],
+   "no_related_mean": -5.76938479197372,
+   "no_related_range": [
+    -6.493878923436434,
+    -5.04839188330726
+   ],
+   "share_removed_mean": -0.11550981992956394,
+   "share_removed_range": [
+    -0.24378601669868563,
+    -0.010025559614338967
+   ]
+  },
+  "tilted_for|h=0.08|f=0.036": {
+   "draws": 200,
+   "recoded": 544.0,
+   "cf_pairs": 1130.315,
+   "fc_pairs": 830.565,
+   "full_mean": 17.49763899821112,
+   "full_range": [
+    16.76525825179608,
+    18.316238904452778
+   ],
+   "no_related_mean": 12.722346417351874,
+   "no_related_range": [
+    11.996333595458449,
+    13.51000789505894
+   ],
+   "share_removed_mean": 0.27303660968940724,
+   "share_removed_range": [
+    0.25220295614051,
+    0.2937668174085782
+   ]
+  },
+  "adversarial_against|h=0.08|f=0.036": {
+   "draws": 1,
+   "recoded": 544.0,
+   "cf_pairs": 1054.0,
+   "fc_pairs": 809.0,
+   "full_mean": -15.702924236799683,
+   "full_range": [
+    -15.702924236799683,
+    -15.702924236799683
+   ],
+   "no_related_mean": -14.278084194752655,
+   "no_related_range": [
+    -14.278084194752655,
+    -14.278084194752655
+   ],
+   "share_removed_mean": 0.0907372423480161,
+   "share_removed_range": [
+    0.0907372423480161,
+    0.0907372423480161
+   ]
+  },
+  "adversarial_for|h=0.08|f=0.036": {
+   "draws": 1,
+   "recoded": 544.0,
+   "cf_pairs": 1217.0,
+   "fc_pairs": 860.0,
+   "full_mean": 25.486161253157945,
+   "full_range": [
+    25.486161253157945,
+    25.486161253157945
+   ],
+   "no_related_mean": 20.75394459788765,
+   "no_related_range": [
+    20.75394459788765,
+    20.75394459788765
+   ],
+   "share_removed_mean": 0.185677890376054,
+   "share_removed_range": [
+    0.185677890376054,
+    0.185677890376054
+   ]
+  },
+  "tilted_against|h=0.188|f=0.064": {
+   "draws": 200,
+   "recoded": 1086.0,
+   "cf_pairs": 1095.27,
+   "fc_pairs": 865.51,
+   "full_mean": -12.3981725993686,
+   "full_range": [
+    -13.265723788817816,
+    -11.678475875835558
+   ],
+   "no_related_mean": -11.506335615451825,
+   "no_related_range": [
+    -12.29043906418734,
+    -10.732533929796897
+   ],
+   "share_removed_mean": 0.07180942165843476,
+   "share_removed_range": [
+    0.03684095174030703,
+    0.10407679972918213
+   ]
+  },
+  "tilted_for|h=0.188|f=0.064": {
+   "draws": 200,
+   "recoded": 1086.0,
+   "cf_pairs": 1176.59,
+   "fc_pairs": 915.61,
+   "full_mean": 20.759221352405444,
+   "full_range": [
+    19.9128447723224,
+    21.540746339497716
+   ],
+   "no_related_mean": 16.380732376653725,
+   "no_related_range": [
+    15.515549450241533,
+    17.268809468576123
+   ],
+   "share_removed_mean": 0.21099684171515878,
+   "share_removed_range": [
+    0.19576214823078583,
+    0.22817207627129216
+   ]
+  },
+  "adversarial_against|h=0.188|f=0.064": {
+   "draws": 1,
+   "recoded": 1086.0,
+   "cf_pairs": 1170.0,
+   "fc_pairs": 983.0,
+   "full_mean": -22.896595570377993,
+   "full_range": [
+    -22.896595570377993,
+    -22.896595570377993
+   ],
+   "no_related_mean": -21.07614247946058,
+   "no_related_range": [
+    -21.07614247946058,
+    -21.07614247946058
+   ],
+   "share_removed_mean": 0.07950758816182214,
+   "share_removed_range": [
+    0.07950758816182214,
+    0.07950758816182214
+   ]
+  },
+  "adversarial_for|h=0.188|f=0.064": {
+   "draws": 1,
+   "recoded": 1086.0,
+   "cf_pairs": 1321.0,
+   "fc_pairs": 984.0,
+   "full_mean": 29.06844031115571,
+   "full_range": [
+    29.06844031115571,
+    29.06844031115571
+   ],
+   "no_related_mean": 25.413307105831063,
+   "no_related_range": [
+    25.413307105831063,
+    25.413307105831063
+   ],
+   "share_removed_mean": 0.12574232281468173,
+   "share_removed_range": [
+    0.12574232281468173,
+    0.12574232281468173
+   ]
+  },
+  "company|h=0.08|f=0.0": {
+   "draws": 200,
+   "recoded": 209.0,
+   "cf_pairs": 1002.695,
+   "fc_pairs": 719.315,
+   "full_mean": 9.261930967334665,
+   "full_range": [
+    8.598790115093989,
+    9.91523397219061
+   ],
+   "no_related_mean": 4.828183789050343,
+   "no_related_range": [
+    4.087515590788998,
+    5.514516040387414
+   ],
+   "share_removed_mean": 0.4793621364826792,
+   "share_removed_range": [
+    0.4390044162739175,
+    0.5237654288602238
+   ]
+  },
+  "company|h=0.188|f=0.0": {
+   "draws": 200,
+   "recoded": 491.0,
+   "cf_pairs": 935.07,
+   "fc_pairs": 693.73,
+   "full_mean": 9.38884815114474,
+   "full_range": [
+    8.416601441344081,
+    10.31347807024869
+   ],
+   "no_related_mean": 4.92577874442296,
+   "no_related_range": [
+    3.945391838860726,
+    5.981058028430757
+   ],
+   "share_removed_mean": 0.4767888328788854,
+   "share_removed_range": [
+    0.4188737632402878,
+    0.5332766081258047
+   ]
+  },
+  "late_recording|all": {
+   "draws": 1,
+   "recoded": 90.0,
+   "cf_pairs": 1044.0,
+   "fc_pairs": 715.0,
+   "full_mean": 8.75238417155062,
+   "full_range": [
+    8.75238417155062,
+    8.75238417155062
+   ],
+   "no_related_mean": 4.268976613962831,
+   "no_related_range": [
+    4.268976613962831,
+    4.268976613962831
+   ],
+   "share_removed_mean": 0.5122498589768237,
+   "share_removed_range": [
+    0.5122498589768237,
+    0.5122498589768237
+   ]
+  }
+ },
+ "sweep": [
+  {
+   "kappa": 0.0,
+   "full_mean": 7.320630773030866,
+   "no_related_mean": 3.7671195042850827,
+   "recoded_effect_z": 0.00136379394880394
+  },
+  {
+   "kappa": 0.1,
+   "full_mean": 6.3036773112936695,
+   "no_related_mean": 2.9549072470016458,
+   "recoded_effect_z": 0.09856940167560173
+  },
+  {
+   "kappa": 0.2,
+   "full_mean": 5.294575707610741,
+   "no_related_mean": 2.052514623937378,
+   "recoded_effect_z": 0.1975996682155635
+  },
+  {
+   "kappa": 0.3,
+   "full_mean": 4.1224592732098735,
+   "no_related_mean": 1.149420628320745,
+   "recoded_effect_z": 0.31278377505219573
+  },
+  {
+   "kappa": 0.4,
+   "full_mean": 2.8956792089896424,
+   "no_related_mean": 0.17595010871167213,
+   "recoded_effect_z": 0.4295911540692227
+  },
+  {
+   "kappa": 0.5,
+   "full_mean": 1.515862394142749,
+   "no_related_mean": -0.8755893501907065,
+   "recoded_effect_z": 0.5627024434681053
+  },
+  {
+   "kappa": 0.6,
+   "full_mean": 0.19123633361930073,
+   "no_related_mean": -1.8647622753987314,
+   "recoded_effect_z": 0.6856018790097677
+  },
+  {
+   "kappa": 0.7,
+   "full_mean": -1.1823242794796742,
+   "no_related_mean": -2.8563367756183404,
+   "recoded_effect_z": 0.8148665426012535
+  },
+  {
+   "kappa": 0.8,
+   "full_mean": -2.692405748124949,
+   "no_related_mean": -3.9867252431284506,
+   "recoded_effect_z": 0.9555447709939798
+  },
+  {
+   "kappa": 0.9,
+   "full_mean": -3.8757778335119597,
+   "no_related_mean": -4.816987072660549,
+   "recoded_effect_z": 1.0648810218368603
+  },
+  {
+   "kappa": 1.0,
+   "full_mean": -5.173626678476828,
+   "no_related_mean": -5.786593898196435,
+   "recoded_effect_z": 1.1859201494016387
+  }
+ ],
+ "breakdown": {
+  "full_zero_at_effect_z": 0.703598973638155,
+  "no_related_zero_at_effect_z": 0.4518641611753294,
+  "h": 0.08,
+  "f": 0.036,
+  "draws_per_kappa": 96
+ },
+ "joint_table": {
+  "rows": [
+   {
+    "step": "published",
+    "pairs": 6006,
+    "cf": 1044,
+    "fc": 737,
+    "estimate": 9.251354998984052,
+    "ci": [
+     7.168262757937825,
+     11.346809027778654
+    ],
+    "change_from_published": 0.0,
+    "change_from_published_ci": [
+     0.0,
+     0.0
+    ],
+    "change_from_previous": 0.0,
+    "change_from_previous_ci": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "step": "documented_errors_removed",
+    "pairs": 6002,
+    "cf": 1044,
+    "fc": 733,
+    "estimate": 9.399328029427382,
+    "ci": [
+     7.226478971431755,
+     11.412036467267084
+    ],
+    "change_from_published": 0.14797303044333,
+    "change_from_published_ci": [
+     -0.02797235494054231,
+     0.3559670772289089
+    ],
+    "change_from_previous": 0.14797303044333,
+    "change_from_previous_ci": [
+     -0.02797235494054231,
+     0.3559670772289089
+    ]
+   },
+   {
+    "step": "plus_no_same_surname",
+    "pairs": 5645,
+    "cf": 986,
+    "fc": 645,
+    "estimate": 4.892711111134508,
+    "ci": [
+     2.7254364724094735,
+     6.793213204821679
+    ],
+    "change_from_published": -4.358643887849544,
+    "change_from_published_ci": [
+     -5.624154432713531,
+     -3.170450483050529
+    ],
+    "change_from_previous": -4.506616918292874,
+    "change_from_previous_ci": [
+     -5.738205936173298,
+     -3.2976919314652613
+    ]
+   },
+   {
+    "step": "plus_no_broad_lender_name",
+    "pairs": 5558,
+    "cf": 956,
+    "fc": 628,
+    "estimate": 4.883174150649743,
+    "ci": [
+     2.743368389910696,
+     6.833032197632129
+    ],
+    "change_from_published": -4.368180848334309,
+    "change_from_published_ci": [
+     -5.646179802126669,
+     -3.1001974207519565
+    ],
+    "change_from_previous": -0.009536960484765267,
+    "change_from_previous_ci": [
+     -0.3931338029315613,
+     0.4543476746807265
+    ]
+   },
+   {
+    "step": "plus_no_legal_rule_deed",
+    "pairs": 5520,
+    "cf": 939,
+    "fc": 621,
+    "estimate": 5.193452130709048,
+    "ci": [
+     2.979481489764093,
+     7.1788671557185495
+    ],
+    "change_from_published": -4.057902868275004,
+    "change_from_published_ci": [
+     -5.36354610465176,
+     -2.761754490293243
+    ],
+    "change_from_previous": 0.31027798005930496,
+    "change_from_previous_ci": [
+     0.10634582986748957,
+     0.5384443381025912
+    ]
+   }
+  ],
+  "bootstrap": {
+   "draws": 999,
+   "seed": 20260909,
+   "clusters": 8127,
+   "seconds": 100.39655024997774
+  },
+  "flag_counts": {
+   "documented": 4,
+   "same_surname": 358,
+   "broad_lender_name": 88,
+   "legal_rule_deed": 93
+  }
+ },
+ "note": "Financing-label errors beyond random one-direction recoding (v3.5).\n\nThe stress test of v3.4 (financing_stress_test.py) recodes, at random and in\none direction, cash labels inside the two switching arms. This script relaxes\neach of those restrictions on the same corrected sample (the 6,002 pairs left\nafter the four documented label errors; the 49 other reviewed pairs keep their\nreviewed labels).\n\n1. Both directions, whole sample. A share h of unreviewed cash-labelled sale\n   endpoints is recoded to financed (a hidden purchase mortgage) and a share f\n   of unreviewed financed-labelled endpoints to cash (a recorded loan that did\n   not finance the purchase). Every pair is eligible, so cash-cash and\n   financed-financed pairs can become switching pairs and switching pairs can\n   leave their arm; the arms are rebuilt from the recoded labels. h = 0.08 is\n   the review's detected share (4 of 50 cash endpoints) and 0.188 its 95%\n   upper limit. f = 0.036 counts the two unresolved financed endpoints as\n   errors (2 of 56) and 0.064 is the Wilson upper limit for 0 of 56. At most\n   one endpoint per pair is recoded.\n2. Outcome-correlated errors. Each possible recoding moves the contrast in a\n   known direction given the pair's residual growth r (log growth net of the\n   headline model's time and location effects): a pair that enters the\n   cash-to-financed arm lowers the contrast if r is low, one that leaves it\n   lowers the contrast if r is high, and the reverse for the financed-to-cash\n   arm. \"Adversarial\" recodes the h and f shares with the largest such effect,\n   against the contrast (and, for the other bound, in its favour). \"Tilted\"\n   draws them with probability proportional to exp(kappa x standardized\n   effect); a sweep over kappa finds the strength of correlation at which the\n   contrast reaches zero, reported as the mean standardized effect of the\n   recoded labels (0 = unrelated to growth). Adversarial selection is a stress\n   bound, not a plausible error process.\n3. Documented failure modes. The review's four errors were two index-date\n   errors and two loans recorded against two adjoining lots. \"Late or early\n   recording\" recodes to financed every unreviewed cash endpoint that has a\n   mortgage in the wide window (15 days before to 180 after) but not in the\n   base window. \"Company buyers\" draws the h share of hidden mortgages only\n   from cash endpoints whose buyer is a company, where development and\n   blanket loans are common.\n\nEach recoded sample is fitted with and without same-surname pairs, paired\nwithin a draw. Ranges are 2.5-97.5 percentiles of point estimates across 200\ndraws: scenario ranges, not confidence intervals.\n\n4. Joint table. The published sample and the successive screens (documented\n   errors, same-surname pairs, broad lender-name rule, legal-rule deeds from\n   the companion classifier) on the paper's common parcel bootstrap (seed\n   20260909, 999 multinomial draws over 8,127 parcel clusters), so every row\n   and every difference is paired with the published estimate.\n\nWrites results/misclassification_checks.json, paper/generated/misclass.tex,\npaper/generated/jointscreens.tex and paper/generated/misclass_numbers.tex.\n"
+}
